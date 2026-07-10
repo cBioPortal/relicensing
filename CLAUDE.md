@@ -28,8 +28,8 @@ Chosen over MIT because Apache 2.0 provides explicit patent grants — critical 
 - Full Software Bill of Materials (SBOM) of all third-party dependencies
 - Identify any upstream AGPL-licensed libraries ("infection" risk)
 - Identify/remove obsolete code from unreachable contributors
-- Preliminary analysis: https://github.com/cBioPortal/cbioportal/pull/12125
-- **Draft v1 audit published (2026-07-10):** [`docs/relicensing/dependency-audit.md`](docs/relicensing/dependency-audit.md). Two real GPL-3.0-only frontend blockers confirmed in use (`react-column-resizer` in the core `LazyMobXTable` component, `react-json-to-table` in one tooltip); backend's flagged `mysql-connector-j` (GPL+Universal FOSS Exception) likely isn't an actual blocker. The backend's own `OPEN-SOURCE-DOCUMENTATION` third-party report is stale (4 of 5 previously-flagged copyleft entries no longer exist in the repo) — needs regeneration. `cbioportal-core`/`session-service` dependency trees are clean.
+- Preliminary analysis: https://github.com/cBioPortal/cbioportal/pull/12125 (closed 2026-07-10, superseded by the audit doc below — findings fully incorporated)
+- **Draft v1 audit published (2026-07-10):** [`docs/relicensing/dependency-audit.md`](docs/relicensing/dependency-audit.md). Two real GPL-3.0-only frontend blockers confirmed in use (`react-column-resizer` in the core `LazyMobXTable` component, `react-json-to-table` in one tooltip) — resolution decided: reimplement in-house, tracked as [cbioportal#12266](https://github.com/cBioPortal/cbioportal/issues/12266) and [#12267](https://github.com/cBioPortal/cbioportal/issues/12267). Backend's flagged `mysql-connector-j` (GPL+Universal FOSS Exception) likely isn't an actual blocker. The backend's own `OPEN-SOURCE-DOCUMENTATION` third-party report is stale (4 of 5 previously-flagged copyleft entries no longer exist in the repo) — needs regeneration. `cbioportal-core`/`session-service` dependency trees are clean. Full transitive Maven dependency resolution has still never actually been completed for the backend.
 
 ### Phase 2 — Contributor Outreach & Consent
 - No prior CLA exists — must get consent from all copyright holders
@@ -89,7 +89,7 @@ Chosen over MIT because Apache 2.0 provides explicit patent grants — critical 
 ## Key References
 
 - RFC document: `RFC86.docx` (in this folder)
-- Preliminary SBOM/dependency PR: https://github.com/cBioPortal/cbioportal/pull/12125
+- Preliminary SBOM/dependency PR: https://github.com/cBioPortal/cbioportal/pull/12125 (closed 2026-07-10, superseded by `docs/relicensing/dependency-audit.md`)
 - AI authorship PR: https://github.com/cBioPortal/cbioportal/pull/12014
 
 ## GitHub Issues
