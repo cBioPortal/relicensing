@@ -34,7 +34,7 @@ Chosen over MIT because Apache 2.0 provides explicit patent grants — critical 
 - **Tier 1**: Formal written approval from lead institutions: MSKCC, DFCI, PMCC, CHOP, Hyve, SE4BIO, top individual contributors
 - **Tier 2**: Standardized outreach to all contributors in git history
 - "Best Effort" standard: reach 95% of codebase by volume; rewrite remaining 5% if needed
-- Maintain a public "Vanish List" of unreachable contributors
+- Maintain a **public consent status board** (per-contributor agreed/pending/declined/unreachable, no raw contact info) — precedent: [mpv's LGPL relicensing](https://github.com/mpv-player/mpv/issues/2033) used a public wiki page for this. The redacted "Vanish List" is a filtered view of this board (unreachable rows only), not a separate artifact.
 
 ### Phase 3 — Community Feedback & Notice Period
 - 30-day public RFC / "Notice and Comment" period on GitHub + mailing list
@@ -56,12 +56,20 @@ Chosen over MIT because Apache 2.0 provides explicit patent grants — critical 
 - Adopt **Developer Certificate of Origin (DCO)** with GitHub CI enforcement
 - Integrate automated license scanning (FOSSA or Snyk) into CI pipeline
 
+## Timeline
+
+**Target: complete by ~2026-10-10 (2–3 months from 2026-07-10).** This is aggressive relative to precedent — mpv's comparable GPL→LGPL relicensing ([mpv-player/mpv#2033](https://github.com/mpv-player/mpv/issues/2033)) took 4+ years on a smaller codebase. Hitting this window will likely require:
+- Running phases in parallel where possible rather than strictly serial (current plan has Phase 1 → Phase 2 → Phase 3 → Sign-off → Phase 4 as a hard chain, plus Phase 3's mandatory 30-day window)
+- A firm response deadline in Tier 2 outreach, defaulting non-responders to the rewrite/removal path rather than waiting indefinitely
+- Leaning more heavily on Tier 1 institutional blanket consent to cover volume quickly
+
 ## Key Risks
 
 | Risk | Notes |
 |------|-------|
 | Upstream AGPL dependency | If cBioPortal depends on AGPL libraries it doesn't own, those modules may need to stay AGPL or be replaced |
 | Contributor consent | Some contributors may be unreachable; "best effort" + rewrite strategy applies |
+| **Aggressive timeline** | 2–3 month target vs. mpv's 4-year precedent for a comparable effort — see Timeline section |
 | Stakeholder pushback | Some may perceive license change as loss of control |
 | Legal/compliance complexity | Careful legal review required |
 | AI authorship claims | `Co-Authored-By: Claude` tags in git history (e.g., PR #12014) — current US Copyright Office guidance: AI cannot hold copyright, but warrants monitoring |
