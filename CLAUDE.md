@@ -31,8 +31,8 @@ Chosen over MIT because Apache 2.0 provides explicit patent grants — critical 
 
 ### Phase 2 — Contributor Outreach & Consent
 - No prior CLA exists — must get consent from all copyright holders
-- **Tier 1**: Formal written approval from lead institutions: MSKCC, DFCI, PMCC, CHOP, Hyve, SE4BIO, top individual contributors
-- **Tier 2**: Standardized outreach to all contributors in git history
+- **Tier 1**: Written approval from the **institutional/team lead** of the cBioPortal team at each lead institution — MSKCC, DFCI, PMCC, CHOP, Hyve, SE4BIO — signed at the team-lead level rather than routed through formal legal/tech-transfer review, to fit the timeline. Letter explicitly invites the lead to redirect to legal if their institution requires it. See Decisions section below.
+- **Tier 2**: Standardized outreach to all contributors in git history, and to top individual contributors regardless of institutional affiliation
 - "Best Effort" standard: reach 95% of codebase by volume; rewrite remaining 5% if needed
 - Maintain a **public consent status board** (per-contributor agreed/pending/declined/unreachable, no raw contact info) — precedent: [mpv's LGPL relicensing](https://github.com/mpv-player/mpv/issues/2033) used a public wiki page for this. The redacted "Vanish List" is a filtered view of this board (unreachable rows only), not a separate artifact.
 
@@ -64,13 +64,13 @@ Chosen over MIT because Apache 2.0 provides explicit patent grants — critical 
 |---|---|---|
 | Phase 0 (scope) | Jul 10–17 | Fast — scope is largely already known |
 | Phase 1 (SBOM/audit) | Jul 10–28 | Starts in parallel with Phase 0 on known components |
-| Phase 2 — Tier 1 outreach | launch Jul 13, target resolved Aug 14 | Starts immediately — institutional legal review is the least controllable variable, gets the longest runway |
+| Phase 2 — Tier 1 outreach | launch Jul 13, target resolved Jul 24 | Team-lead sign-off (not formal legal review, see Decisions) — should turn around in ~1-2 weeks since leads are already engaged collaborators |
 | Phase 2 — Tier 2 outreach | launch Jul 28, firm deadline Aug 18, reconciliation by Aug 20 | Firm 3-week window; non-responders default to rewrite/remove, not indefinite waiting |
 | Phase 3 (30-day notice) | Aug 21 – Sep 20 | Fixed at 30 days — not compressible, everything else fits around this |
 | Sign-off Gate | Sep 20–23 | Fast if the record is assembled continuously through Phases 1–3, not started here |
 | Phase 4 (Switch Commit) | Sep 23–30 | Fast if SPDX header scripts/tooling are dry-run tested during the Phase 1 window |
 
-**Critical path risk:** Tier 1 institutional consent (MSKCC, DFCI, PMCC, CHOP, Hyve, SE4BIO legal review). If any institution is still pending by mid-August, that's the trigger to escalate, not wait — a slip here is the most likely way the Sep 30 date is missed, since Phase 3's 30 days cannot be compressed to absorb it.
+**Critical path risk:** with Tier 1 moved to team-lead sign-off, the remaining critical path is **Phase 1 cleanup finishing on time (Jul 28) and Tier 2's firm 3-week outreach window (Jul 28 – Aug 18)** — those now gate Phase 3's fixed 30-day window, which cannot be compressed to absorb a slip. The Jul 24–Aug 20 gap also now acts as schedule buffer for any Tier 1 straggler or minor Tier 2 slippage.
 
 ## Key Risks
 
@@ -78,7 +78,8 @@ Chosen over MIT because Apache 2.0 provides explicit patent grants — critical 
 |------|-------|
 | Upstream AGPL dependency | If cBioPortal depends on AGPL libraries it doesn't own, those modules may need to stay AGPL or be replaced |
 | Contributor consent | Some contributors may be unreachable; "best effort" + rewrite strategy applies |
-| **Aggressive timeline** | Hard 2026-09-30 deadline vs. mpv's 4-year precedent for a comparable effort; critical path is Tier 1 institutional consent — see Timeline section |
+| **Aggressive timeline** | Hard 2026-09-30 deadline vs. mpv's 4-year precedent for a comparable effort; critical path is now Phase 1 cleanup + Tier 2 outreach — see Timeline section |
+| **Team-lead sign-off authority** | Tier 1 consent is signed by institutional/team leads, not formal legal/tech-transfer review — faster, but weaker legal footing if a lead lacks actual authority to bind their institution. See Decisions. |
 | Stakeholder pushback | Some may perceive license change as loss of control |
 | Legal/compliance complexity | Careful legal review required |
 | AI authorship claims | `Co-Authored-By: Claude` tags in git history (e.g., PR #12014) — current US Copyright Office guidance: AI cannot hold copyright, but warrants monitoring |
@@ -107,6 +108,7 @@ Tracked in [cBioPortal/relicensing](https://github.com/cBioPortal/relicensing) (
 ## Decisions
 
 - **AI authorship (2026-05-19):** Treat AI-assisted commits (e.g. `Co-Authored-By: Claude` tags) as human-authored for contributor outreach. Most conservative/comprehensive baseline. Revisit only if legal review suggests otherwise.
+- **Tier 1 sign-off level (2026-07-10):** Get Tier 1 institutional consent from each institution's cBioPortal team lead/PI directly, rather than routing through formal legal/tech-transfer review. Rationale: this is a non-commercial, mission-aligned open source tool, not a contested IP matter, and team leads can turn around a signature far faster than a legal department — necessary to hit the 2026-09-30 deadline. Trade-off: a team lead may not have actual authority to bind their institution; mitigated by having the letter (`outreach_tier1_letter.md`) explicitly invite redirection to legal if the lead's institution requires it, and by an explicit authority attestation in the signed consent. Revisit for any institution where this basis feels shaky.
 
 ## Current Status
 
