@@ -73,9 +73,9 @@ The preliminary dependency-audit PR referenced above (#12125) is itself entirely
 - [ ] Legal confirmation that `mysql-connector-j`'s Universal FOSS Exception conditions are met (likely yes, low risk)
 - [ ] **Implement** the `react-column-resizer` reimplementation in `cbioportal-frontend` — tracked in [cBioPortal/cbioportal#12266](https://github.com/cBioPortal/cbioportal/issues/12266) (owner TBD)
 - [ ] **Implement** the `react-json-to-table` reimplementation in `cbioportal-frontend` — tracked in [cBioPortal/cbioportal#12267](https://github.com/cBioPortal/cbioportal/issues/12267) (owner TBD)
-- [ ] Regenerate the backend's `OPEN-SOURCE-DOCUMENTATION` from current dependency state (current file is stale — 4 of 5 previously-flagged copyleft entries no longer exist in the repo)
+- [ ] Regenerate the backend's `OPEN-SOURCE-DOCUMENTATION` from current dependency state — tracked in [cBioPortal/cbioportal#12268](https://github.com/cBioPortal/cbioportal/issues/12268)
 - [ ] Run a full automated npm license scan of `cbioportal-frontend` (only PR #12125's spot-checked subset has been verified so far)
 - [ ] Confirm the other dual/multi-licensed transitive backend dependencies flagged by PR #12125 (Jakarta/Jersey/RabbitMQ-adjacent artifacts)
 - [ ] Run a **full transitive Maven dependency resolution** for the backend from a network environment that can reach `build.shibboleth.net` (neither PR #12125 nor this pass has actually completed one — both relied on direct declarations/effective POM/Maven Central metadata for the items checked)
+- [ ] Remove the dead Flash-based `netviz.jsp`/`cytoscape_web` feature — tracked in [cBioPortal/cbioportal#12269](https://github.com/cBioPortal/cbioportal/issues/12269)
 - [x] Decide whether to formally extend the AI-authorship decision to cover Copilot-authored commits/PRs — **decided 2026-07-10: yes, extended to all AI tools**
-- [ ] Codebase cleanup: remove the dead Flash-based `netviz.jsp`/`cytoscape_web` feature (resolves the one remaining real copyleft flag from the stale OSS doc and removes genuinely non-functional code)
