@@ -84,7 +84,7 @@ Chosen over MIT because Apache 2.0 provides explicit patent grants — critical 
 | **Team-lead sign-off authority** | Tier 1 consent is signed by institutional/team leads, not formal legal/tech-transfer review — faster, but weaker legal footing if a lead lacks actual authority to bind their institution. See Decisions. |
 | Stakeholder pushback | Some may perceive license change as loss of control |
 | Legal/compliance complexity | Careful legal review required |
-| AI authorship claims | Larger footprint than the single PR #12014 example: 31/52/1/0 `Co-Authored-By: Claude` commits and 31/42/1/0 Copilot-authored PRs across cbioportal/cbioportal-frontend/cbioportal-core/session-service respectively (per Phase 1 audit, 2026-07-10). Current US Copyright Office guidance: AI cannot hold copyright, but warrants monitoring. Open question: extend the Claude-specific decision below to cover Copilot too. |
+| AI authorship claims | Larger footprint than the single PR #12014 example: 31/52/1/0 `Co-Authored-By: Claude` commits and 31/42/1/0 Copilot-authored PRs across cbioportal/cbioportal-frontend/cbioportal-core/session-service respectively (per Phase 1 audit, 2026-07-10). Current US Copyright Office guidance: AI cannot hold copyright, but warrants monitoring. Policy now explicitly covers all AI tools, not just Claude — see Decisions. |
 
 ## Key References
 
@@ -109,7 +109,7 @@ Tracked in [cBioPortal/relicensing](https://github.com/cBioPortal/relicensing) (
 
 ## Decisions
 
-- **AI authorship (2026-05-19):** Treat AI-assisted commits (e.g. `Co-Authored-By: Claude` tags) as human-authored for contributor outreach. Most conservative/comprehensive baseline. Revisit only if legal review suggests otherwise.
+- **AI authorship (2026-05-19, extended 2026-07-10):** Treat AI-assisted commits as human-authored for contributor outreach. Originally scoped to `Co-Authored-By: Claude` tags; **extended 2026-07-10 to cover all AI coding tools** (confirmed footprint includes GitHub Copilot — 31/42/1/0 Copilot-authored PRs across cbioportal/cbioportal-frontend/cbioportal-core/session-service, per the Phase 1 audit — plus Claude, and any other AI agent found later). Most conservative/comprehensive baseline. Revisit only if legal review suggests otherwise.
 - **Tier 1 sign-off level (2026-07-10):** Get Tier 1 institutional consent from each institution's cBioPortal team lead/PI directly, rather than routing through formal legal/tech-transfer review. Rationale: this is a non-commercial, mission-aligned open source tool, not a contested IP matter, and team leads can turn around a signature far faster than a legal department — necessary to hit the 2026-09-30 deadline. Trade-off: a team lead may not have actual authority to bind their institution; mitigated by having the letter (`outreach_tier1_letter.md`) explicitly invite redirection to legal if the lead's institution requires it, and by an explicit authority attestation in the signed consent. Revisit for any institution where this basis feels shaky.
 - **Adjacent AGPL tooling out of scope (2026-07-10):** `cancerhotspots`, `datahub-study-curation-tools`, `clinical-data-normalization`, `fmi-converter`, and `clinical-data-dictionary` — real, actively-maintained, currently-AGPL cBioPortal repos, but not bundled into the docker-compose/Helm deployment — are kept separate from RFC86. They stay AGPL (or unlicensed) for now; candidates for a possible future relicensing wave, not this one. See `docs/relicensing/component-manifest.md`.
 
