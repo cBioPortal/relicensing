@@ -65,14 +65,14 @@ These are old *pre-monorepo* standalone versions of the packages above, confirme
 ### Forks or wrappers of third-party projects — not cBioPortal's copyright to relicense
 Already permissively licensed or not cBioPortal-owned code in the first place, so no RFC86 action needed: `igv.js` (MIT), `svg2pdf.js` (MIT, cBioPortal maintains a patched fork referenced directly in `cbioportal-frontend/package.json` via `github:cbioportal/svg2pdf.js#v1.3.3-cbio-patch-1`), `swagger-js-codegen` (Apache-2.0), `spring-social-google` / `spring-social-live` (Apache-2.0), `maven-external-version` (Apache-2.0), `wdio-novus-visual-regression-service` (MIT), `LibreChat` (MIT, appears to be an unrelated clone, not part of any cBioPortal product).
 
-### Flag for a scope decision — AGPL, cBioPortal-owned, actively maintained, but NOT bundled into the release
+### Deferred to a follow-on wave — AGPL, cBioPortal-owned, actively maintained, but NOT bundled into the release
 These are real, currently-AGPL, actively-developed cBioPortal repos — but they're auxiliary services/tools called over the network or used offline, not part of the docker-compose/Helm deployment graph, so they fall outside Phase 0's "the release" as currently scoped:
 - `cancerhotspots` (AGPL, updated 2026-06-02) — powers cancerhotspots.org; confirmed called by `cbioportal-frontend` as an external API (`packages/react-mutation-mapper`, `src/shared/components/driverAnnotations/...`), not bundled into the app itself
 - `datahub-study-curation-tools` (AGPL, updated 2026-06-01) and `clinical-data-normalization` (AGPL, updated 2025-09-23) — data-curation tooling used by curators, not shipped in the served product
 - `fmi-converter` (AGPL, 2023) — a data-format converter tool, same category
 - `clinical-data-dictionary` (**no license at all**, Java web service) — only referenced from a doc mention (`docs/File-Formats.md`) in the backend repo, not from docker-compose/Helm/pom.xml — appears to be an optional/adjacent service, not deployed as part of the release
 
-**These five are a real open question, not a default exclusion** — they're clearly "in the family" (same org, same AGPL default, actively maintained) even though they don't meet Phase 0's current "part of the docker-compose/Helm/pom.xml deployment graph" test. Worth a decision: fold them into RFC86 now, or explicitly defer them to a follow-on relicensing wave.
+**Decided (2026-07-10): kept separate from RFC86.** These five stay outside this relicensing effort's scope/denominator — not included in the Phase 1 SBOM or the Phase 2 consent count. They remain AGPL (or unlicensed, for `clinical-data-dictionary`) for now and are candidates for their own future relicensing effort if/when there's a reason to revisit them.
 
 ### Everything else — out of scope by default
 The remaining repos (AI/MCP assistant tools, benchmarks, personal notebooks/workshops, project-management repos like `roadmap`/`icebox`/`GSoC`, one-off scripts) show no reference from any in-scope component and are treated as out of scope by default.
@@ -83,4 +83,4 @@ The remaining repos (AI/MCP assistant tools, benchmarks, personal notebooks/work
 - [ ] Check `cbioportal-docker-compose` and `cbioportal-helm` repo-level licenses directly (not yet checked)
 - [ ] Verify `cbioportal-helm`'s chart references the same component set as docker-compose
 - [ ] Consider fast-tracking a LICENSE file for `session-service` and `cbioportal-core` — since neither was ever AGPL to begin with, adding Apache-2.0 directly (with sign-off from their small, mostly-already-being-contacted contributor lists) may not need to wait on the full Phase 1–4 sequence for the rest of the codebase
-- [ ] **Decide scope for the 5 "adjacent AGPL tooling" repos** (`cancerhotspots`, `datahub-study-curation-tools`, `clinical-data-normalization`, `fmi-converter`, `clinical-data-dictionary`) — include in RFC86 now or defer to a follow-on wave?
+- [x] Decide scope for the 5 "adjacent AGPL tooling" repos — **decided 2026-07-10: kept separate, deferred to a follow-on wave** (see above)
