@@ -29,6 +29,7 @@ Chosen over MIT because Apache 2.0 provides explicit patent grants — critical 
 - Identify any upstream AGPL-licensed libraries ("infection" risk)
 - Identify/remove obsolete code from unreachable contributors
 - Preliminary analysis: https://github.com/cBioPortal/cbioportal/pull/12125
+- **Draft v1 audit published (2026-07-10):** [`docs/relicensing/dependency-audit.md`](docs/relicensing/dependency-audit.md). Two real GPL-3.0-only frontend blockers confirmed in use (`react-column-resizer` in the core `LazyMobXTable` component, `react-json-to-table` in one tooltip); backend's flagged `mysql-connector-j` (GPL+Universal FOSS Exception) likely isn't an actual blocker. The backend's own `OPEN-SOURCE-DOCUMENTATION` third-party report is stale (4 of 5 previously-flagged copyleft entries no longer exist in the repo) — needs regeneration. `cbioportal-core`/`session-service` dependency trees are clean.
 
 ### Phase 2 — Contributor Outreach & Consent
 - No prior CLA exists — must get consent from all copyright holders
@@ -83,7 +84,7 @@ Chosen over MIT because Apache 2.0 provides explicit patent grants — critical 
 | **Team-lead sign-off authority** | Tier 1 consent is signed by institutional/team leads, not formal legal/tech-transfer review — faster, but weaker legal footing if a lead lacks actual authority to bind their institution. See Decisions. |
 | Stakeholder pushback | Some may perceive license change as loss of control |
 | Legal/compliance complexity | Careful legal review required |
-| AI authorship claims | `Co-Authored-By: Claude` tags in git history (e.g., PR #12014) — current US Copyright Office guidance: AI cannot hold copyright, but warrants monitoring |
+| AI authorship claims | Larger footprint than the single PR #12014 example: 31/52/1/0 `Co-Authored-By: Claude` commits and 31/42/1/0 Copilot-authored PRs across cbioportal/cbioportal-frontend/cbioportal-core/session-service respectively (per Phase 1 audit, 2026-07-10). Current US Copyright Office guidance: AI cannot hold copyright, but warrants monitoring. Open question: extend the Claude-specific decision below to cover Copilot too. |
 
 ## Key References
 
