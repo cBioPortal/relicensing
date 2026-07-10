@@ -22,6 +22,7 @@ Chosen over MIT because Apache 2.0 provides explicit patent grants — critical 
 - Scope spans: backend repo, `cbioportal-frontend`, Docker images, `cbioportal-docker-compose`, docs/site, sample/test data, DB scripts
 - The SBOM denominator (Phase 1) and contributor-consent denominator (Phase 2's ≥95%) must cover all in-scope repos/components
 - Combined distribution (e.g., Docker image bundling Apache backend + AGPL frontend) remains AGPL until all components relicense
+- **Draft v1 manifest published (2026-07-10):** [`docs/relicensing/component-manifest.md`](docs/relicensing/component-manifest.md), based on direct repo inspection (docker-compose image pins, backend `pom.xml`, its generated `OPEN-SOURCE-DOCUMENTATION` file, contributor counts). Headline findings: `session-service` and `cbioportal-core` (the data importer) have **no license at all** today, independent of AGPL/Apache; 5 vendored copyleft components (3 GPL, 2 LGPL, no AGPL) found in legacy webapp assets; several docs/manual/API-spec repos are stale and marked historical only; `datahub` tracked as a separate data-licensing question, out of this scope. See the manifest for open follow-ups.
 
 ### Phase 1 — Compliance & Dependency Audit
 - Full Software Bill of Materials (SBOM) of all third-party dependencies
@@ -115,7 +116,7 @@ Tracked in [cBioPortal/relicensing](https://github.com/cBioPortal/relicensing) (
 - [x] Project setup complete (CLAUDE.md, memory)
 - [x] GitHub Epic + 7 phase/gate issues created
 - [x] Issues moved to dedicated cBioPortal/relicensing repo (2026-07-10)
-- [ ] Phase 0: Release & Component Scope (#1) — not started
+- [ ] Phase 0: Release & Component Scope (#1) — draft v1 manifest published (2026-07-10), open follow-ups remain
 - [ ] Phase 1: Compliance & Dependency Audit (#2) — blocked on Phase 0
 - [ ] Phase 2: Contributor Outreach & Consent (#3) — blocked on Phase 1
 - [ ] Phase 3: Community Feedback (#4) — blocked on Phase 2
