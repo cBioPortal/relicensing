@@ -119,8 +119,8 @@ Tracked in [cBioPortal/relicensing](https://github.com/cBioPortal/relicensing) (
 - [x] GitHub Epic + 7 phase/gate issues created
 - [x] Issues moved to dedicated cBioPortal/relicensing repo (2026-07-10)
 - [x] Phase 0: Release & Component Scope (#1) — closed 2026-07-10. Manifest at `docs/relicensing/component-manifest.md`. Two non-blocking product decisions remain open (cbioportal-core version pinning, Helm chart currency vs. docker-compose)
-- [ ] Phase 1: Compliance & Dependency Audit (#2) — unblocked, ready to start
-- [ ] Phase 2: Contributor Outreach & Consent (#3) — blocked on Phase 1
+- [ ] Phase 1: Compliance & Dependency Audit (#2) — draft v1 audit published 2026-07-10 (`docs/relicensing/dependency-audit.md`). Code-change follow-ups tracked as cbioportal#12266–12269. Non-code follow-ups (npm scan, full Maven transitive resolution, mysql-connector-j legal confirmation) remain, proceeding in parallel with Phase 2 rather than blocking it
+- [ ] Phase 2: Contributor Outreach & Consent (#3) — starting 2026-07-10 in parallel with Phase 1's remaining non-code follow-ups
 - [ ] Phase 3: Community Feedback (#4) — blocked on Phase 2
 - [ ] Pre-Switch Sign-off Gate (#5) — blocked on Phase 3
 - [ ] Phase 4: Technical Execution (#6) — blocked on sign-off gate
