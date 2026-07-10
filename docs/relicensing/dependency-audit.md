@@ -1,0 +1,74 @@
+# RFC86 Phase 1 — Compliance & Dependency Audit (Draft v1)
+
+**Status:** Draft — first pass based on direct inspection of `pom.xml`/`package.json`/`requirements.txt` files, the backend's generated `OPEN-SOURCE-DOCUMENTATION`, npm registry metadata, and the existing preliminary analysis in [cBioPortal/cbioportal#12125](https://github.com/cBioPortal/cbioportal/pull/12125). Tracked in [relicensing#2](https://github.com/cBioPortal/relicensing/issues/2). Builds on the Phase 0 manifest ([relicensing#1](https://github.com/cBioPortal/relicensing/issues/1), `component-manifest.md`).
+
+## Summary
+
+Two real, confirmed-in-use GPL-3.0-only dependencies in the frontend are the main blockers found so far. The backend's one flagged dependency (`mysql-connector-j`) is very likely resolvable via its license exception, not a true blocker. `cbioportal-core` and `session-service` are clean. The backend's own third-party license report is stale and should not be trusted as-is. AI authorship (both Claude and GitHub Copilot) is a larger footprint than previously tracked.
+
+## 1) Backend (`cbioportal`)
+
+### Confirmed dependency: `com.mysql:mysql-connector-j:8.2.0`
+- Declared license: **GPL-2.0 with the Universal FOSS Exception 1.0 (UFE)**.
+- Still an active, unconditional `pom.xml` dependency (verified directly, not stale from PR #12125's original finding).
+- **Likely not an actual blocker.** Oracle created the UFE specifically to allow using MySQL Connector/J alongside software under other OSI-approved licenses (including Apache-2.0), as long as the connector itself isn't modified in a way that would need to carry a conflicting license. cBioPortal uses it as an unmodified upstream dependency, which is exactly the case UFE covers.
+- **Resolution path:** confirm with legal that the UFE conditions are met (should be straightforward), and add the required UFE notice into the project's `NOTICE` file (Apache-2.0 requires this either way for redistributed dependencies). Owner: TBD. Not a "replace or exclude" situation like the Phase 0 manifest's copyleft webapp assets.
+
+### Other dual/multi-licensed transitive dependencies (from PR #12125)
+Jakarta API and some Jersey/RabbitMQ-related transitive artifacts have multi-license declarations (e.g. EPL/GPL or LGPL/MPL alternatives). These are generally consumable under a permissive option but weren't individually re-verified in this pass — flagged for legal confirmation, same as PR #12125 recommended.
+
+### The backend's own `OPEN-SOURCE-DOCUMENTATION` file is stale
+Of the 5 copyleft components flagged from this file in the Phase 0 manifest (3 GPL, 2 LGPL), **4 no longer exist anywhere in the current repo tree** (verified via direct git tree listing, not just code search, which can miss binary/minified files): `jquery.popeye-2.1.min`, `jslab-stdlib`, `packery.pkgd.min`, and `corejmoljsv.z` are gone. Only `cytoscape_web`'s files remain (`src/main/resources/webapp/swf/CytoscapeWeb.swf`, `cytoscapeweb.js`, and supporting ActionScript source).
+- **This means the generated doc reflects a much older snapshot of the codebase and cannot be used as-is for the final SBOM.** It needs to be regenerated from the current dependency tree (whatever tool produced it originally — likely a Maven/license-report plugin — should be re-run in CI, not hand-maintained).
+- The remaining `cytoscape_web` asset (LGPL) powers `netviz.jsp`'s Flash-based network visualization (referenced Java code confirmed via `src/main/resources/webapp/netviz.jsp`). **This is very likely fully dead**: Flash Player was end-of-lifed in December 2020 and removed from all major browsers — a `.swf` file cannot run anywhere today regardless of whether the JSP page is still technically reachable. Strong candidate for outright removal (Phase 1's "codebase cleanup" task) — this simultaneously resolves the one real remaining flagged copyleft asset and removes dead code.
+
+**Recommended action:** regenerate the `OPEN-SOURCE-DOCUMENTATION` report from current `pom.xml` state (machine-readable SBOM), and separately confirm no other stale entries hide additional now-removed or now-added dependencies beyond the ones checked here.
+
+## 2) Frontend (`cbioportal-frontend`)
+
+The frontend does **not** have an equivalent automated full dependency-license report (its own `OPEN-SOURCE-DOCUMENTATION` file only documents two small bundled assets — a ColorBrewer color scheme and a font-detection script, both Apache-licensed — not the npm dependency tree). PR #12125's findings were spot-checked against the current `package.json` and confirmed still present:
+
+| Package | License | Used? | Assessment |
+|---|---|---|---|
+| `react-column-resizer` | **GPL-3.0-only** (confirmed via npm registry) | **Yes** — `src/shared/components/lazyMobXTable/LazyMobXTable.tsx` | **Real blocker.** `LazyMobXTable` is cBioPortal's core/widely-used data table component, not an isolated feature. Needs either replacement with a permissively-licensed resize library, a custom implementation, or explicit legal risk acceptance. Owner: TBD. |
+| `react-json-to-table` | **GPL-3.0** (confirmed via npm registry) | **Yes** — `src/shared/components/studyTagsTooltip/StudyTagsTooltip.tsx` | **Real blocker, but narrow.** Used in a single tooltip component — likely the easier of the two to replace or reimplement directly. |
+| `jszip` | Dual-licensed **(MIT OR GPL-3.0-or-later)** | Yes | **Not a blocker** — the project can explicitly elect the MIT option. Needs a NOTICE entry documenting that choice. |
+| `webpack-raphael` (fork of `raphael`) | Upstream `raphael` is **MIT** | Yes | **Not a blocker**, assuming cBioPortal's build-tooling fork doesn't add restrictive terms (no indication it does). |
+| `svg2pdf.js` (cBioPortal's patched fork) | Upstream is **MIT** (already resolved in Phase 0) | Yes | Not a blocker. |
+| `swagger-js-codegen` | **Apache-2.0** (already resolved in Phase 0) | Used in tooling | Not a blocker. |
+
+**Recommended action:** run a proper automated license scan of the full frontend npm dependency tree (e.g. `license-checker` or equivalent) rather than relying on spot-checks of the handful PR #12125 already flagged — there may be others not yet surfaced.
+
+## 3) `cbioportal-core` (data importer)
+
+Checked `pom.xml` (Java) and `requirements.txt` (Python). All dependencies are standard, well-known permissively-licensed libraries: Spring (Apache-2.0), Jackson (Apache-2.0), Guava (Apache-2.0), Commons Lang/IO/Text/Collections (Apache-2.0), ClickHouse JDBC (Apache-2.0), JUnit (EPL-1.0, doesn't affect distribution), `requests`/`PyYAML`/`Jinja2`/`MarkupSafe`/`dsnparse` (all Apache-2.0/MIT/BSD family). **No copyleft flags found.** Still needs the LICENSE-file gap from Phase 0 resolved (this repo has no license of its own today), but that's independent of dependency compatibility.
+
+## 4) `session-service`
+
+Checked `pom.xml`. Standard Spring Boot stack (Spring Boot, Spring Security, Spring Data MongoDB — all Apache-2.0), Sentry SDK (MIT/BSD family), Hibernate Validator, springdoc-openapi. **No copyleft flags found.** Same pre-existing LICENSE-file gap as `cbioportal-core`, independent of this audit.
+
+## 5) AI authorship inventory
+
+Broader than previously tracked (CLAUDE.md's Key Risks previously only named PR #12014 as an example):
+
+| Repo | `Co-Authored-By: Claude` commits | Copilot-authored PRs (`app/copilot-swe-agent`) |
+|---|---|---|
+| cbioportal | 31 | 31 |
+| cbioportal-frontend | 52 | 42 |
+| cbioportal-core | 1 | 1 |
+| session-service | 0 | 0 |
+
+The preliminary dependency-audit PR referenced above (#12125) is itself entirely Copilot-authored (all 4 commits by `app/copilot-swe-agent`) — a concrete example of AI-agent-authored content directly feeding into RFC86 itself.
+
+**Decision needed:** the project's existing decision ("treat Claude-co-authored commits as human-authored for outreach purposes") doesn't explicitly cover Copilot-authored commits/PRs, which are a comparable or larger footprint. Recommend extending the same policy to Copilot (and any other AI agent) for consistency, subject to the same "revisit if legal review suggests otherwise" caveat — but this should be an explicit decision, not an assumed extension.
+
+## Open follow-ups
+
+- [ ] Legal confirmation that `mysql-connector-j`'s Universal FOSS Exception conditions are met (likely yes, low risk)
+- [ ] Resolution path + owner for `react-column-resizer` (GPL-3.0, in `LazyMobXTable`)
+- [ ] Resolution path + owner for `react-json-to-table` (GPL-3.0, in `StudyTagsTooltip`)
+- [ ] Regenerate the backend's `OPEN-SOURCE-DOCUMENTATION` from current dependency state (current file is stale — 4 of 5 previously-flagged copyleft entries no longer exist in the repo)
+- [ ] Run a full automated npm license scan of `cbioportal-frontend` (only PR #12125's spot-checked subset has been verified so far)
+- [ ] Confirm the other dual/multi-licensed transitive backend dependencies flagged by PR #12125 (Jakarta/Jersey/RabbitMQ-adjacent artifacts)
+- [ ] Decide whether to formally extend the AI-authorship decision to cover Copilot-authored commits/PRs, not just Claude
+- [ ] Codebase cleanup: remove the dead Flash-based `netviz.jsp`/`cytoscape_web` feature (resolves the one remaining real copyleft flag from the stale OSS doc and removes genuinely non-functional code)
