@@ -117,8 +117,8 @@ Tracked in [cBioPortal/relicensing](https://github.com/cBioPortal/relicensing) (
 - [x] Project setup complete (CLAUDE.md, memory)
 - [x] GitHub Epic + 7 phase/gate issues created
 - [x] Issues moved to dedicated cBioPortal/relicensing repo (2026-07-10)
-- [ ] Phase 0: Release & Component Scope (#1) — draft v1 manifest published (2026-07-10), open follow-ups remain
-- [ ] Phase 1: Compliance & Dependency Audit (#2) — blocked on Phase 0
+- [x] Phase 0: Release & Component Scope (#1) — closed 2026-07-10. Manifest at `docs/relicensing/component-manifest.md`. Two non-blocking product decisions remain open (cbioportal-core version pinning, Helm chart currency vs. docker-compose)
+- [ ] Phase 1: Compliance & Dependency Audit (#2) — unblocked, ready to start
 - [ ] Phase 2: Contributor Outreach & Consent (#3) — blocked on Phase 1
 - [ ] Phase 3: Community Feedback (#4) — blocked on Phase 2
 - [ ] Pre-Switch Sign-off Gate (#5) — blocked on Phase 3
