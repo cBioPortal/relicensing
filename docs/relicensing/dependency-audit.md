@@ -4,7 +4,7 @@
 
 ## Summary
 
-Two real, confirmed-in-use GPL-3.0-only dependencies in the frontend are the main blockers found so far. The backend's one flagged dependency (`mysql-connector-j`) is very likely resolvable via its license exception, not a true blocker. `cbioportal-core` and `session-service` are clean. The backend's own third-party license report is stale and should not be trusted as-is. AI authorship (both Claude and GitHub Copilot) is a larger footprint than previously tracked.
+Two real, confirmed-in-use GPL-3.0-only dependencies in the frontend are the main blockers found so far — both resolved to a decided path: **reimplement in-house** (each is under ~130 lines, zero non-React dependencies, narrow usage). The backend's one flagged dependency (`mysql-connector-j`) is very likely resolvable via its license exception, not a true blocker. `cbioportal-core` and `session-service` are clean. The backend's own third-party license report is stale and should not be trusted as-is. AI authorship (both Claude and GitHub Copilot) is a larger footprint than previously tracked — the policy has been extended to cover all AI tools (2026-07-10).
 
 ## 1) Backend (`cbioportal`)
 
@@ -30,8 +30,8 @@ The frontend does **not** have an equivalent automated full dependency-license r
 
 | Package | License | Used? | Assessment |
 |---|---|---|---|
-| `react-column-resizer` | **GPL-3.0-only** (confirmed via npm registry) | **Yes** — `src/shared/components/lazyMobXTable/LazyMobXTable.tsx` | **Real blocker.** `LazyMobXTable` is cBioPortal's core/widely-used data table component, not an isolated feature. Needs either replacement with a permissively-licensed resize library, a custom implementation, or explicit legal risk acceptance. Owner: TBD. |
-| `react-json-to-table` | **GPL-3.0** (confirmed via npm registry) | **Yes** — `src/shared/components/studyTagsTooltip/StudyTagsTooltip.tsx` | **Real blocker, but narrow.** Used in a single tooltip component — likely the easier of the two to replace or reimplement directly. |
+| `react-column-resizer` | **GPL-3.0-only** (confirmed via npm registry) | **Yes** — `src/shared/components/lazyMobXTable/LazyMobXTable.tsx`, 2 call sites, both just `<ColumnResizer className="..." minWidth={0} />` | **Real blocker — resolution: reimplement in-house.** Inspected the actual upstream source (`nik-m2/react-column-resizer`): ~100 lines total, zero non-React dependencies. It renders a thin draggable `<td>` divider between two sibling cells and directly mutates `previousSibling.style.width`/`nextSibling.style.width` on `mousemove`/`touchmove`. cBioPortal's usage only ever passes `className` and `minWidth={0}` — never uses the library's `disabled` prop. A tailored internal component replicating exactly this behavior is low-risk, low-effort, and removes the dependency entirely (better than sourcing and vetting a third-party replacement's own license/dependency tree). |
+| `react-json-to-table` | **GPL-3.0** (confirmed via npm registry) | **Yes** — `src/shared/components/studyTagsTooltip/StudyTagsTooltip.tsx`, exactly 1 call site: `<JsonToTable json={this.studyMetadata.result} />` | **Real blocker, narrow — resolution: reimplement in-house.** Inspected the actual upstream source (`thehyve/react-json-to-table` — maintained by The Hyve, one of cBioPortal's own Tier 1 institutions): ~130 lines total across 2 files, recursively renders an arbitrary JS object/array into nested HTML `<table>`s, zero non-React dependencies. The actual data passed here (study tag metadata) is a flat key-value map, so a from-scratch replacement can likely be simpler than the general-purpose original. Reimplementing is faster than a licensing negotiation given the Sep 30 deadline, even with a friendly Tier-1-adjacent maintainer. |
 | `jszip` | Dual-licensed **(MIT OR GPL-3.0-or-later)** | Yes | **Not a blocker** — the project can explicitly elect the MIT option. Needs a NOTICE entry documenting that choice. |
 | `webpack-raphael` (fork of `raphael`) | Upstream `raphael` is **MIT** | Yes | **Not a blocker**, assuming cBioPortal's build-tooling fork doesn't add restrictive terms (no indication it does). |
 | `svg2pdf.js` (cBioPortal's patched fork) | Upstream is **MIT** (already resolved in Phase 0) | Yes | Not a blocker. |
@@ -60,15 +60,15 @@ Broader than previously tracked (CLAUDE.md's Key Risks previously only named PR 
 
 The preliminary dependency-audit PR referenced above (#12125) is itself entirely Copilot-authored (all 4 commits by `app/copilot-swe-agent`) — a concrete example of AI-agent-authored content directly feeding into RFC86 itself.
 
-**Decision needed:** the project's existing decision ("treat Claude-co-authored commits as human-authored for outreach purposes") doesn't explicitly cover Copilot-authored commits/PRs, which are a comparable or larger footprint. Recommend extending the same policy to Copilot (and any other AI agent) for consistency, subject to the same "revisit if legal review suggests otherwise" caveat — but this should be an explicit decision, not an assumed extension.
+**Decided 2026-07-10:** the AI-authorship policy now explicitly covers all AI coding tools (Claude, GitHub Copilot, and any other AI agent found later), not just Claude. See CLAUDE.md Decisions.
 
 ## Open follow-ups
 
 - [ ] Legal confirmation that `mysql-connector-j`'s Universal FOSS Exception conditions are met (likely yes, low risk)
-- [ ] Resolution path + owner for `react-column-resizer` (GPL-3.0, in `LazyMobXTable`)
-- [ ] Resolution path + owner for `react-json-to-table` (GPL-3.0, in `StudyTagsTooltip`)
+- [ ] **Implement** the `react-column-resizer` reimplementation in `cbioportal-frontend` (resolution path decided 2026-07-10 — see table above; owner TBD)
+- [ ] **Implement** the `react-json-to-table` reimplementation in `cbioportal-frontend` (resolution path decided 2026-07-10 — see table above; owner TBD)
 - [ ] Regenerate the backend's `OPEN-SOURCE-DOCUMENTATION` from current dependency state (current file is stale — 4 of 5 previously-flagged copyleft entries no longer exist in the repo)
 - [ ] Run a full automated npm license scan of `cbioportal-frontend` (only PR #12125's spot-checked subset has been verified so far)
 - [ ] Confirm the other dual/multi-licensed transitive backend dependencies flagged by PR #12125 (Jakarta/Jersey/RabbitMQ-adjacent artifacts)
-- [ ] Decide whether to formally extend the AI-authorship decision to cover Copilot-authored commits/PRs, not just Claude
+- [x] Decide whether to formally extend the AI-authorship decision to cover Copilot-authored commits/PRs — **decided 2026-07-10: yes, extended to all AI tools**
 - [ ] Codebase cleanup: remove the dead Flash-based `netviz.jsp`/`cytoscape_web` feature (resolves the one remaining real copyleft flag from the stale OSS doc and removes genuinely non-functional code)
