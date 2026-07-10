@@ -58,10 +58,19 @@ Chosen over MIT because Apache 2.0 provides explicit patent grants — critical 
 
 ## Timeline
 
-**Target: complete by ~2026-10-10 (2–3 months from 2026-07-10).** This is aggressive relative to precedent — mpv's comparable GPL→LGPL relicensing ([mpv-player/mpv#2033](https://github.com/mpv-player/mpv/issues/2033)) took 4+ years on a smaller codebase. Hitting this window will likely require:
-- Running phases in parallel where possible rather than strictly serial (current plan has Phase 1 → Phase 2 → Phase 3 → Sign-off → Phase 4 as a hard chain, plus Phase 3's mandatory 30-day window)
-- A firm response deadline in Tier 2 outreach, defaulting non-responders to the rewrite/removal path rather than waiting indefinitely
-- Leaning more heavily on Tier 1 institutional blanket consent to cover volume quickly
+**Hard deadline: 2026-09-30.** This is aggressive relative to precedent — mpv's comparable GPL→LGPL relicensing ([mpv-player/mpv#2033](https://github.com/mpv-player/mpv/issues/2033)) took 4+ years on a smaller codebase. Hitting it requires running phases in parallel rather than the strictly serial chain the phase numbering implies, plus firm deadlines on contributor outreach. Backward-planned schedule from the 82-day budget (2026-07-10 → 2026-09-30):
+
+| Track | Window | Notes |
+|---|---|---|
+| Phase 0 (scope) | Jul 10–17 | Fast — scope is largely already known |
+| Phase 1 (SBOM/audit) | Jul 10–28 | Starts in parallel with Phase 0 on known components |
+| Phase 2 — Tier 1 outreach | launch Jul 13, target resolved Aug 14 | Starts immediately — institutional legal review is the least controllable variable, gets the longest runway |
+| Phase 2 — Tier 2 outreach | launch Jul 28, firm deadline Aug 18, reconciliation by Aug 20 | Firm 3-week window; non-responders default to rewrite/remove, not indefinite waiting |
+| Phase 3 (30-day notice) | Aug 21 – Sep 20 | Fixed at 30 days — not compressible, everything else fits around this |
+| Sign-off Gate | Sep 20–23 | Fast if the record is assembled continuously through Phases 1–3, not started here |
+| Phase 4 (Switch Commit) | Sep 23–30 | Fast if SPDX header scripts/tooling are dry-run tested during the Phase 1 window |
+
+**Critical path risk:** Tier 1 institutional consent (MSKCC, DFCI, PMCC, CHOP, Hyve, SE4BIO legal review). If any institution is still pending by mid-August, that's the trigger to escalate, not wait — a slip here is the most likely way the Sep 30 date is missed, since Phase 3's 30 days cannot be compressed to absorb it.
 
 ## Key Risks
 
@@ -69,7 +78,7 @@ Chosen over MIT because Apache 2.0 provides explicit patent grants — critical 
 |------|-------|
 | Upstream AGPL dependency | If cBioPortal depends on AGPL libraries it doesn't own, those modules may need to stay AGPL or be replaced |
 | Contributor consent | Some contributors may be unreachable; "best effort" + rewrite strategy applies |
-| **Aggressive timeline** | 2–3 month target vs. mpv's 4-year precedent for a comparable effort — see Timeline section |
+| **Aggressive timeline** | Hard 2026-09-30 deadline vs. mpv's 4-year precedent for a comparable effort; critical path is Tier 1 institutional consent — see Timeline section |
 | Stakeholder pushback | Some may perceive license change as loss of control |
 | Legal/compliance complexity | Careful legal review required |
 | AI authorship claims | `Co-Authored-By: Claude` tags in git history (e.g., PR #12014) — current US Copyright Office guidance: AI cannot hold copyright, but warrants monitoring |
