@@ -1,6 +1,6 @@
 # RFC86 Phase 1 — Compliance & Dependency Audit (Draft v1)
 
-**Status:** Draft — first pass based on direct inspection of `pom.xml`/`package.json`/`requirements.txt` files, the backend's generated `OPEN-SOURCE-DOCUMENTATION`, npm registry metadata, and the existing preliminary analysis in [cBioPortal/cbioportal#12125](https://github.com/cBioPortal/cbioportal/pull/12125). Tracked in [relicensing#2](https://github.com/cBioPortal/relicensing/issues/2). Builds on the Phase 0 manifest ([relicensing#1](https://github.com/cBioPortal/relicensing/issues/1), `component-manifest.md`).
+**Status:** Draft — first pass based on direct inspection of `pom.xml`/`package.json`/`requirements.txt` files, the backend's generated `OPEN-SOURCE-DOCUMENTATION`, npm registry metadata, and the preliminary analysis in [cBioPortal/cbioportal#12125](https://github.com/cBioPortal/cbioportal/pull/12125) (closed 2026-07-10, superseded by this document — its findings are fully incorporated here). Tracked in [relicensing#2](https://github.com/cBioPortal/relicensing/issues/2). Builds on the Phase 0 manifest ([relicensing#1](https://github.com/cBioPortal/relicensing/issues/1), `component-manifest.md`).
 
 ## Summary
 
@@ -16,6 +16,12 @@ Two real, confirmed-in-use GPL-3.0-only dependencies in the frontend are the mai
 
 ### Other dual/multi-licensed transitive dependencies (from PR #12125)
 Jakarta API and some Jersey/RabbitMQ-related transitive artifacts have multi-license declarations (e.g. EPL/GPL or LGPL/MPL alternatives). These are generally consumable under a permissive option but weren't individually re-verified in this pass — flagged for legal confirmation, same as PR #12125 recommended.
+
+### Audit methodology limitation (carried over from PR #12125)
+PR #12125's backend audit was **not** a full transitive Maven dependency resolution — `mvn install`/`integration-test` in that environment was blocked by an unreachable Shibboleth-hosted OpenSAML artifact host (`build.shibboleth.net`), so its findings are based on direct dependency declarations, the effective POM, and Maven Central license metadata for resolvable artifacts only. This pass didn't have network access to re-attempt full resolution either, so **the backend's transitive dependency tree has still never been fully/automatically resolved and scanned** — only the specific items already flagged (mysql-connector-j, Jakarta/Jersey/RabbitMQ) have been checked directly. This is a real gap, not just a formality — a full scan could surface additional transitive copyleft dependencies neither audit pass would have seen.
+
+### E2E JavaScript package (from PR #12125, not independently re-verified)
+`src/e2e/js/package.json` declares license `ISC`; its dependencies are common permissive packages (`axios`, `lodash`, `chai`, `mocha`, etc.). No Apache-2.0 compatibility concern.
 
 ### The backend's own `OPEN-SOURCE-DOCUMENTATION` file is stale
 Of the 5 copyleft components flagged from this file in the Phase 0 manifest (3 GPL, 2 LGPL), **4 no longer exist anywhere in the current repo tree** (verified via direct git tree listing, not just code search, which can miss binary/minified files): `jquery.popeye-2.1.min`, `jslab-stdlib`, `packery.pkgd.min`, and `corejmoljsv.z` are gone. Only `cytoscape_web`'s files remain (`src/main/resources/webapp/swf/CytoscapeWeb.swf`, `cytoscapeweb.js`, and supporting ActionScript source).
@@ -70,5 +76,6 @@ The preliminary dependency-audit PR referenced above (#12125) is itself entirely
 - [ ] Regenerate the backend's `OPEN-SOURCE-DOCUMENTATION` from current dependency state (current file is stale — 4 of 5 previously-flagged copyleft entries no longer exist in the repo)
 - [ ] Run a full automated npm license scan of `cbioportal-frontend` (only PR #12125's spot-checked subset has been verified so far)
 - [ ] Confirm the other dual/multi-licensed transitive backend dependencies flagged by PR #12125 (Jakarta/Jersey/RabbitMQ-adjacent artifacts)
+- [ ] Run a **full transitive Maven dependency resolution** for the backend from a network environment that can reach `build.shibboleth.net` (neither PR #12125 nor this pass has actually completed one — both relied on direct declarations/effective POM/Maven Central metadata for the items checked)
 - [x] Decide whether to formally extend the AI-authorship decision to cover Copilot-authored commits/PRs — **decided 2026-07-10: yes, extended to all AI tools**
 - [ ] Codebase cleanup: remove the dead Flash-based `netviz.jsp`/`cytoscape_web` feature (resolves the one remaining real copyleft flag from the stale OSS doc and removes genuinely non-functional code)
