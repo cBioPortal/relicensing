@@ -65,8 +65,8 @@ The preliminary dependency-audit PR referenced above (#12125) is itself entirely
 ## Open follow-ups
 
 - [ ] Legal confirmation that `mysql-connector-j`'s Universal FOSS Exception conditions are met (likely yes, low risk)
-- [ ] **Implement** the `react-column-resizer` reimplementation in `cbioportal-frontend` (resolution path decided 2026-07-10 — see table above; owner TBD)
-- [ ] **Implement** the `react-json-to-table` reimplementation in `cbioportal-frontend` (resolution path decided 2026-07-10 — see table above; owner TBD)
+- [ ] **Implement** the `react-column-resizer` reimplementation in `cbioportal-frontend` — tracked in [cBioPortal/cbioportal#12266](https://github.com/cBioPortal/cbioportal/issues/12266) (owner TBD)
+- [ ] **Implement** the `react-json-to-table` reimplementation in `cbioportal-frontend` — tracked in [cBioPortal/cbioportal#12267](https://github.com/cBioPortal/cbioportal/issues/12267) (owner TBD)
 - [ ] Regenerate the backend's `OPEN-SOURCE-DOCUMENTATION` from current dependency state (current file is stale — 4 of 5 previously-flagged copyleft entries no longer exist in the repo)
 - [ ] Run a full automated npm license scan of `cbioportal-frontend` (only PR #12125's spot-checked subset has been verified so far)
 - [ ] Confirm the other dual/multi-licensed transitive backend dependencies flagged by PR #12125 (Jakarta/Jersey/RabbitMQ-adjacent artifacts)
