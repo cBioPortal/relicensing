@@ -43,9 +43,39 @@ Found in the backend's own `OPEN-SOURCE-DOCUMENTATION` file, all appear to be le
 
 These look like strong candidates for the Phase 1 "codebase cleanup" removal task (relicensing#2) — if they're genuinely unused dead code from the pre-React era, removing them resolves the copyleft flag *and* shrinks the Phase 2 consent surface at the same time.
 
-## Out of scope by default
+## Full survey of the other ~90 org repos (2026-07-10)
 
-The cBioPortal GitHub org has ~90 repos total. Everything not listed above (AI/MCP assistant tools, experiments, personal notebooks, an unrelated `LibreChat` fork, etc.) does not appear in the docker-compose, Helm, or backend `pom.xml` dependency graph, so it's treated as **out of scope** for this manifest by default. Flag here if any of these should actually be pulled in.
+Went through every repo in the `cBioPortal` GitHub org individually (license, activity, and whether it's actually referenced by the in-scope components above) rather than assuming the rest is irrelevant. Findings:
+
+### Already covered — no separate scope needed
+`cbioportal-frontend` is a pnpm/lerna monorepo (`packages/` folder). Confirmed via its `package.json` (all pulled in as `workspace:*`, not external npm packages) that these live *inside* the frontend repo already accounted for above, not as separate licensing surfaces: `oncoprintjs`, `react-mutation-mapper`, `cbioportal-clinical-timeline`, `cbioportal-frontend-commons`, `cbioportal-ts-api-client`, `oncokb-frontend-commons`, `oncokb-ts-api-client`, `cbioportal-utils`, `genome-nexus-ts-api-client`, `react-variant-view`.
+
+### Historical only — superseded standalone repos, no action needed
+These are old *pre-monorepo* standalone versions of the packages above, confirmed dead (last real commits 2016–2023, not referenced anywhere in current frontend/backend code):
+- `oncoprintjs` (standalone, archived, LGPL) — superseded by `cbioportal-frontend/packages/oncoprintjs`
+- `react-mutation-mapper` (standalone, archived, AGPL) — superseded by the in-repo package of the same name
+- `clinical-timeline` (standalone, LGPL) — last real commit 2020-04-16 (its "updated" timestamp is newer metadata noise, not new commits); superseded by `cbioportal-frontend/packages/cbioportal-clinical-timeline`
+- `mutation-mapper` (standalone, LGPL, 2023) — predecessor of `react-mutation-mapper`
+- `MobxPromise` (MIT) and `oql` — not present anywhere in `cbioportal-frontend`'s dependencies; reimplemented internally
+- `reactable` (MIT) — the frontend's actual `reactable: ^0.14.1` dependency resolves to the original third-party npm package, not this org's same-named repo, which looks like an unused fork/experiment
+- `cbio-engine` (AGPL, 2015, "next generation core framework") — no references found anywhere in current backend code; abandoned prototype
+- `common` (AGPL, 2017, described as "used by web application and importer projects") — checked the backend's own `docs/Inter-Repository-Dependencies.md` (authoritative, confirms `cbioportal-core`'s actual dependency graph) and Maven search; not referenced by group ID anywhere current — superseded when `cbioportal-core` absorbed this functionality directly
+- `importer`, `cbioportal-neo4j`, `gdc-et-pipeline`, `cbioportal-frontend-archive-1`, `iViz` (archived) — old/superseded, no current references found
+
+### Forks or wrappers of third-party projects — not cBioPortal's copyright to relicense
+Already permissively licensed or not cBioPortal-owned code in the first place, so no RFC86 action needed: `igv.js` (MIT), `svg2pdf.js` (MIT, cBioPortal maintains a patched fork referenced directly in `cbioportal-frontend/package.json` via `github:cbioportal/svg2pdf.js#v1.3.3-cbio-patch-1`), `swagger-js-codegen` (Apache-2.0), `spring-social-google` / `spring-social-live` (Apache-2.0), `maven-external-version` (Apache-2.0), `wdio-novus-visual-regression-service` (MIT), `LibreChat` (MIT, appears to be an unrelated clone, not part of any cBioPortal product).
+
+### Flag for a scope decision — AGPL, cBioPortal-owned, actively maintained, but NOT bundled into the release
+These are real, currently-AGPL, actively-developed cBioPortal repos — but they're auxiliary services/tools called over the network or used offline, not part of the docker-compose/Helm deployment graph, so they fall outside Phase 0's "the release" as currently scoped:
+- `cancerhotspots` (AGPL, updated 2026-06-02) — powers cancerhotspots.org; confirmed called by `cbioportal-frontend` as an external API (`packages/react-mutation-mapper`, `src/shared/components/driverAnnotations/...`), not bundled into the app itself
+- `datahub-study-curation-tools` (AGPL, updated 2026-06-01) and `clinical-data-normalization` (AGPL, updated 2025-09-23) — data-curation tooling used by curators, not shipped in the served product
+- `fmi-converter` (AGPL, 2023) — a data-format converter tool, same category
+- `clinical-data-dictionary` (**no license at all**, Java web service) — only referenced from a doc mention (`docs/File-Formats.md`) in the backend repo, not from docker-compose/Helm/pom.xml — appears to be an optional/adjacent service, not deployed as part of the release
+
+**These five are a real open question, not a default exclusion** — they're clearly "in the family" (same org, same AGPL default, actively maintained) even though they don't meet Phase 0's current "part of the docker-compose/Helm/pom.xml deployment graph" test. Worth a decision: fold them into RFC86 now, or explicitly defer them to a follow-on relicensing wave.
+
+### Everything else — out of scope by default
+The remaining repos (AI/MCP assistant tools, benchmarks, personal notebooks/workshops, project-management repos like `roadmap`/`icebox`/`GSoC`, one-off scripts) show no reference from any in-scope component and are treated as out of scope by default.
 
 ## Open follow-ups
 
@@ -53,3 +83,4 @@ The cBioPortal GitHub org has ~90 repos total. Everything not listed above (AI/M
 - [ ] Check `cbioportal-docker-compose` and `cbioportal-helm` repo-level licenses directly (not yet checked)
 - [ ] Verify `cbioportal-helm`'s chart references the same component set as docker-compose
 - [ ] Consider fast-tracking a LICENSE file for `session-service` and `cbioportal-core` — since neither was ever AGPL to begin with, adding Apache-2.0 directly (with sign-off from their small, mostly-already-being-contacted contributor lists) may not need to wait on the full Phase 1–4 sequence for the rest of the codebase
+- [ ] **Decide scope for the 5 "adjacent AGPL tooling" repos** (`cancerhotspots`, `datahub-study-curation-tools`, `clinical-data-normalization`, `fmi-converter`, `clinical-data-dictionary`) — include in RFC86 now or defer to a follow-on wave?
