@@ -31,7 +31,7 @@ I'm reaching out because you've contributed to cBioPortal, and we need your cons
 
 > I, [your name], consent to the relicensing of my contributions to the cBioPortal repositories from AGPL-3.0 to Apache-2.0 as described in RFC 86.
 
-If you have questions, please reply here or email jgao@cbio.mskcc.org.
+If you have questions, please reply here or email gaoj@mskcc.org.
 
 **Deadline:** please respond within 3 weeks of this message. If we haven't heard back by then, any specific contributions that cannot be relicensed will be rewritten or removed before the license switch (we can't wait indefinitely and still hit our target date) — your name will be marked `unreachable` on the public status board (linked below) in that case, not `declined`.
 
