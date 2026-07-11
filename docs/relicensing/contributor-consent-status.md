@@ -19,6 +19,25 @@ One bot account (`Copilot`, GitHub's AI coding agent) was excluded from this con
 - `declined` — has explicitly declined
 - `unreachable` — could not be located/contacted after reasonable effort (feeds the redirected "Vanish List" view)
 
+## Linked identities
+
+Some contributors have used more than one GitHub account over the project's history. Where confirmed by the project team, this is noted in-line so outreach is treated as a single consent request per person, not duplicated or split across accounts:
+
+- **`nschultz-sketch`** and **`schultzn`** are both Dr. Nikolaus Schultz (confirmed by the project PI, 2026-07-10) — combined 105 commits across both identities. `schultzn`'s "MSKCC" organization is independently domain-verified (see Organization methodology above); `nschultz-sketch`'s **MSKCC\*** is inferred from being the same person, not independently verified for that specific account — marked with `*` in the table below to keep the provenance distinction clear.
+
+## Pre-license-era contributors (last commit before 2015-03-18)
+
+cBioPortal's AGPL `LICENSE` file was added 2015-03-18; the repository's actual root commit dates to 2011-06-17 (Ethan Cerami), so ~4 years of pre-license history exists. Copyright exists automatically regardless of licensing, so pre-license contributions need consent at least as much as later ones — if anything, their legal footing is *more* ambiguous, not less, since they were never formally open-sourced under any license at the time. Only 6 of 209 contributors have their last commit before that date; none are excluded from outreach:
+
+| Login | Last commit | Note |
+|---|---|---|
+| `nschultz-sketch` | 2012-08-06 | Dr. Nikolaus Schultz — see "Linked identities" above; likely MSKCC-affiliated at the time given the project's origin, pending confirmation |
+| `spcar7` | 2011-08-24 | |
+| `caitlinjones` | 2011-12-21 | |
+| `paragomi` | 2012-07-05 | |
+| `artgoldberg` | 2011-12-08 | |
+| `ugurdogrusoz` | 2012-05-07 | |
+
 ## Contributors
 
 | GitHub Handle | Name | Organization | Backend | Frontend | Docker Compose | Core (importer) | Session Service | Total | Consent Status |
@@ -53,7 +72,7 @@ One bot account (`Copilot`, GitHub's AI coding agent) was excluded from this con
 | [JiaoJiao123](https://github.com/JiaoJiao123) | Jiaojiao Wang |  | 97 | 1 | 0 | 0 | 0 | 98 | pending |
 | [ao508](https://github.com/ao508) | ao508 |  | 90 | 5 | 0 | 0 | 1 | 96 | pending |
 | [adufilie](https://github.com/adufilie) | Andrew Dufilie |  | 0 | 80 | 0 | 0 | 0 | 80 | pending |
-| [nschultz-sketch](https://github.com/nschultz-sketch) | Nikolaus Schultz |  | 79 | 0 | 0 | 0 | 0 | 79 | pending |
+| [nschultz-sketch](https://github.com/nschultz-sketch) | Nikolaus Schultz | MSKCC* | 79 | 0 | 0 | 0 | 0 | 79 | pending |
 | [tmazor](https://github.com/tmazor) | Tali Mazor | DFCI | 70 | 4 | 0 | 0 | 0 | 74 | pending |
 | [JREastonMarks](https://github.com/JREastonMarks) | Jeremy R. Easton-Marks |  | 42 | 0 | 1 | 28 | 0 | 71 | pending |
 | [spcar7](https://github.com/spcar7) | lennartbastian |  | 69 | 0 | 0 | 0 | 0 | 69 | pending |
