@@ -27,7 +27,7 @@ I'm reaching out because you've contributed to cBioPortal, and we need your cons
 - **No / I'm not sure my employer would claim this** → your own consent below is sufficient.
 - **Yes** → please still sign below, but also let us know who your employer was at the time so we can follow up with them if needed (we're separately contacting the major institutions we know about — MSKCC, DFCI, PMCC, CHOP, Hyve, SE4BIO — but may be missing some).
 
-**What we are asking:** Please reply to this message (or to the tracking issue at https://github.com/cBioPortal/relicensing/issues/3) confirming:
+**What we are asking:** Please reply to this message, or post a comment confirming your consent directly on https://github.com/cBioPortal/cbioportal/issues/12271 (the public consent-collection issue for this project) — whichever is easier for you:
 
 > I, [your name], consent to the relicensing of my contributions to the cBioPortal repositories from AGPL-3.0 to Apache-2.0 as described in RFC 86.
 
@@ -41,4 +41,4 @@ Thank you for your contributions to cBioPortal!
 
 ---
 
-*This message is being sent to all contributors as part of the RFC 86 relicensing process. See https://github.com/cBioPortal/relicensing/issues/3 for full details, and https://github.com/cBioPortal/relicensing/blob/main/docs/relicensing/contributor-consent-status.md for the public status board tracking every contributor's consent status.*
+*This message is being sent to all contributors as part of the RFC 86 relicensing process. See https://github.com/cBioPortal/cbioportal/issues/12271 to give consent publicly, https://github.com/cBioPortal/relicensing/issues/3 for the full Phase 2 process, and https://github.com/cBioPortal/relicensing/blob/main/docs/relicensing/contributor-consent-status.md for the public status board tracking every contributor's consent status.*
