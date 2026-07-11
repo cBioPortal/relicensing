@@ -37,6 +37,9 @@ We are requesting that you, as institutional lead of the cBioPortal team at **[I
 |---|---|
 | cbioportal (backend) | https://github.com/cBioPortal/cbioportal |
 | cbioportal-frontend | https://github.com/cBioPortal/cbioportal-frontend |
+| cbioportal-docker-compose | https://github.com/cBioPortal/cbioportal-docker-compose |
+| cbioportal-core (data importer) | https://github.com/cBioPortal/cbioportal-core |
+| session-service | https://github.com/cBioPortal/session-service |
 
 The contributors from [INSTITUTION] whose work is included in the codebase are:
 
@@ -59,7 +62,7 @@ We are also separately reaching out to individual contributors where appropriate
 
 ## Timeline
 
-We are targeting completion of institutional consents by **[DATE]**. Following that, we will conduct a 30-day public notice and comment period before any technical changes are made.
+We are targeting completion of institutional consents by **July 24, 2026**. Following that, we will conduct a 30-day public notice and comment period (Aug 21 – Sep 20) before any technical changes are made.
 
 ## Questions
 
@@ -68,7 +71,7 @@ Please direct any questions or requests for additional information to:
 **Jianjiong Gao** — jgao@cbio.mskcc.org  
 cBioPortal Principal Investigator, MSKCC
 
-A copy of RFC 86 (the full relicensing proposal) is attached for reference.
+A copy of RFC 86 (the full relicensing proposal) is attached for reference. The full relicensing process, including a public status board tracking every contributor's consent status, is tracked at https://github.com/cBioPortal/relicensing.
 
 ---
 
