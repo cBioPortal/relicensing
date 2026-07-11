@@ -38,6 +38,7 @@ Chosen over MIT because Apache 2.0 provides explicit patent grants — critical 
 - "Best Effort" standard: reach 95% of codebase by volume; rewrite remaining 5% if needed
 - Maintain a **public consent status board** (per-contributor agreed/pending/declined/unreachable, no raw contact info) — precedent: [mpv's LGPL relicensing](https://github.com/mpv-player/mpv/issues/2033) used a public wiki page for this. The redacted "Vanish List" is a filtered view of this board (unreachable rows only), not a separate artifact.
 - **Board published (2026-07-10):** [`docs/relicensing/contributor-consent-status.md`](docs/relicensing/contributor-consent-status.md) — 209 contributors across all 5 in-scope repos, built from public data only (no private contact info). Enriched with contribution-time names (from public git commit history) and organizations (from commit-email domains — institution name only, never the raw email).
+- **Public consent-collection issue (2026-07-10, opened early):** [cBioPortal/cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271), mirroring mpv's approach directly — a single public issue where any contributor can comment their consent, in addition to replying individually. Hosted in the main `cbioportal` repo (not `relicensing`) for maximum organic visibility, same reasoning as mpv.
 
 ### Phase 3 — Community Feedback & Notice Period
 - 30-day public RFC / "Notice and Comment" period on GitHub + mailing list
