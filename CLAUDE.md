@@ -37,7 +37,7 @@ Chosen over MIT because Apache 2.0 provides explicit patent grants — critical 
 - **Tier 2**: Standardized outreach to all contributors in git history, and to top individual contributors regardless of institutional affiliation
 - "Best Effort" standard: reach 95% of codebase by volume; rewrite remaining 5% if needed
 - Maintain a **public consent status board** (per-contributor agreed/pending/declined/unreachable, no raw contact info) — precedent: [mpv's LGPL relicensing](https://github.com/mpv-player/mpv/issues/2033) used a public wiki page for this. The redacted "Vanish List" is a filtered view of this board (unreachable rows only), not a separate artifact.
-- **Board published (2026-07-10):** [`docs/relicensing/contributor-consent-status.md`](docs/relicensing/contributor-consent-status.md) — 209 contributors across all 5 in-scope repos (`cbioportal`, `cbioportal-frontend`, `cbioportal-docker-compose`, `cbioportal-core`, `session-service`), built from live public GitHub profile data only (no private contact info).
+- **Board published (2026-07-10):** [`docs/relicensing/contributor-consent-status.md`](docs/relicensing/contributor-consent-status.md) — 209 contributors across all 5 in-scope repos, built from public data only (no private contact info). Enriched with contribution-time names (from public git commit history) and organizations (from commit-email domains — institution name only, never the raw email).
 
 ### Phase 3 — Community Feedback & Notice Period
 - 30-day public RFC / "Notice and Comment" period on GitHub + mailing list
