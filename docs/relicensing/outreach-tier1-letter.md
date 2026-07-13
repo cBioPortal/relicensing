@@ -69,7 +69,6 @@ We are targeting completion of institutional consents by **July 24, 2026**. Foll
 Please direct any questions or requests for additional information to:
 
 **Jianjiong Gao** — gaoj@mskcc.org  
-cBioPortal Principal Investigator, MSKCC
 
 A copy of RFC 86 (the full relicensing proposal) is attached for reference. The full relicensing process, including a public status board tracking every contributor's consent status, is tracked at https://github.com/cBioPortal/relicensing.
 
