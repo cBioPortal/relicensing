@@ -44,4 +44,4 @@ This Tier 1 institutional consent is not intended to replace individual Tier 2 o
 
 - RFC 86 tracking repo: https://github.com/cBioPortal/relicensing
 - Public consent collection issue: https://github.com/cBioPortal/cbioportal/issues/12271
-- Questions: Jianjiong Gao (gaoj@mskcc.org)
+- Questions: JJ Gao (gaoj@mskcc.org)
