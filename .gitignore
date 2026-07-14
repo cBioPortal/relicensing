@@ -1,6 +1,5 @@
 .DS_Store
 .claude/
 .claude/settings.local.json
-data
-contributor_matrix.tsv
+data/
 RFC86.docx
