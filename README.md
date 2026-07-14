@@ -37,10 +37,12 @@ Process details are tracked in [the phase issue set](https://github.com/cBioPort
 
 ## Current status (high level)
 
-- Phase 0 completed
-- Phase 1 in progress: approval from cBioPortal core team institutions are being seeked.
-- Phase 2 in progress: public concent
-- Phase 3+ pending prior phases
+- Phase 0: Release & Component Scope [completed]
+- Phase 1: Compliance & Dependency Audit [completed]
+- Phase 2: Contributor Outreach & Consent [in progress]
+- Phase 3: Community Feedback & Notice Period [pending]
+- Phase 4: Technical Execution [in progress]
+- Phase 5: Future Governance [in progress]
 
 ## Where to read details
 
