@@ -65,6 +65,7 @@ Detailed denominator, distribution caveats, and component-level findings are mai
 - [`docs/relicensing/component-manifest.md`](docs/relicensing/component-manifest.md) — Phase 0 scope and distribution model
 - [`docs/relicensing/dependency-audit.md`](docs/relicensing/dependency-audit.md) — Phase 1 dependency/license findings
 - [`docs/relicensing/contributor-consent-status.md`](docs/relicensing/contributor-consent-status.md) — public consent board
+- [`docs/relicensing/tier1-overview.md`](docs/relicensing/tier1-overview.md) — high-level Tier 1 summary for institutional leads
 - [`docs/relicensing/outreach-tier1-letter.md`](docs/relicensing/outreach-tier1-letter.md) — institutional lead template
 - [`docs/relicensing/outreach-tier2-template.md`](docs/relicensing/outreach-tier2-template.md) — individual contributor template
 - [`RFC86.docx`](RFC86.docx) — proposal source document
