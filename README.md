@@ -38,7 +38,8 @@ Process details are tracked in the docs below and in the phase issue set.
 ## Current status (high level)
 
 - Phase 0 completed
-- Phase 1 and Phase 2 in progress
+- Phase 1 in progress: approval from cBioPortal core team institutions are being seeked.
+- Phase 2 in progress: public concent
 - Phase 3+ pending prior phases
 
 ## Where to read details
