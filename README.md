@@ -33,7 +33,7 @@ Public consent collection issue: https://github.com/cBioPortal/cbioportal/issues
 Templates and status are public. Signed originals with signatures/sensitive details are stored privately; public records reference status/evidence.
 
 ### Where is the full process documented?
-Process details are tracked in the docs below and in the phase issue set.
+Process details are tracked in [the phase issue set](https://github.com/cBioPortal/relicensing/issues/8).
 
 ## Current status (high level)
 
