@@ -43,27 +43,9 @@ Process details are tracked in the docs below and in the phase issue set.
 
 ## Where to read details
 
+- RFC86 source document: https://docs.google.com/document/d/1X4lrW4Foi23hoplIUd_jcy7Vn0MwoIOyDchum2vqn0w/edit?tab=t.0#heading=h.btohl122j9ni
 - Scope and combined-distribution model: [`docs/relicensing/component-manifest.md`](docs/relicensing/component-manifest.md)
 - Dependency/license audit: [`docs/relicensing/dependency-audit.md`](docs/relicensing/dependency-audit.md)
 - Public consent board: [`docs/relicensing/contributor-consent-status.md`](docs/relicensing/contributor-consent-status.md)
 - Tier 1 institutional consent sheet: [`docs/relicensing/outreach-tier1-letter.md`](docs/relicensing/outreach-tier1-letter.md)
 - Tier 2 individual outreach template: [`docs/relicensing/outreach-tier2-template.md`](docs/relicensing/outreach-tier2-template.md)
-- Original proposal source: [`RFC86.docx`](RFC86.docx)
-
-## Tracking issues
-
-Tracked in [`cBioPortal/relicensing`](https://github.com/cBioPortal/relicensing):
-
-- Epic: [#8](https://github.com/cBioPortal/relicensing/issues/8)
-- Phase 0: [#1](https://github.com/cBioPortal/relicensing/issues/1)
-- Phase 1: [#2](https://github.com/cBioPortal/relicensing/issues/2)
-- Phase 2: [#3](https://github.com/cBioPortal/relicensing/issues/3)
-- Phase 3: [#4](https://github.com/cBioPortal/relicensing/issues/4)
-- Pre-Switch Gate: [#5](https://github.com/cBioPortal/relicensing/issues/5)
-- Phase 4: [#6](https://github.com/cBioPortal/relicensing/issues/6)
-- Phase 5: [#7](https://github.com/cBioPortal/relicensing/issues/7)
-
-## Assistant guidance
-
-Repository-specific Copilot instructions:
-- [`.github/copilot-instructions.md`](.github/copilot-instructions.md)
