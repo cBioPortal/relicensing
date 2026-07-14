@@ -1,4 +1,6 @@
 .DS_Store
+.claude/
 .claude/settings.local.json
+data
 contributor_matrix.tsv
 RFC86.docx
