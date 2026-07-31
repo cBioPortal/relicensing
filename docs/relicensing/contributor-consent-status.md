@@ -17,7 +17,23 @@ One bot account (`Copilot`, GitHub's AI coding agent) was excluded from this con
 - `declined` — has explicitly declined
 - `unreachable` — could not be located/contacted after reasonable effort (feeds the redirected "Vanish List" view)
 
-## Contributors
+## Team lead consent
+
+Consent from team leads covers contributions made by their team members. See [cbioportal#12282](https://github.com/cBioPortal/cbioportal/issues/12282).
+
+| Team | Team Lead | GitHub Handle | Consent Status |
+|---|---|---|---|
+| cBioPortal @ MSKCC | Nikolaus Schultz | [nschultz-sketch](https://github.com/nschultz-sketch) | pending |
+| cBioPortal @ DFCI | James Lindsay | [jim-bo](https://github.com/jim-bo) | pending |
+| cBioPortal @ PMCC | Trevor Pugh | trpugh | pending |
+| cBioPortal @ CHOP | Adam Resnick | [amresnick](https://github.com/amresnick) | pending |
+| cBioPortal @ The Hyve | Henk-Jan van den Ham | [henkjanvdham](https://github.com/henkjanvdham) | pending |
+| cBioPortal @ SE4BIO | Pieter Lukasse | [pieterlukasse](https://github.com/pieterlukasse) | pending |
+| cBioPortal @ Bilkent U | Ugur Dogrusoz | [ugurdogrusoz](https://github.com/ugurdogrusoz) | pending |
+
+## Individual contributor consent
+
+See [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271).
 
 | GitHub Handle | Name | Backend | Frontend | Docker | Core | Session | Total | Consent Status |
 |---|---|---|---|---|---|---|---|---|
