@@ -68,13 +68,13 @@ Chosen over MIT because Apache 2.0 provides explicit patent grants — critical 
 |---|---|---|
 | Phase 0 (scope) | Jul 10–17 | Fast — scope is largely already known |
 | Phase 1 (SBOM/audit) | Jul 10–28 | Starts in parallel with Phase 0 on known components |
-| Phase 2 — Team lead consent | launch Jul 13, target resolved Jul 24 | Team-lead sign-off (not formal legal review, see Decisions) — should turn around in ~1-2 weeks since leads are already engaged collaborators |
-| Phase 2 — Individual contributor outreach | launch Jul 28, firm deadline Aug 18, reconciliation by Aug 20 | Firm 3-week window; non-responders default to rewrite/remove, not indefinite waiting |
-| Phase 3 (30-day notice) | Aug 21 – Sep 20 | Fixed at 30 days — not compressible, everything else fits around this |
+| Phase 2 — Team lead consent | launch Jul 31, deadline Aug 31 | Team-lead sign-off via [cbioportal#12282](https://github.com/cBioPortal/cbioportal/issues/12282); runs in parallel with Phase 3 tail |
+| Phase 2 — Individual contributor outreach | launch Jul 28, deadline Sep 20 | Runs in parallel with Phase 3; closes when notice period ends |
+| Phase 3 (30-day notice) | Aug 21 – Sep 20 | Runs in parallel with tail of Phase 2 outreach; fixed at 30 days |
 | Sign-off Gate | Sep 20–23 | Fast if the record is assembled continuously through Phases 1–3, not started here |
 | Phase 4 (Switch Commit) | Sep 23–30 | Fast if SPDX header scripts/tooling are dry-run tested during the Phase 1 window |
 
-**Critical path risk:** with team lead consent moved to a direct GitHub issue, the remaining critical path is **Phase 1 cleanup finishing on time (Jul 28) and the individual contributor outreach's firm 3-week window (Jul 28 – Aug 18)** — those now gate Phase 3's fixed 30-day window, which cannot be compressed to absorb a slip. The Jul 24–Aug 20 gap also now acts as schedule buffer for any team lead straggler or minor individual outreach slippage.
+**Critical path:** Phase 3's 30-day window is fixed (Aug 21 – Sep 20) and cannot be compressed. Phase 2 individual outreach runs in parallel and closes Sep 20; any non-responder by that date defaults to rewrite/remove. Team lead consent (deadline Aug 31) provides an additional coverage layer before the notice period ends.
 
 ## Key Risks
 
