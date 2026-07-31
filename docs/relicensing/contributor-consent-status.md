@@ -1,14 +1,4 @@
-# RFC86 Phase 2 — Public Contributor Consent Status Board
-
-**Status:** Updated 2026-07-10. Outreach is now underway — team lead consent via [cbioportal#12282](https://github.com/cBioPortal/cbioportal/issues/12282), individual contributor outreach via [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271) (deadline Aug 18, 2026). This board will be updated as responses come in.
-
-This board lists every contributor to the 5 in-scope repos (`cbioportal`, `cbioportal-frontend`, `cbioportal-docker-compose`, `cbioportal-core`, `session-service`) by GitHub handle. **Name** uses only public information: the current GitHub profile name if set, otherwise the name from git commit history (visible via `git log`/GitHub's commit API).
-
-No email addresses, Slack IDs, or other private contact information appear anywhere in this file. That information is tracked separately and privately by the project team, per [relicensing#3](https://github.com/cBioPortal/relicensing/issues/3)'s "no raw contact info" requirement.
-
-Precedent: [mpv's LGPL relicensing](https://github.com/mpv-player/mpv/issues/2033) used a similar public wiki page.
-
-One bot account (`Copilot`, GitHub's AI coding agent) was excluded from this contributor list — AI authorship is tracked separately, see `docs/relicensing/dependency-audit.md`.
+# RFC86 — Contributor Consent Status Board
 
 ## Status legend
 
@@ -25,7 +15,7 @@ Consent from team leads covers contributions made by their team members. See [cb
 |---|---|---|
 | cBioPortal @ MSKCC | Nikolaus Schultz | pending |
 | cBioPortal @ DFCI | James Lindsay | pending |
-| cBioPortal @ PMCC | [Trevor Pugh](https://github.com/pughlab) | pending |
+| cBioPortal @ PMCC | Trevor Pugh | pending |
 | cBioPortal @ CHOP | Adam Resnick | pending |
 | cBioPortal @ The Hyve | Henk-Jan van den Ham | pending |
 | cBioPortal @ SE4BIO | Pieter Lukasse | pending |
