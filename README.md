@@ -29,7 +29,7 @@ It affects release licensing and requires a defined switch commit, contributor c
 ### Where can contributors publicly give consent?
 Public consent collection issue: https://github.com/cBioPortal/cbioportal/issues/12271
 
-### Are signed institutional documents public?
+### Are signed team lead consent documents public?
 Templates and status are public. Signed originals with signatures/sensitive details are stored privately; public records reference status/evidence.
 
 ### Where is the full process documented?
@@ -50,5 +50,5 @@ Process details are tracked in [the phase issue set](https://github.com/cBioPort
 - Scope and combined-distribution model: [`docs/relicensing/component-manifest.md`](docs/relicensing/component-manifest.md)
 - Dependency/license audit: [`docs/relicensing/dependency-audit.md`](docs/relicensing/dependency-audit.md)
 - Public consent board: [`docs/relicensing/contributor-consent-status.md`](docs/relicensing/contributor-consent-status.md)
-- Tier 1 institutional consent sheet: [`docs/relicensing/outreach-tier1-letter.md`](docs/relicensing/outreach-tier1-letter.md)
+- Tier 1 team lead consent sheet: [`docs/relicensing/outreach-tier1-letter.md`](docs/relicensing/outreach-tier1-letter.md)
 - Tier 2 individual outreach template: [`docs/relicensing/outreach-tier2-template.md`](docs/relicensing/outreach-tier2-template.md)
