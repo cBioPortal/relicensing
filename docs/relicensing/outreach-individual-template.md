@@ -1,4 +1,4 @@
-# Tier 2 Outreach — Individual Contributor Template
+# Individual Contributor Outreach — Template
 
 *Send via: GitHub issue comment / DM, or email if address is available in git history.*
 

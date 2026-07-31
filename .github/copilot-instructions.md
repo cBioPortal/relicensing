@@ -20,7 +20,7 @@ The repo is a single-source planning and execution record for the AGPL → Apach
    - `component-manifest.md`: scope denominator and combined-distribution licensing model
    - `dependency-audit.md`: dependency blockers and remediation decisions
    - `contributor-consent-status.md`: public consent board and status tracking model
-   - `outreach-tier2-template.md`: individual contributor outreach template
+   - `outreach-individual-template.md`: individual contributor outreach template
 3. **Working data (`contributor_matrix.tsv`)**  
    Private operational/contact dataset used to drive outreach and board updates; not intended for publication.
 

@@ -51,4 +51,4 @@ Process details are tracked in [the phase issue set](https://github.com/cBioPort
 - Dependency/license audit: [`docs/relicensing/dependency-audit.md`](docs/relicensing/dependency-audit.md)
 - Public consent board: [`docs/relicensing/contributor-consent-status.md`](docs/relicensing/contributor-consent-status.md)
 - Tier 1 team lead consent issue: https://github.com/cBioPortal/cbioportal/issues/12282
-- Tier 2 individual outreach template: [`docs/relicensing/outreach-tier2-template.md`](docs/relicensing/outreach-tier2-template.md)
+- Individual contributor outreach template: [`docs/relicensing/outreach-individual-template.md`](docs/relicensing/outreach-individual-template.md)
