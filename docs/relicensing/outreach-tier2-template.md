@@ -25,7 +25,7 @@ I'm reaching out because you've contributed to cBioPortal, and we need your cons
 
 **One quick question before the consent statement:** Was this contribution made as part of your paid job duties, under an employment agreement that assigns software IP to your employer? This helps us route the request correctly:
 - **No / I'm not sure my employer would claim this** → your own consent below is sufficient.
-- **Yes** → please still sign below, but also let us know who your employer was at the time so we can follow up with them if needed (we're separately contacting the team leads of the major contributing teams we know about — MSKCC, DFCI, PMCC, CHOP, Hyve, SE4BIO — but may be missing some).
+- **Yes** → please still sign below, but also let us know who your employer was at the time so we can follow up with them if needed (we're separately contacting the team leads of the major contributing teams we know about — MSKCC, DFCI, PMCC, CHOP, Hyve, SE4BIO — via https://github.com/cBioPortal/cbioportal/issues/12282, but may be missing some).
 
 **What we are asking:** Please reply to this message, or post a comment confirming your consent directly on https://github.com/cBioPortal/cbioportal/issues/12271 (the public consent-collection issue for this project) — whichever is easier for you:
 
