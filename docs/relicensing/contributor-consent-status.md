@@ -21,15 +21,15 @@ One bot account (`Copilot`, GitHub's AI coding agent) was excluded from this con
 
 Consent from team leads covers contributions made by their team members. See [cbioportal#12282](https://github.com/cBioPortal/cbioportal/issues/12282).
 
-| Team | Team Lead | GitHub Handle | Consent Status |
-|---|---|---|---|
-| cBioPortal @ MSKCC | Nikolaus Schultz | [nschultz-sketch](https://github.com/nschultz-sketch) | pending |
-| cBioPortal @ DFCI | James Lindsay | [jim-bo](https://github.com/jim-bo) | pending |
-| cBioPortal @ PMCC | Trevor Pugh | trpugh | pending |
-| cBioPortal @ CHOP | Adam Resnick | [amresnick](https://github.com/amresnick) | pending |
-| cBioPortal @ The Hyve | Henk-Jan van den Ham | [henkjanvdham](https://github.com/henkjanvdham) | pending |
-| cBioPortal @ SE4BIO | Pieter Lukasse | [pieterlukasse](https://github.com/pieterlukasse) | pending |
-| cBioPortal @ Bilkent U | Ugur Dogrusoz | [ugurdogrusoz](https://github.com/ugurdogrusoz) | pending |
+| Team | Team Lead | Consent Status |
+|---|---|---|
+| cBioPortal @ MSKCC | Nikolaus Schultz | pending |
+| cBioPortal @ DFCI | James Lindsay | pending |
+| cBioPortal @ PMCC | [Trevor Pugh](https://github.com/pughlab) | pending |
+| cBioPortal @ CHOP | Adam Resnick | pending |
+| cBioPortal @ The Hyve | Henk-Jan van den Ham | pending |
+| cBioPortal @ SE4BIO | Pieter Lukasse | pending |
+| cBioPortal @ Bilkent U | Ugur Dogrusoz | pending |
 
 ## Individual contributor consent
 
