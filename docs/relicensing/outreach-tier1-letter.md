@@ -19,30 +19,31 @@ cBioPortal is proposing to relicense the in-scope repositories from AGPL-3.0 to 
 | cbioportal-core (data importer) | [https://github.com/cBioPortal/cbioportal-core](https://github.com/cBioPortal/cbioportal-core) |
 | session-service | [https://github.com/cBioPortal/session-service](https://github.com/cBioPortal/session-service) |
 
-## Consent statement (applies to each signer below)
+## Consent statement (applies to each approvers below)
 
-By signing below, I confirm that I am the institutional/team lead (or delegated equivalent) for cBioPortal work at the listed institution, and in that capacity I consent to relicensing contributions made by my institution's cBioPortal team in the repositories above from AGPL-3.0 to Apache-2.0, as described in RFC 86\.
+By approving below, I confirm that I am the institutional/team lead (or an authorized representative acting on the lead’s behalf) for cBioPortal work at the listed institution, and in that capacity I consent to relicensing contributions made by my institution's cBioPortal team, or otherwise commissioned & sponsored by my institution, for which my institution owns or controls the relevant copyright in the repositories above from AGPL-3.0 to Apache-2.0, as described in RFC 86\.
 
 I further attest that I have a good-faith basis to provide this consent on behalf of the institution/team listed, or that I have redirected this request to the appropriate legal/technology-transfer authority if required by institutional policy.
 
 This Tier 1 institutional consent is not intended to replace individual Tier 2 outreach for contributors whose work may fall outside institutional employment/sponsorship.
 
-## Signers
+## Approvers
 
-| Institution | Team Lead | Signature | Date |
+| Institution | Team Lead | Approved\* | Date |
 | :---- | :---- | :---- | :---- |
 | MSKCC | Nikolaus Schultz |  |  |
-| DFCI | Tali Mazor |  |  |
+| DFCI | James Lindsay |  |  |
 | PMCC | Trevor Pugh |  |  |
 | CHOP | Adam Resnick |  |  |
 | The Hyve | Henk-Jan van den Ham |  |  |
 | SE4BIO | Pieter Lukasse |  |  |
 | Bilkent U | Ugur Dogrusoz |  |  |
 
+\*Approver: please **type YES in the Approved column and add the date**, which will be tracked in the document history.
+
 ## Contacts and references
 
 - RFC 86 tracking repo: [https://github.com/cBioPortal/relicensing](https://github.com/cBioPortal/relicensing)  
 - Public consent collection issue: [https://github.com/cBioPortal/cbioportal/issues/12271](https://github.com/cBioPortal/cbioportal/issues/12271)  
 - Public consent status board: [https://github.com/cBioPortal/relicensing/blob/main/docs/relicensing/contributor-consent-status.md](https://github.com/cBioPortal/relicensing/blob/main/docs/relicensing/contributor-consent-status.md)   
-- Questions: JJ Gao ([gaoj@mskcc.org](mailto:gaoj@mskcc.org))  
-- 
+- Questions: JJ Gao ([gaoj@mskcc.org](mailto:gaoj@mskcc.org))
