@@ -30,5 +30,6 @@ The repo is a single-source planning and execution record for the AGPL → Apach
 - **Issue-driven execution:** each material change should map to the phase issue hierarchy in `cBioPortal/relicensing` (epic `#8`, phases `#1`–`#7`).
 - **Public/private data boundary is strict:** `contributor-consent-status.md` is public and must not include raw emails or private contact fields; sensitive originals stay outside the repo per README policy.
 - **Live consent records are sensitive:** `cbioportal#12282`, `cbioportal#12271`, and `docs/relicensing/contributor-consent-status.md` are live records. Preserve recorded consents exactly; make only surgical edits when needed, and avoid broad rewrites that could alter or obscure existing consent entries.
+- **Current live entries:** Nikolaus Schultz is already recorded in `cbioportal#12282` and JJ Gao is already recorded in `cbioportal#12271`. Preserve those consent entries exactly in any future edits.
 - **Scope discipline:** this repo tracks RFC86 relicensing coordination; implementation fixes belong in target component repos (e.g., `cbioportal`, `cbioportal-frontend`, `cbioportal-core`, `session-service`) and should be referenced here, not implemented here.
-- **Respect existing outreach language:** Tier 1/Tier 2 templates are treated as standard text; modify only when policy/decision changes require it.
+- **Respect existing outreach language:** team-lead and individual-contributor outreach text is treated as standard copy; modify only when policy/decision changes require it.
