@@ -57,7 +57,7 @@ See [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271).
 | [JiaoJiao123](https://github.com/JiaoJiao123) | Jiaojiao Wang | MSKCC | pending | 98 | 97 | 1 | 0 | 0 | 0 |
 | [ao508](https://github.com/ao508) | Angelica Ochoa | MSKCC | pending | 96 | 90 | 5 | 0 | 0 | 1 |
 | [adufilie](https://github.com/adufilie) | Andrew Dufilie | DFCI | pending | 80 | 0 | 80 | 0 | 0 | 0 |
-| [nschultz-sketch](https://github.com/nschultz-sketch) | Niki Schultz | MSKCC | pending | 79 | 79 | 0 | 0 | 0 | 0 |
+| [nschultz-sketch](https://github.com/nschultz-sketch) | Niki Schultz | MSKCC | pending | 105 | 105 | 0 | 0 | 0 | 0 |
 | [tmazor](https://github.com/tmazor) | Tali Mazor | DFCI | pending | 74 | 70 | 4 | 0 | 0 | 0 |
 | [JREastonMarks](https://github.com/JREastonMarks) | Jeremy R. Easton-Marks | DFCI | pending | 71 | 42 | 0 | 1 | 28 | 0 |
 | [spcar7](https://github.com/spcar7) | lennartbastian |  | pending | 69 | 69 | 0 | 0 | 0 | 0 |
@@ -75,7 +75,6 @@ See [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271).
 | [fuzhaoyuan](https://github.com/fuzhaoyuan) | Zhaoyuan (Ryan) Fu | DFCI | pending | 36 | 18 | 16 | 2 | 0 | 0 |
 | [furkansahin](https://github.com/furkansahin) | Furkan Sahin | Bilkent U | pending | 33 | 33 | 0 | 0 | 0 | 0 |
 | [qlu-cls](https://github.com/qlu-cls) | Qi-Xuan Lu |  | pending | 32 | 30 | 2 | 0 | 0 | 0 |
-| [schultzn](https://github.com/schultzn) | Niki Schultz | MSKCC | pending | 26 | 26 | 0 | 0 | 0 | 0 |
 | [j-hudecek](https://github.com/j-hudecek) | Jan Hudecek | The Hyve | pending | 24 | 24 | 0 | 0 | 0 | 0 |
 | [TJMKuijpers](https://github.com/TJMKuijpers) | Tim Kuijpers | The Hyve | pending | 23 | 2 | 20 | 0 | 1 | 0 |
 | [brittanydionigi](https://github.com/brittanydionigi) | Brittany Dionigi |  | pending | 22 | 22 | 0 | 0 | 0 | 0 |
