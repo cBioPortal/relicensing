@@ -13,7 +13,7 @@ Consent from team leads covers contributions made by their team members. See [cb
 
 | Team | Team Lead | Consent Status |
 |---|---|---|
-| cBioPortal @ MSKCC | Nikolaus Schultz | pending |
+| cBioPortal @ MSKCC | Nikolaus Schultz | [agreed](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653) |
 | cBioPortal @ DFCI | James Lindsay | pending |
 | cBioPortal @ PMCC | Trevor Pugh | pending |
 | cBioPortal @ CHOP | Adam Resnick | pending |
