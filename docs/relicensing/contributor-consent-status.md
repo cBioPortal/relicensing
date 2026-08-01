@@ -62,10 +62,10 @@ See [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271).
 | [JREastonMarks](https://github.com/JREastonMarks) | Jeremy R. Easton-Marks | DFCI | pending | 71 | 42 | 0 | 1 | 28 | 0 |
 | [spcar7](https://github.com/spcar7) | lennartbastian |  | pending | 69 | 69 | 0 | 0 | 0 | 0 |
 | [ritikakundra](https://github.com/ritikakundra) | Ritika Kundra | MSKCC | pending | 61 | 61 | 0 | 0 | 0 | 0 |
-| [nr23730](https://github.com/nr23730) | Niklas Reimer | skfit-uni-luebeck | pending | 61 | 49 | 1 | 6 | 5 | 0 |
+| [nr23730](https://github.com/nr23730) | Niklas Reimer |  | pending | 61 | 49 | 1 | 6 | 5 | 0 |
 | [caitlinjones](https://github.com/caitlinjones) | Caitin Jones | MSKCC | pending | 58 | 58 | 0 | 0 | 0 | 0 |
 | [rmadupuri](https://github.com/rmadupuri) | Ramya Madupuri | MSKCC | pending | 58 | 49 | 0 | 3 | 6 | 0 |
-| [tamaccount](https://github.com/tamaccount) | Tamba | Ramp & Contentwrap | pending | 52 | 4 | 48 | 0 | 0 | 0 |
+| [tamaccount](https://github.com/tamaccount) | Tamba |  | pending | 52 | 4 | 48 | 0 | 0 | 0 |
 | [sbabyanusha](https://github.com/sbabyanusha) | Baby Anusha Satravada | MSKCC | pending | 52 | 42 | 0 | 0 | 10 | 0 |
 | [jagnathan](https://github.com/jagnathan) | Jag (P K Jagannathan) | PMCC | pending | 49 | 25 | 24 | 0 | 0 | 0 |
 | [morungos](https://github.com/morungos) | Stuart Watt | PMCC | pending | 48 | 48 | 0 | 0 | 0 | 0 |
@@ -146,7 +146,7 @@ See [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271).
 | [amanbhardwaj12072003](https://github.com/amanbhardwaj12072003) | Aman Bhardwaj |  | pending | 2 | 2 | 0 | 0 | 0 | 0 |
 | [ugurkoysuren](https://github.com/ugurkoysuren) | Ugur Koysuren |  | pending | 2 | 1 | 0 | 1 | 0 | 0 |
 | [sayan-aiml](https://github.com/sayan-aiml) | Sayan Kr. Pattanayak |  | pending | 2 | 0 | 2 | 0 | 0 | 0 |
-| [kurt-mueller-osumc](https://github.com/kurt-mueller-osumc) | Kurt Mueller | The Ohio State University College of Medicine Research IT | pending | 2 | 1 | 0 | 1 | 0 | 0 |
+| [kurt-mueller-osumc](https://github.com/kurt-mueller-osumc) | Kurt Mueller |  | pending | 2 | 1 | 0 | 1 | 0 | 0 |
 | [dtenenba](https://github.com/dtenenba) | Dan Tenenbaum |  | pending | 2 | 2 | 0 | 0 | 0 | 0 |
 | [VenkateshVishwas](https://github.com/VenkateshVishwas) | Venky |  | pending | 2 | 2 | 0 | 0 | 0 | 0 |
 | [johnyaku](https://github.com/johnyaku) | John Reeves |  | pending | 2 | 1 | 0 | 1 | 0 | 0 |
@@ -196,7 +196,7 @@ See [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271).
 | [Annu881](https://github.com/Annu881) | Annu881 |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
 | [thomasmarwitz](https://github.com/thomasmarwitz) | thomasmarwitz |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
 | [mdhvprasad](https://github.com/mdhvprasad) | mvprasad |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
-| [NikdAK](https://github.com/NikdAK) | Niklas dAK | Technical University of Munich (TUM) | pending | 1 | 0 | 0 | 1 | 0 | 0 |
+| [NikdAK](https://github.com/NikdAK) | Niklas dAK |  | pending | 1 | 0 | 0 | 1 | 0 | 0 |
 | [anshuman-rai-27](https://github.com/anshuman-rai-27) | Anshuman Rai |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
 | [nbentoneves](https://github.com/nbentoneves) | Nuno Bento |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
 | [meow1729](https://github.com/meow1729) | Aradhya Makkar |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
