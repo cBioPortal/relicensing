@@ -29,7 +29,7 @@ See [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271).
 |---|---|---|---|---|---|---|---|---|---|
 | [inodb](https://github.com/inodb) | Ino de Bruijn | MSKCC | pending | 4129 | 2130 | 1891 | 67 | 5 | 36 |
 | [alisman](https://github.com/alisman) | Aaron Lisman | MSKCC | pending | 3463 | 413 | 3043 | 5 | 1 | 1 |
-| [jjgao](https://github.com/jjgao) | JJ Gao | MSKCC | pending | 3180 | 3169 | 11 | 0 | 0 | 0 |
+| [jjgao](https://github.com/jjgao) | JJ Gao | MSKCC | agreed | 3180 | 3169 | 11 | 0 | 0 | 0 |
 | [n1zea144](https://github.com/n1zea144) | Benjamin Gross | MSKCC | pending | 2171 | 2167 | 2 | 0 | 0 | 2 |
 | [onursumer](https://github.com/onursumer) | Onur Sumer | MSKCC | pending | 1942 | 1268 | 666 | 8 | 0 | 0 |
 | [zhx828](https://github.com/zhx828) | Hongxin | MSKCC | pending | 1218 | 945 | 272 | 0 | 0 | 1 |
