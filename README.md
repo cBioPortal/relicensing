@@ -27,19 +27,16 @@ Yes. This is a license transition, not a move to closed source.
 It affects release licensing and requires a defined switch commit, contributor consent coverage, and notice/sign-off steps.
 
 ### Where can contributors publicly give consent?
-Public consent collection issue: https://github.com/cBioPortal/cbioportal/issues/12271
-
-### Are signed team lead consent documents public?
-Templates and status are public. Signed originals with signatures/sensitive details are stored privately; public records reference status/evidence.
-
-### Where is the full process documented?
-Process details are tracked in [the phase issue set](https://github.com/cBioPortal/relicensing/issues/8).
+- Public consent collection issue: https://github.com/cBioPortal/cbioportal/issues/12271
+- Team lead consent issue: https://github.com/cBioPortal/cbioportal/issues/12282
 
 ## Current status (high level)
 
 - Phase 0: Release & Component Scope [completed]
 - Phase 1: Compliance & Dependency Audit [completed]
 - Phase 2: Contributor Outreach & Consent [in progress]
+  - Public consent board: [`docs/relicensing/contributor-consent-status.md`](docs/relicensing/contributor-consent-status.md)
+
 - Phase 3: Community Feedback & Notice Period [pending]
 - Phase 4: Technical Execution [in progress]
 - Phase 5: Future Governance [in progress]
@@ -49,6 +46,4 @@ Process details are tracked in [the phase issue set](https://github.com/cBioPort
 - RFC86 source document: https://docs.google.com/document/d/1X4lrW4Foi23hoplIUd_jcy7Vn0MwoIOyDchum2vqn0w/edit?tab=t.0#heading=h.btohl122j9ni
 - Scope and combined-distribution model: [`docs/relicensing/component-manifest.md`](docs/relicensing/component-manifest.md)
 - Dependency/license audit: [`docs/relicensing/dependency-audit.md`](docs/relicensing/dependency-audit.md)
-- Public consent board: [`docs/relicensing/contributor-consent-status.md`](docs/relicensing/contributor-consent-status.md)
-- Tier 1 team lead consent issue: https://github.com/cBioPortal/cbioportal/issues/12282
-- Individual contributor outreach template: [`docs/relicensing/outreach-individual-template.md`](docs/relicensing/outreach-individual-template.md)
+- Process details are tracked in [the phase issue set](https://github.com/cBioPortal/relicensing/issues/8)
