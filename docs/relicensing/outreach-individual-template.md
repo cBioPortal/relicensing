@@ -10,32 +10,28 @@
 
 Hi @[GITHUB_HANDLE],
 
-I'm reaching out because you've contributed to cBioPortal, and we need your consent as part of a license change we are proposing for the project.
+You've contributed to cBioPortal, and we're asking for your consent to a license change (RFC 86): switching from **AGPL-3.0** to the **Apache License 2.0**. Full proposal: https://github.com/cBioPortal/relicensing/issues/8
 
-**What we're doing:** We are proposing to relicense cBioPortal from its current **GNU Affero General Public License v3 (AGPL-3.0)** to the **Apache License 2.0** (RFC 86). The full proposal is tracked here: https://github.com/cBioPortal/relicensing/issues/8
-
-**Why:** NCI and CZI funding requirements mandate permissive licenses, and AGPL has created adoption barriers for pharmaceutical and biotech organizations. Apache 2.0 is a well-recognized permissive license that includes explicit patent grants — the same choice made by Kubernetes.
-
-**What this means for you:** Your past contributions remain attributed to you. We are only changing the license under which they are distributed going forward.
+**Why:** Our funders (NCI, CZI) now require permissive licenses, and AGPL has been an adoption barrier for pharma/biotech users. Apache 2.0 adds an explicit patent grant — same choice Kubernetes made. Your past contributions stay attributed to you; only the license going forward changes.
 
 **Your contributions:**
 - Repository/repositories: [REPO(S) — cbioportal, cbioportal-frontend, cbioportal-docker-compose, cbioportal-core, and/or session-service]
 - Approximate commit count: [N]
-[- Note: some of your commits/PRs were made with AI coding assistance (e.g. GitHub Copilot or Claude). Per project decision, we treat AI-assisted contributions as your own for consent purposes — you don't need to do anything differently for these.]
+[- Some of your commits/PRs used AI coding assistance (e.g. Copilot or Claude) — we treat those as your own for consent purposes, no extra action needed.]
 
-**One quick question before the consent statement:** Was this contribution made as part of your paid job duties, under an employment agreement that assigns software IP to your employer? This helps us route the request correctly:
-- **No / I'm not sure my employer would claim this** → your own consent below is sufficient.
-- **Yes** → please still sign below, but also let us know who your employer was at the time so we can follow up with them if needed (we're separately contacting the team leads of the major contributing teams we know about — MSKCC, DFCI, PMCC, CHOP, Hyve, SE4BIO — via https://github.com/cBioPortal/cbioportal/issues/12282, but may be missing some).
+**One thing to check first:** Was this contribution made under an employment agreement that assigns IP to your employer?
+- **No / not sure** → your consent below is sufficient.
+- **Yes** → please still sign below, and tell us your employer at the time so we can follow up if needed. (We're separately contacting known team leads — MSKCC, DFCI, PMCC, CHOP, Hyve, SE4BIO — via https://github.com/cBioPortal/cbioportal/issues/12282.)
 
-**What we are asking:** Please reply to this message, or post a comment confirming your consent directly on https://github.com/cBioPortal/cbioportal/issues/12271 (the public consent-collection issue for this project) — whichever is easier for you:
+**To consent:** reply here, or comment on the public consent issue (https://github.com/cBioPortal/cbioportal/issues/12271) with:
 
 > I, [your name], consent to the relicensing of my contributions to the cBioPortal repositories from AGPL-3.0 to Apache-2.0 as described in RFC 86.
 
-If you have questions, please reply here or email gaoj@mskcc.org.
+Questions: reply here or email gaoj@mskcc.org.
 
-**Deadline:** please respond within 3 weeks of this message. If we haven't heard back by then, any specific contributions that cannot be relicensed will be rewritten or removed before the license switch (we can't wait indefinitely and still hit our target date) — your name will be marked `unreachable` on the public status board (linked below) in that case, not `declined`.
+**Deadline:** 3 weeks from this message. No response by then means we'll mark you `unreachable` (not `declined`) on the public status board, and rewrite/remove any contributions that can't be relicensed.
 
-Thank you for your contributions to cBioPortal!
+Thank you for contributing to cBioPortal!
 
 — Jianjiong Gao, on behalf of the cBioPortal core team
 
