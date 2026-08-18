@@ -27,14 +27,14 @@ See [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271).
 
 | GitHub Handle | Name | Team | Consent Status | Total (as of 2026-07-10) | Backend | Frontend | Docker | Core | Session |
 |---|---|---|---|---|---|---|---|---|---|
-| [inodb](https://github.com/inodb) | Ino de Bruijn | MSKCC | pending | 4129 | 2130 | 1891 | 67 | 5 | 36 |
+| [inodb](https://github.com/inodb) | Ino de Bruijn | MSKCC | [agreed](https://github.com/cBioPortal/cbioportal/issues/12271#issuecomment-5320662669) | 4129 | 2130 | 1891 | 67 | 5 | 36 |
 | [alisman](https://github.com/alisman) | Aaron Lisman | MSKCC | pending | 3463 | 413 | 3043 | 5 | 1 | 1 |
 | [jjgao](https://github.com/jjgao) | JJ Gao | MSKCC | [agreed](https://github.com/cBioPortal/cbioportal/issues/12271#issuecomment-5148911880) | 3180 | 3169 | 11 | 0 | 0 | 0 |
-| [n1zea144](https://github.com/n1zea144) | Benjamin Gross | MSKCC | pending | 2171 | 2167 | 2 | 0 | 0 | 2 |
-| [onursumer](https://github.com/onursumer) | Onur Sumer | MSKCC | pending | 1942 | 1268 | 666 | 8 | 0 | 0 |
-| [zhx828](https://github.com/zhx828) | Hongxin | MSKCC | pending | 1218 | 945 | 272 | 0 | 0 | 1 |
+| [n1zea144](https://github.com/n1zea144) | Benjamin Gross | MSKCC | [agreed](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787061107473179) | 2171 | 2167 | 2 | 0 | 0 | 2 |
+| [onursumer](https://github.com/onursumer) | Onur Sumer | MSKCC | [agreed](https://github.com/cBioPortal/cbioportal/issues/12271#issuecomment-5320673312) | 1942 | 1268 | 666 | 8 | 0 | 0 |
+| [zhx828](https://github.com/zhx828) | Hongxin | MSKCC | [agreed](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787071793953559) | 1218 | 945 | 272 | 0 | 0 | 1 |
 | [gideonite](https://github.com/gideonite) | Gideon Dresdner | MSKCC | pending | 820 | 818 | 2 | 0 | 0 | 0 |
-| [dippindots](https://github.com/dippindots) | Gaofei Zhao | MSKCC | pending | 715 | 402 | 246 | 39 | 20 | 8 |
+| [dippindots](https://github.com/dippindots) | Gaofei Zhao | MSKCC | [agreed](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787006214370829) | 715 | 402 | 246 | 39 | 20 | 8 |
 | [adamabeshouse](https://github.com/adamabeshouse) | Adam Abeshouse | MSKCC | pending | 693 | 62 | 630 | 1 | 0 | 0 |
 | [kalletlak](https://github.com/kalletlak) | Karthik K | CHOP | pending | 663 | 256 | 396 | 0 | 0 | 11 |
 | [ecerami](https://github.com/ecerami) | Ethan Cerami | DFCI | pending | 655 | 644 | 11 | 0 | 0 | 0 |
@@ -42,37 +42,37 @@ See [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271).
 | [ersinciftci](https://github.com/ersinciftci) | Ersin Ciftci | DFCI | pending | 448 | 366 | 82 | 0 | 0 | 0 |
 | [pvannierop](https://github.com/pvannierop) | Pim van Nierop | The Hyve | pending | 436 | 156 | 272 | 6 | 0 | 2 |
 | [armish](https://github.com/armish) | B. Arman Aksoy | MSKCC | pending | 315 | 315 | 0 | 0 | 0 | 0 |
-| [zainasir](https://github.com/zainasir) | Zain Nasir | MSKCC | pending | 258 | 106 | 66 | 83 | 1 | 2 |
-| [gblaih](https://github.com/gblaih) | Bryan Lai | MSKCC | pending | 204 | 16 | 183 | 0 | 1 | 4 |
+| [zainasir](https://github.com/zainasir) | Zain Nasir | MSKCC | [agreed](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787004106744099) | 258 | 106 | 66 | 83 | 1 | 2 |
+| [gblaih](https://github.com/gblaih) | Bryan Lai | MSKCC | [agreed](https://github.com/cBioPortal/cbioportal/issues/12271#issuecomment-5330010351) | 204 | 16 | 183 | 0 | 1 | 4 |
 | [pieterlukasse](https://github.com/pieterlukasse) | Pieter Lukasse | SE4BIO | pending | 200 | 190 | 10 | 0 | 0 | 0 |
-| [sheridancbio](https://github.com/sheridancbio) | Robert Sheridan | MSKCC | pending | 191 | 171 | 5 | 1 | 14 | 0 |
+| [sheridancbio](https://github.com/sheridancbio) | Robert Sheridan | MSKCC | [agreed](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787061175191719) | 191 | 171 | 5 | 1 | 14 | 0 |
 | [oplantalech](https://github.com/oplantalech) | Oleguer Plantalech | The Hyve | pending | 186 | 108 | 72 | 0 | 4 | 2 |
-| [leexgh](https://github.com/leexgh) | Xiang Li | MSKCC | pending | 159 | 16 | 143 | 0 | 0 | 0 |
-| [mandawilson](https://github.com/mandawilson) | Manda Wilson | MSKCC | pending | 159 | 71 | 1 | 0 | 0 | 87 |
+| [leexgh](https://github.com/leexgh) | Xiang Li | MSKCC | [agreed](https://github.com/cBioPortal/cbioportal/issues/12271#issuecomment-5320764809) | 159 | 16 | 143 | 0 | 0 | 0 |
+| [mandawilson](https://github.com/mandawilson) | Manda Wilson | MSKCC | [agreed](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787069252125209) | 159 | 71 | 1 | 0 | 0 | 87 |
 | [zheins](https://github.com/zheins) | Zachary Heins | MSKCC | pending | 157 | 157 | 0 | 0 | 0 | 0 |
 | [haynescd](https://github.com/haynescd) | Charles Haynes | CHOP | pending | 141 | 78 | 39 | 5 | 19 | 0 |
-| [Luke-Sikina](https://github.com/Luke-Sikina) | Luke Sikina | DFCI | pending | 120 | 61 | 54 | 3 | 0 | 2 |
+| [Luke-Sikina](https://github.com/Luke-Sikina) | Luke Sikina | DFCI | [agreed](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787051243718419) | 120 | 61 | 54 | 3 | 0 | 2 |
 | [yichaoS](https://github.com/yichaoS) | Yichao Sun | MSKCC | pending | 115 | 100 | 15 | 0 | 0 | 0 |
 | [istemi-bahceci](https://github.com/istemi-bahceci) | İstemi Bahçeci | Bilkent U | pending | 109 | 109 | 0 | 0 | 0 | 0 |
 | [JiaoJiao123](https://github.com/JiaoJiao123) | Jiaojiao Wang | MSKCC | pending | 98 | 97 | 1 | 0 | 0 | 0 |
-| [ao508](https://github.com/ao508) | Angelica Ochoa | MSKCC | pending | 96 | 90 | 5 | 0 | 0 | 1 |
+| [ao508](https://github.com/ao508) | Angelica Ochoa | MSKCC | [agreed](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787004915193039) | 96 | 90 | 5 | 0 | 0 | 1 |
 | [adufilie](https://github.com/adufilie) | Andrew Dufilie | DFCI | pending | 80 | 0 | 80 | 0 | 0 | 0 |
 | [nschultz-sketch](https://github.com/nschultz-sketch) | Niki Schultz | MSKCC | pending | 105 | 105 | 0 | 0 | 0 | 0 |
-| [tmazor](https://github.com/tmazor) | Tali Mazor | DFCI | pending | 74 | 70 | 4 | 0 | 0 | 0 |
+| [tmazor](https://github.com/tmazor) | Tali Mazor | DFCI | [agreed](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787057517782339) | 74 | 70 | 4 | 0 | 0 | 0 |
 | [JREastonMarks](https://github.com/JREastonMarks) | Jeremy R. Easton-Marks | DFCI | pending | 71 | 42 | 0 | 1 | 28 | 0 |
 | [spcar7](https://github.com/spcar7) | lennartbastian |  | pending | 69 | 69 | 0 | 0 | 0 | 0 |
 | [ritikakundra](https://github.com/ritikakundra) | Ritika Kundra | MSKCC | pending | 61 | 61 | 0 | 0 | 0 | 0 |
 | [nr23730](https://github.com/nr23730) | Niklas Reimer |  | pending | 61 | 49 | 1 | 6 | 5 | 0 |
 | [caitlinjones](https://github.com/caitlinjones) | Caitin Jones | MSKCC | pending | 58 | 58 | 0 | 0 | 0 | 0 |
-| [rmadupuri](https://github.com/rmadupuri) | Ramya Madupuri | MSKCC | pending | 58 | 49 | 0 | 3 | 6 | 0 |
+| [rmadupuri](https://github.com/rmadupuri) | Ramya Madupuri | MSKCC | [agreed](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787005361262699) | 58 | 49 | 0 | 3 | 6 | 0 |
 | [tamaccount](https://github.com/tamaccount) | Tamba |  | pending | 52 | 4 | 48 | 0 | 0 | 0 |
-| [sbabyanusha](https://github.com/sbabyanusha) | Baby Anusha Satravada | MSKCC | pending | 52 | 42 | 0 | 0 | 10 | 0 |
+| [sbabyanusha](https://github.com/sbabyanusha) | Baby Anusha Satravada | MSKCC | [agreed](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787006432271899) | 52 | 42 | 0 | 0 | 10 | 0 |
 | [jagnathan](https://github.com/jagnathan) | Jag (P K Jagannathan) | PMCC | pending | 49 | 25 | 24 | 0 | 0 | 0 |
 | [morungos](https://github.com/morungos) | Stuart Watt | PMCC | pending | 48 | 48 | 0 | 0 | 0 | 0 |
 | [forus](https://github.com/forus) | Ruslan Forostianov | SE4BIO | pending | 46 | 15 | 4 | 2 | 16 | 9 |
-| [averyniceday](https://github.com/averyniceday) | Avery Wang | MSKCC | pending | 41 | 39 | 2 | 0 | 0 | 0 |
+| [averyniceday](https://github.com/averyniceday) | Avery Wang | MSKCC | [agreed](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787061135744189) | 41 | 39 | 2 | 0 | 0 | 0 |
 | [victoria34](https://github.com/victoria34) | Jing Su | MSKCC | pending | 38 | 20 | 18 | 0 | 0 | 0 |
-| [fuzhaoyuan](https://github.com/fuzhaoyuan) | Zhaoyuan (Ryan) Fu | DFCI | pending | 36 | 18 | 16 | 2 | 0 | 0 |
+| [fuzhaoyuan](https://github.com/fuzhaoyuan) | Zhaoyuan (Ryan) Fu | DFCI | [agreed](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787004770076559) | 36 | 18 | 16 | 2 | 0 | 0 |
 | [furkansahin](https://github.com/furkansahin) | Furkan Sahin | Bilkent U | pending | 33 | 33 | 0 | 0 | 0 | 0 |
 | [qlu-cls](https://github.com/qlu-cls) | Qi-Xuan Lu |  | pending | 32 | 30 | 2 | 0 | 0 | 0 |
 | [j-hudecek](https://github.com/j-hudecek) | Jan Hudecek | The Hyve | pending | 24 | 24 | 0 | 0 | 0 | 0 |
@@ -81,7 +81,7 @@ See [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271).
 | [amirinenik](https://github.com/amirinenik) | Kiran Amirineni |  | pending | 21 | 2 | 19 | 0 | 0 | 0 |
 | [leedonghn4](https://github.com/leedonghn4) | Dong Li | MSKCC | pending | 20 | 20 | 0 | 0 | 0 | 0 |
 | [ngocnn1104](https://github.com/ngocnn1104) | Ngoc Nguyen |  | pending | 18 | 2 | 16 | 0 | 0 | 0 |
-| [jamesqo](https://github.com/jamesqo) | James Ko | MSKCC | pending | 18 | 10 | 0 | 1 | 7 | 0 |
+| [jamesqo](https://github.com/jamesqo) | James Ko | MSKCC | [agreed](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787004695438599) | 18 | 10 | 0 | 1 | 7 | 0 |
 | [Rajat-Sirohi](https://github.com/Rajat-Sirohi) | Rajat Sirohi |  | pending | 17 | 4 | 13 | 0 | 0 | 0 |
 | [jtquach1](https://github.com/jtquach1) | Joyce Quach |  | pending | 16 | 4 | 12 | 0 | 0 | 0 |
 | [HectorWon](https://github.com/HectorWon) | Minxin Cheng |  | pending | 14 | 14 | 0 | 0 | 0 | 0 |
@@ -100,7 +100,7 @@ See [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271).
 | [Nelliney](https://github.com/Nelliney) | Tetiana |  | pending | 7 | 0 | 7 | 0 | 0 | 0 |
 | [dubincorey](https://github.com/dubincorey) | Corey Dubin |  | pending | 7 | 0 | 7 | 0 | 0 | 0 |
 | [rishisulakhe](https://github.com/rishisulakhe) | Rishi Prasad Sulakhe |  | pending | 7 | 1 | 6 | 0 | 0 | 0 |
-| [hweej](https://github.com/hweej) | Jason Hwee |  | pending | 7 | 4 | 3 | 0 | 0 | 0 |
+| [hweej](https://github.com/hweej) | Jason Hwee |  | [agreed](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787018433068569) | 7 | 4 | 3 | 0 | 0 | 0 |
 | [cataphract](https://github.com/cataphract) | Gustavo Lopes |  | pending | 6 | 6 | 0 | 0 | 0 | 0 |
 | [johnyesit](https://github.com/johnyesit) | johnyesit |  | pending | 6 | 0 | 6 | 0 | 0 | 0 |
 | [Beking0912](https://github.com/Beking0912) | Beking0912 |  | pending | 6 | 1 | 5 | 0 | 0 | 0 |
@@ -110,9 +110,9 @@ See [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271).
 | [agarwalrounak](https://github.com/agarwalrounak) | Rounak Agarwal |  | pending | 5 | 2 | 3 | 0 | 0 | 0 |
 | [sowmiyaa-kumar](https://github.com/sowmiyaa-kumar) | Sowmiyaa Kumar |  | pending | 5 | 4 | 1 | 0 | 0 | 0 |
 | [tlangs](https://github.com/tlangs) | Trevyn Langsford |  | pending | 5 | 5 | 0 | 0 | 0 | 0 |
-| [i-am-leslie](https://github.com/i-am-leslie) | Leslie |  | pending | 4 | 2 | 2 | 0 | 0 | 0 |
+| [i-am-leslie](https://github.com/i-am-leslie) | Leslie |  | [agreed](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787016637427159) | 4 | 2 | 2 | 0 | 0 | 0 |
 | [kojix2](https://github.com/kojix2) | kojix2 |  | pending | 4 | 1 | 0 | 3 | 0 | 0 |
-| [jfkonecn](https://github.com/jfkonecn) | John Konecny |  | pending | 4 | 1 | 3 | 0 | 0 | 0 |
+| [jfkonecn](https://github.com/jfkonecn) | John Konecny |  | [agreed](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787081813140929) | 4 | 1 | 3 | 0 | 0 | 0 |
 | [aditygrg2](https://github.com/aditygrg2) | Aditya Garg |  | pending | 4 | 0 | 4 | 0 | 0 | 0 |
 | [coderrsid](https://github.com/coderrsid) | Siddhant Sehgal |  | pending | 4 | 0 | 4 | 0 | 0 | 0 |
 | [jxu8](https://github.com/jxu8) | jxu8 |  | pending | 4 | 0 | 4 | 0 | 0 | 0 |
@@ -171,7 +171,7 @@ See [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271).
 | [karissawhiting](https://github.com/karissawhiting) | karissawhiting |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
 | [Gautam-aman](https://github.com/Gautam-aman) | Aman Gautam |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
 | [gulshan2052](https://github.com/gulshan2052) | Gulshan Anand |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
-| [callachennault](https://github.com/callachennault) | Calla Chennault |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
+| [callachennault](https://github.com/callachennault) | Calla Chennault |  | [agreed](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787077888212769) | 1 | 0 | 1 | 0 | 0 | 0 |
 | [manik-dhanjal](https://github.com/manik-dhanjal) | Manik Dhanjal |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
 | [YashhCanCode](https://github.com/YashhCanCode) | Yashwanth Konnuru |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
 | [pambot](https://github.com/pambot) | Pamela Wu | GSoC | pending | 1 | 0 | 1 | 0 | 0 | 0 |
@@ -219,7 +219,7 @@ See [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271).
 | [Ak-Macha](https://github.com/Ak-Macha) | Akash Macha |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
 | [emmanuel-ferdman](https://github.com/emmanuel-ferdman) | Emmanuel Ferdman |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
 | [heuermh](https://github.com/heuermh) | Michael L Heuer |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
-| [calvinlu3](https://github.com/calvinlu3) | Calvin Lu | MSKCC | pending | 1 | 0 | 1 | 0 | 0 | 0 |
+| [calvinlu3](https://github.com/calvinlu3) | Calvin Lu | MSKCC | [agreed](https://github.com/cBioPortal/cbioportal/issues/12271#issuecomment-5328211828) | 1 | 0 | 1 | 0 | 0 | 0 |
 | [stachnim](https://github.com/stachnim) | Marcin Stachniuk |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
 | [GarvitDadheech](https://github.com/GarvitDadheech) | Garvit Dadheech |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
 | [Ismael-Sallami](https://github.com/Ismael-Sallami) | Ismael Sallami |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
