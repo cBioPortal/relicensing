@@ -110,7 +110,7 @@ See [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271).
 | [agarwalrounak](https://github.com/agarwalrounak) | Rounak Agarwal |  | pending | 5 | 2 | 3 | 0 | 0 | 0 |
 | [sowmiyaa-kumar](https://github.com/sowmiyaa-kumar) | Sowmiyaa Kumar |  | pending | 5 | 4 | 1 | 0 | 0 | 0 |
 | [tlangs](https://github.com/tlangs) | Trevyn Langsford |  | pending | 5 | 5 | 0 | 0 | 0 | 0 |
-| [i-am-leslie](https://github.com/i-am-leslie) | Leslie |  | [agreed](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787016637427159) | 4 | 2 | 2 | 0 | 0 | 0 |
+| [i-am-leslie](https://github.com/i-am-leslie) | Leslie Ejeh |  | [agreed](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787016637427159) | 4 | 2 | 2 | 0 | 0 | 0 |
 | [kojix2](https://github.com/kojix2) | kojix2 |  | pending | 4 | 1 | 0 | 3 | 0 | 0 |
 | [jfkonecn](https://github.com/jfkonecn) | John Konecny |  | [agreed](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787081813140929) | 4 | 1 | 3 | 0 | 0 | 0 |
 | [aditygrg2](https://github.com/aditygrg2) | Aditya Garg |  | pending | 4 | 0 | 4 | 0 | 0 | 0 |
