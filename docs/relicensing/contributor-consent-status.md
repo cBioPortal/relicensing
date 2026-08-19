@@ -17,7 +17,7 @@ Consent from team leads covers contributions made by their team members. See [cb
 | cBioPortal @ DFCI | James Lindsay | pending |
 | cBioPortal @ PMCC | Trevor Pugh | pending |
 | cBioPortal @ CHOP | Adam Resnick | pending |
-| cBioPortal @ The Hyve | Henk-Jan van den Ham | pending |
+| cBioPortal @ The Hyve | Henk-Jan van den Ham | [agreed](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5343586536) |
 | cBioPortal @ SE4BIO | Pieter Lukasse | pending |
 | cBioPortal @ Bilkent U | Ugur Dogrusoz | pending |
 
