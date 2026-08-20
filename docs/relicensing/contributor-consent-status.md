@@ -6,6 +6,7 @@
 - `yes` — has consented; superscripts link to the consent source(s): ¹ = individual, ² = team lead
 - `declined` — has explicitly declined
 - `unreachable` — could not be located/contacted after reasonable effort (feeds the redirected "Vanish List" view)
+- `covered`¹ — individual response pending, but team lead has consented on behalf of this contributor's org; individual response still welcome
 
 ## Team lead consent
 
