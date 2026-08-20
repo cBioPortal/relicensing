@@ -230,4 +230,5 @@ See [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271).
 | [sgicbpc](https://github.com/sgicbpc) | sgicbpc |  | pending | 1 | 0 | 0 | 0 | 1 | 0 |
 
 ¹ Individual consent recorded — click to view the source comment.
+
 ² Team lead consent recorded for this contributor's org — click to view. See [team lead consent](#team-lead-consent) above.
