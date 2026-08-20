@@ -1,24 +1,16 @@
 # RFC86 — Contributor Consent Status Board
 
-## Status legend
-
-- `pending` — not yet contacted, or contacted and awaiting response
-- `yes` — has consented; superscripts link to the consent source(s): ¹ = individual, ² = team lead
-- `declined` — has explicitly declined
-- `unreachable` — could not be located/contacted after reasonable effort (feeds the redirected "Vanish List" view)
-- `covered`¹ — individual response pending, but team lead has consented on behalf of this contributor's org; individual response still welcome
-
 ## Team lead consent
 
 Consent from team leads covers contributions made by their team members. See [cbioportal#12282](https://github.com/cBioPortal/cbioportal/issues/12282).
 
 | Team | Team Lead | Consent Status |
 |---|---|---|
-| cBioPortal @ MSKCC | Nikolaus Schultz | [agreed](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653) |
+| cBioPortal @ MSKCC | Nikolaus Schultz | [yes](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653) |
 | cBioPortal @ DFCI | James Lindsay | pending |
 | cBioPortal @ PMCC | Trevor Pugh | pending |
 | cBioPortal @ CHOP | Adam Resnick | pending |
-| cBioPortal @ The Hyve | Henk-Jan van den Ham | [agreed](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5343586536) |
+| cBioPortal @ The Hyve | Henk-Jan van den Ham | [yes](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5343586536) |
 | cBioPortal @ SE4BIO | Pieter Lukasse | pending |
 | cBioPortal @ Bilkent U | Ugur Dogrusoz | pending |
 
