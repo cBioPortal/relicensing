@@ -232,37 +232,3 @@ See [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271).
 ¹ Individual consent recorded — click to view the source comment.
 
 ² Team lead consent recorded for this contributor's org — click to view. See [team lead consent](#team-lead-consent) above.
-
-## Additional consents received
-
-These individuals voluntarily consented via [#relicensing-consent](https://cbioportal.slack.com/archives/C0BQW0PPASV) or [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271) but do not appear in the tracked contributor list above (≥1 commit in the 5 in-scope repos as of 2026-07-10). Their consent is recorded here for completeness.
-
-| Name | Org | Consent Source |
-|---|---|---|
-| [Darin Moore](https://github.com/darinmoore) | MSKCC | [GitHub](https://github.com/cBioPortal/cbioportal/issues/12271#issuecomment-5320692830) |
-| Debyani Chakravarty | MSKCC | [Slack](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787087227815679) |
-| Michele Waters | MSKCC | [Slack](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787068971330319) |
-| Brooke Mastrogiacomo | MSKCC | [Slack](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787067443073729) |
-| Rima AlHamad | MSKCC | [Slack](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787059597558339) |
-| Foris Kuang | MSKCC | [Slack](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787059548319069) |
-| John Orgera | MSKCC | [Slack](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787007468267069) |
-| Tom Pollard | MSKCC | [Slack](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787007205080579) |
-| David Gomez-Sanchez | MSKCC | [Slack](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787005079817619) |
-| Chris Fong | MSKCC | [Slack](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787004071714609) |
-| Arfath Pasha | MSKCC | [Slack](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787003945260449) |
-| Anika Begum | MSKCC | [Slack](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787003906725989) |
-| Tejiri Agbamu | MSKCC | [Slack](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787003457564209) |
-| Ramzi Homsi | MSKCC | [Slack](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787162092261999) |
-| Henry Walch | MSKCC | [Slack](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787160537716219) |
-| Jennifer Altreuter | DFCI | [Slack](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787003381057459) |
-| Miguel Brown | CHOP | [Slack](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787056828735799) |
-| Adria Closa | NKI | [Slack](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787054909144369) |
-| Suhasini Lulla |  | [Slack](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787070646736989) |
-| Luke Devlin |  | [Slack](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787035757404999) |
-| Changchang Li |  | [Slack](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787017687781509) |
-| Ignacio Vazquez-Garcia |  | [Slack](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787012898204009) |
-| Walid Chatila |  | [Slack](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787160561260649) |
-| Yang Su |  | [Slack](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787185102200439) |
-| Ahmed Osama |  | [Slack](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787005425245579) |
-| Jierui Xu |  | [Slack](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787160017864589) |
-| Trevor Pugh | PMCC | [Slack](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787683585485349) — individual consent; team lead consent for PMCC pending in team lead table |
