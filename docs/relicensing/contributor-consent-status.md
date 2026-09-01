@@ -10,25 +10,25 @@ _As of 2026-09-01._ The "best effort" target is 95% coverage of the codebase by 
 
 | Org | Contributors consented | Commit-volume coverage |
 |---|---|---|
-| MSKCC | 30/30 | 100% |
-| The Hyve | 11/11 | 100% |
-| Bilkent U | 4/4 | 100% |
+| MSKCC | 33/33 | 100% |
+| The Hyve | 12/12 | 100% |
+| Bilkent U | 5/5 | 100% |
 | PMCC | 2/2 | 100% |
-| Caris | 1/1 | 100% |
-| CHOP | 1/2 | 17.5% |
+| Caris | 2/2 | 100% |
+| CHOP | 1/3 | 17.3% |
 | DFCI | 4/14 | 15.0% |
 | SE4BIO | 0/2 | 0% |
-| Unaffiliated/individual | 4/139 | 3.5% |
+| Unaffiliated/individual | 4/132 | 4.1% |
 
-The five orgs with team-lead consent (MSKCC, The Hyve, Bilkent U, PMCC, Caris) are fully covered. The remaining gap to 95% is concentrated in DFCI, CHOP, and SE4BIO — team-lead consent from any of those would close more ground than individual outreach at this point (DFCI alone accounts for ~1,355 uncovered commits). Note: CHOP's single largest contributor (663 of CHOP's 804 commits) has a mixed Caris/CHOP affiliation that can't be split from git history alone — not resolved by either org's team-lead consent; needs individual follow-up.
+The five orgs with team-lead consent (MSKCC, The Hyve, Bilkent U, PMCC, Caris) are fully covered. The remaining gap to 95% is concentrated in DFCI, CHOP, and SE4BIO — team-lead consent from any of those would close more ground than individual outreach at this point (DFCI alone accounts for ~1,355 uncovered commits). Note: CHOP's single largest contributor (663 of CHOP's 816 commits) has a mixed Caris/CHOP affiliation that can't be split from git history alone — not resolved by either org's team-lead consent; needs individual follow-up.
 
 **Coverage by commit volume:**
 
 | | Consented commits | Total commits | Coverage |
 |---|---|---|---|
-| **Overall** | 22,507 | 25,227 | **89.2%** |
-| Backend | 14,272 | 16,074 | 88.8% |
-| Frontend | 7,771 | 8,600 | 90.4% |
+| **Overall** | 22,558 | 25,227 | **89.4%** |
+| Backend | 14,301 | 16,074 | 89.0% |
+| Frontend | 7,793 | 8,600 | 90.6% |
 | Docker | 224 | 240 | 93.3% |
 | Core (importer) | 92 | 142 | 64.8% |
 | Session-service | 148 | 171 | 86.5% |
@@ -37,8 +37,8 @@ The five orgs with team-lead consent (MSKCC, The Hyve, Bilkent U, PMCC, Caris) a
 
 | | Contributors | % |
 |---|---|---|
-| Consented | 57 / 208 | 27.4% |
-| Pending | 151 / 208 | 72.6% |
+| Consented | 63 / 208 | 30.3% |
+| Pending | 145 / 208 | 69.7% |
 
 ## Team lead consent
 
@@ -118,9 +118,9 @@ See [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271).
 | [jamesqo](https://github.com/jamesqo) | James Ko | MSKCC | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787004695438599)[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 18 | 10 | 0 | 1 | 7 | 0 |
 | [Rajat-Sirohi](https://github.com/Rajat-Sirohi) | Rajat Sirohi | DFCI | pending | 17 | 4 | 13 | 0 | 0 | 0 |
 | [jtquach1](https://github.com/jtquach1) | Joyce Quach | DFCI | pending | 16 | 4 | 12 | 0 | 0 | 0 |
-| [HectorWon](https://github.com/HectorWon) | Minxin Cheng |  | pending | 14 | 14 | 0 | 0 | 0 | 0 |
+| [HectorWon](https://github.com/HectorWon) | Minxin Cheng | MSKCC | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 14 | 14 | 0 | 0 | 0 | 0 |
 | [lemccarthy](https://github.com/lemccarthy) | Lloyd McCarthy | DFCI | pending | 13 | 8 | 5 | 0 | 0 | 0 |
-| [uklineale](https://github.com/uklineale) | Neel Kuila |  | pending | 12 | 10 | 2 | 0 | 0 | 0 |
+| [uklineale](https://github.com/uklineale) | Neel Kuila | CHOP | pending | 12 | 10 | 2 | 0 | 0 | 0 |
 | [ChrisWakefield](https://github.com/ChrisWakefield) | Chris Wakefield | MDACC | pending | 12 | 8 | 4 | 0 | 0 | 0 |
 | [pappde](https://github.com/pappde) | Denis P |  | pending | 11 | 7 | 4 | 0 | 0 | 0 |
 | [paragomi](https://github.com/paragomi) | nkucukdemirci |  | pending | 10 | 10 | 0 | 0 | 0 | 0 |
@@ -128,11 +128,11 @@ See [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271).
 | [rnugraha](https://github.com/rnugraha) | Riza Nugraha |  | pending | 9 | 6 | 3 | 0 | 0 | 0 |
 | [MatthijsPon](https://github.com/MatthijsPon) | Matthijs Pon | The Hyve | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5343586536)</sup> | 9 | 4 | 2 | 0 | 3 | 0 |
 | [holtgrewe](https://github.com/holtgrewe) | Manuel Holtgrewe |  | pending | 8 | 8 | 0 | 0 | 0 | 0 |
-| [msalihaltun](https://github.com/msalihaltun) | Salih Altun |  | pending | 8 | 0 | 8 | 0 | 0 | 0 |
-| [dionnezaal](https://github.com/dionnezaal) | Dionne Zaal |  | pending | 8 | 8 | 0 | 0 | 0 | 0 |
-| [artgoldberg](https://github.com/artgoldberg) | Arthur P Goldberg |  | pending | 7 | 7 | 0 | 0 | 0 | 0 |
-| [Nelliney](https://github.com/Nelliney) | Tetiana |  | pending | 7 | 0 | 7 | 0 | 0 | 0 |
-| [dubincorey](https://github.com/dubincorey) | Corey Dubin |  | pending | 7 | 0 | 7 | 0 | 0 | 0 |
+| [msalihaltun](https://github.com/msalihaltun) | Salih Altun | Bilkent U | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5350502520)</sup> | 8 | 0 | 8 | 0 | 0 | 0 |
+| [dionnezaal](https://github.com/dionnezaal) | Dionne Zaal | The Hyve | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5343586536)</sup> | 8 | 8 | 0 | 0 | 0 | 0 |
+| [artgoldberg](https://github.com/artgoldberg) | Arthur P Goldberg | MSKCC | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 7 | 7 | 0 | 0 | 0 | 0 |
+| [Nelliney](https://github.com/Nelliney) | Tetiana Matiukhova | MSKCC | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 7 | 0 | 7 | 0 | 0 | 0 |
+| [dubincorey](https://github.com/dubincorey) | Corey Dubin | Caris | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5500479290)</sup> | 7 | 0 | 7 | 0 | 0 | 0 |
 | [rishisulakhe](https://github.com/rishisulakhe) | Rishi Prasad Sulakhe |  | pending | 7 | 1 | 6 | 0 | 0 | 0 |
 | [hweej](https://github.com/hweej) | Jason Hwee |  | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787018433068569)</sup> | 7 | 4 | 3 | 0 | 0 | 0 |
 | [cataphract](https://github.com/cataphract) | Gustavo Lopes |  | pending | 6 | 6 | 0 | 0 | 0 | 0 |
