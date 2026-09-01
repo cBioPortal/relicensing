@@ -6,24 +6,6 @@ _As of 2026-09-01._ The "best effort" target is 95% coverage of the codebase by 
 
 **Team lead consent** ([cbioportal#12282](https://github.com/cBioPortal/cbioportal/issues/12282)): **4 / 7 agreed** — MSKCC, The Hyve, PMCC, Bilkent U. Still pending: DFCI, CHOP, SE4BIO.
 
-**Individual contributor consent** ([cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271)):
-
-| | Contributors | % |
-|---|---|---|
-| Consented | 54 / 208 | 26.0% |
-| Pending | 154 / 208 | 74.0% |
-
-**Coverage by commit volume:**
-
-| | Consented commits | Total commits | Coverage |
-|---|---|---|---|
-| **Overall** | 22,396 | 25,227 | **88.8%** |
-| Backend | 14,163 | 16,074 | 88.1% |
-| Frontend | 7,769 | 8,600 | 90.3% |
-| Docker | 224 | 240 | 93.3% |
-| Core (importer) | 92 | 142 | 64.8% |
-| Session-service | 148 | 171 | 86.5% |
-
 **By organization:**
 
 | Org | Contributors consented | Commit-volume coverage |
@@ -38,6 +20,24 @@ _As of 2026-09-01._ The "best effort" target is 95% coverage of the codebase by 
 | Unaffiliated/individual | 4/141 | 2.9% |
 
 The four orgs with team-lead consent (MSKCC, The Hyve, Bilkent U, PMCC) are fully covered. The remaining gap to 95% is concentrated in DFCI, CHOP, and SE4BIO — team-lead consent from any of those would close more ground than individual outreach at this point (DFCI alone accounts for ~1,365 uncovered commits).
+
+**Coverage by commit volume:**
+
+| | Consented commits | Total commits | Coverage |
+|---|---|---|---|
+| **Overall** | 22,396 | 25,227 | **88.8%** |
+| Backend | 14,163 | 16,074 | 88.1% |
+| Frontend | 7,769 | 8,600 | 90.3% |
+| Docker | 224 | 240 | 93.3% |
+| Core (importer) | 92 | 142 | 64.8% |
+| Session-service | 148 | 171 | 86.5% |
+
+**Individual contributor consent** ([cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271)):
+
+| | Contributors | % |
+|---|---|---|
+| Consented | 54 / 208 | 26.0% |
+| Pending | 154 / 208 | 74.0% |
 
 ## Team lead consent
 
