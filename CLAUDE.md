@@ -138,3 +138,22 @@ Tracked in [cBioPortal/relicensing](https://github.com/cBioPortal/relicensing) (
 - Track GitHub issues with an Epic for the overall relicensing + child issues per phase
 - Report progress to the team via Slack
 - Store decisions and status updates in memory and in this file
+
+## Consent Update Playbook
+
+When asked to "update consent" (or similar), run this end-to-end — no need to re-scope the task from scratch:
+
+1. **Pull every consent source since the last run.** Check `data/consent-processing-checkpoint.json` (gitignored) for `last_processed_ts` (Slack) and `last_processed_at`/`last_processed_comment_id` (GitHub) from the most recent run, then fetch only what's newer:
+   - `cbioportal#12282` (team lead) — `gh api repos/cBioPortal/cbioportal/issues/12282/comments`
+   - `cbioportal#12271` (individual) — `gh api repos/cBioPortal/cbioportal/issues/12271/comments`
+   - Slack `#relicensing-consent` (channel ID `C0BQW0PPASV`) — search or read the channel for messages after the checkpoint's `last_processed_ts`
+   - Also check for a direct email (PDF/forward) if the user mentions one, per the PMCC/UHN precedent
+2. **Match each new consent to a contributor.** Use `data/contributor_matrix copy.tsv` (gitignored — `email`/`slack_email` columns) to resolve a name/email to a GitHub login. If no match, don't guess — verify with `gh api "repos/cBioPortal/<repo>/commits?author=<email-or-login>"` across all 5 in-scope repos (`cbioportal`, `cbioportal-frontend`, `cbioportal-docker-compose`, `cbioportal-core`, `session-service`).
+   - **Do not use `gh api search/commits` with an `author-email:` filter** — confirmed unreliable (false negatives even for real contributors with 100+ commits; see the "Comprehensive consent reconciliation pass" entry in Decisions above). Use the plain per-repo `commits?author=` endpoint instead.
+   - A genuine team-lead consent covers every individual contributor from that org (update their row's `Effective Consent` to `yes²`, citing the team-lead comment).
+   - Zero commits across all 5 repos → not an in-scope contributor. No board row. Log them in `data/consent-responders-not-on-board.md` instead so they aren't re-checked next time.
+3. **Apply surgical edits only** to `docs/relicensing/contributor-consent-status.md` and the two GitHub issue bodies (team-lead table in `#12282`) — per the "live consent records are sensitive" decision, don't do broad rewrites.
+4. **Recompute and refresh the Summary section** at the top of the board (organization table → coverage-by-commit-volume table → individual contributor consent counts, in that order) and the two progress-count lines in `README.md` ("Team leads: X/7 agreed", "Individual contributors: Y/208 agreed").
+5. **Update the checkpoint file** (`data/consent-processing-checkpoint.json`) with the new `last_processed_ts`/`last_processed_at` and a summary of what changed, so the next run only looks at the delta.
+6. **Before publishing:** run a privacy scan (regex for email-shaped strings) on the public board file — it must stay clean.
+7. **Ship it as a PR** (branch off `main`, commit, push, `gh pr create`) rather than committing straight to `main` — matches how the last two rounds were done (PR #14, #15).
