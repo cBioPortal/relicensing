@@ -10,15 +10,15 @@ _As of 2026-09-01._ The "best effort" target is 95% coverage of the codebase by 
 
 | Org | Contributors consented | Commit-volume coverage |
 |---|---|---|
-| MSKCC | 33/33 | 100% |
+| MSKCC | 34/34 | 100% |
 | The Hyve | 12/12 | 100% |
 | Bilkent U | 5/5 | 100% |
-| PMCC | 2/2 | 100% |
+| PMCC | 3/3 | 100% |
 | Caris | 2/2 | 100% |
 | CHOP | 1/3 | 17.3% |
 | DFCI | 4/14 | 15.0% |
 | SE4BIO | 0/2 | 0% |
-| Unaffiliated/individual | 4/132 | 4.1% |
+| Unaffiliated/individual | 4/130 | 4.1% |
 
 The five orgs with team-lead consent (MSKCC, The Hyve, Bilkent U, PMCC, Caris) are fully covered. The remaining gap to 95% is concentrated in DFCI, CHOP, and SE4BIO — team-lead consent from any of those would close more ground than individual outreach at this point (DFCI alone accounts for ~1,355 uncovered commits). Note: CHOP's single largest contributor (663 of CHOP's 816 commits) has a mixed Caris/CHOP affiliation that can't be split from git history alone — not resolved by either org's team-lead consent; needs individual follow-up.
 
@@ -26,8 +26,8 @@ The five orgs with team-lead consent (MSKCC, The Hyve, Bilkent U, PMCC, Caris) a
 
 | | Consented commits | Total commits | Coverage |
 |---|---|---|---|
-| **Overall** | 22,558 | 25,227 | **89.4%** |
-| Backend | 14,301 | 16,074 | 89.0% |
+| **Overall** | 22,561 | 25,227 | **89.4%** |
+| Backend | 14,304 | 16,074 | 89.0% |
 | Frontend | 7,793 | 8,600 | 90.6% |
 | Docker | 224 | 240 | 93.3% |
 | Core (importer) | 92 | 142 | 64.8% |
@@ -37,8 +37,8 @@ The five orgs with team-lead consent (MSKCC, The Hyve, Bilkent U, PMCC, Caris) a
 
 | | Contributors | % |
 |---|---|---|
-| Consented | 63 / 208 | 30.3% |
-| Pending | 145 / 208 | 69.7% |
+| Consented | 65 / 208 | 31.2% |
+| Pending | 143 / 208 | 68.8% |
 
 ## Team lead consent
 
@@ -173,7 +173,7 @@ See [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271).
 | [SURAJ-SHARMA27](https://github.com/SURAJ-SHARMA27) | SURAJ |  | pending | 2 | 0 | 2 | 0 | 0 | 0 |
 | [KingAlex1985](https://github.com/KingAlex1985) | KingAlex1985 |  | pending | 2 | 2 | 0 | 0 | 0 | 0 |
 | [SAHU-01](https://github.com/SAHU-01) | Ankita Sahu |  | pending | 2 | 0 | 2 | 0 | 0 | 0 |
-| [ckandoth](https://github.com/ckandoth) | Cyriac Kandoth |  | pending | 2 | 2 | 0 | 0 | 0 | 0 |
+| [ckandoth](https://github.com/ckandoth) | Cyriac Kandoth | MSKCC | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 2 | 2 | 0 | 0 | 0 | 0 |
 | [dianab0](https://github.com/dianab0) | dianab0 |  | pending | 2 | 1 | 1 | 0 | 0 | 0 |
 | [lllinging](https://github.com/lllinging) | lllinging |  | pending | 2 | 0 | 2 | 0 | 0 | 0 |
 | [amanbhardwaj12072003](https://github.com/amanbhardwaj12072003) | Aman Bhardwaj |  | pending | 2 | 2 | 0 | 0 | 0 | 0 |
@@ -245,7 +245,7 @@ See [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271).
 | [saxenanurag](https://github.com/saxenanurag) | Anurag Saxena |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
 | [FilledEther20](https://github.com/FilledEther20) | Chaitanya Gairola |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
 | [Player256](https://github.com/Player256) | space_samurai |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
-| [khzhu](https://github.com/khzhu) | Kelsey Zhu |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
+| [khzhu](https://github.com/khzhu) | Kelsey Zhu | PMCC | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5497278496)</sup> | 1 | 1 | 0 | 0 | 0 | 0 |
 | [ShahKirtan2003](https://github.com/ShahKirtan2003) | Kirtan Shah |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
 | [Vinny02](https://github.com/Vinny02) | Vinny02 |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
 | [ruslan-forostianov](https://github.com/ruslan-forostianov) | Ruslan |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
