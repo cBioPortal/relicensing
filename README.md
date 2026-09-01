@@ -36,8 +36,8 @@ It affects release licensing and requires a defined switch commit, contributor c
 - Phase 1: Compliance & Dependency Audit [completed]
 - Phase 2: Contributor Outreach & Consent [in progress]
   - Public consent board: [`docs/relicensing/contributor-consent-status.md`](docs/relicensing/contributor-consent-status.md)
-  - Team leads: 4/7 agreed
-  - Individual contributors: 54/208 agreed
+  - Team leads: 5/8 agreed
+  - Individual contributors: 65/208 agreed
 
 - Phase 3: Community Feedback & Notice Period [pending]
 - Phase 4: Technical Execution [in progress]
