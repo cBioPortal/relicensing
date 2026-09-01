@@ -1,5 +1,44 @@
 # RFC86 — Contributor Consent Status Board
 
+## Summary
+
+_As of 2026-09-01._ The "best effort" target is 95% coverage of the codebase by commit volume ([RFC 86](https://github.com/cBioPortal/relicensing/issues/8)).
+
+**Team lead consent** ([cbioportal#12282](https://github.com/cBioPortal/cbioportal/issues/12282)): **4 / 7 agreed** — MSKCC, The Hyve, PMCC, Bilkent U. Still pending: DFCI, CHOP, SE4BIO.
+
+**Individual contributor consent** ([cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271)):
+
+| | Contributors | % |
+|---|---|---|
+| Consented | 54 / 208 | 26.0% |
+| Pending | 154 / 208 | 74.0% |
+
+**Coverage by commit volume:**
+
+| | Consented commits | Total commits | Coverage |
+|---|---|---|---|
+| **Overall** | 22,396 | 25,227 | **88.8%** |
+| Backend | 14,163 | 16,074 | 88.1% |
+| Frontend | 7,769 | 8,600 | 90.3% |
+| Docker | 224 | 240 | 93.3% |
+| Core (importer) | 92 | 142 | 64.8% |
+| Session-service | 148 | 171 | 86.5% |
+
+**By organization:**
+
+| Org | Contributors consented | Commit-volume coverage |
+|---|---|---|
+| MSKCC | 29/29 | 100% |
+| The Hyve | 11/11 | 100% |
+| Bilkent U | 4/4 | 100% |
+| PMCC | 2/2 | 100% |
+| CHOP | 1/2 | 17.5% |
+| DFCI | 3/14 | 14.4% |
+| SE4BIO | 0/2 | 0% |
+| Unaffiliated/individual | 4/141 | 2.9% |
+
+The four orgs with team-lead consent (MSKCC, The Hyve, Bilkent U, PMCC) are fully covered. The remaining gap to 95% is concentrated in DFCI, CHOP, and SE4BIO — team-lead consent from any of those would close more ground than individual outreach at this point (DFCI alone accounts for ~1,365 uncovered commits).
+
 ## Team lead consent
 
 Consent from team leads covers contributions made by their team members. See [cbioportal#12282](https://github.com/cBioPortal/cbioportal/issues/12282).
@@ -8,7 +47,7 @@ Consent from team leads covers contributions made by their team members. See [cb
 |---|---|---|
 | cBioPortal @ MSKCC | Nikolaus Schultz | [yes](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653) |
 | cBioPortal @ DFCI | James Lindsay | pending |
-| cBioPortal @ PMCC | Trevor Pugh | [yes](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5497278496) (via UHN Legal Counsel; also confirmed directly by Trevor Pugh [via Slack](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787683585485349)) |
+| cBioPortal @ PMCC | Trevor Pugh | [yes](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5497278496) |
 | cBioPortal @ CHOP | Adam Resnick | pending |
 | cBioPortal @ The Hyve | Henk-Jan van den Ham | [yes](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5343586536) |
 | cBioPortal @ SE4BIO | Pieter Lukasse | pending |
