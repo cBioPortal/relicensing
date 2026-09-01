@@ -20,7 +20,7 @@ _As of 2026-09-01._ The "best effort" target is 95% coverage of the codebase by 
 | SE4BIO | 0/2 | 0% |
 | Unaffiliated/individual | 4/130 | 4.1% |
 
-The five orgs with team-lead consent (MSKCC, The Hyve, Bilkent U, PMCC, Caris) are fully covered. The remaining gap to 95% is concentrated in DFCI, CHOP, and SE4BIO — team-lead consent from any of those would close more ground than individual outreach at this point (DFCI alone accounts for ~1,355 uncovered commits). Note: CHOP's single largest contributor (663 of CHOP's 816 commits) has a mixed Caris/CHOP affiliation that can't be split from git history alone — not resolved by either org's team-lead consent; needs individual follow-up.
+The five orgs with team-lead consent (MSKCC, The Hyve, Bilkent U, PMCC, Caris) are fully covered. The remaining gap to 95% is concentrated in DFCI, CHOP, and SE4BIO — team-lead consent from any of those would close more ground than individual outreach at this point (DFCI alone accounts for ~1,355 uncovered commits; CHOP's largest contributor alone accounts for 663 of CHOP's 816).
 
 **Coverage by commit volume:**
 
