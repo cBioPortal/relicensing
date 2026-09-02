@@ -1,6 +1,6 @@
 # RFC86 Phase 3 — Community Feedback & 30-Day Notice Period
 
-**Status:** Notice posted 2026-09-02. Comment period open through **2026-09-20 (23:59 UTC)**. Tracked in [relicensing#4](https://github.com/cBioPortal/relicensing/issues/4).
+**Status:** Notice posted 2026-09-02. Comment period open through **2026-10-02 (23:59 UTC)**. Tracked in [relicensing#4](https://github.com/cBioPortal/relicensing/issues/4).
 
 **Notice issue (public):** [cBioPortal/cbioportal#12328](https://github.com/cBioPortal/cbioportal/issues/12328)
 
@@ -11,9 +11,9 @@
 ### Comment period
 
 **Open:** September 2, 2026
-**Close:** September 20, 2026 (23:59 UTC)
+**Close:** October 2, 2026 (23:59 UTC)
 
-> **Timing note:** The original target opening was August 21. The notice was posted on Sep 2 because Phase 2 outreach reached the 95% threshold only recently. The Sep 20 closing date is maintained to preserve the sign-off gate timeline (Sep 20–23) and the Switch Commit window (Sep 23–30).
+> **Timing note:** The original target opening was August 21; the notice was posted Sep 2 because Phase 2 outreach ran in parallel and reached the 95% threshold only recently. This is a full 30-day window.
 
 ---
 
@@ -57,10 +57,10 @@ No specific release version pinned. The Switch Commit will be tied to the releas
 
 1. Phase 2 consent ≥95% per component (or confirmed rewrite/remove plan for the gap)
 2. Phase 1 GPL-3.0 frontend dependencies replaced (react-column-resizer, react-json-to-table)
-3. This comment period (Sep 20 close)
+3. This comment period (Oct 2 close)
 4. Pre-switch sign-off gate ([relicensing#5](https://github.com/cBioPortal/relicensing/issues/5))
 
-**Target:** Switch Commit on or before **2026-09-30**.
+**Target:** Switch Commit tied to the release immediately following the sign-off gate.
 
 ---
 
@@ -88,13 +88,13 @@ As of 2026-09-02:
 - **Overall coverage:** 95.8% (24,162 / 25,227 commits)
 - Two components below 95%: frontend (93.7%), session-service (91.8%)
 - Remaining gap: CHOP (675 commits) + unaffiliated individuals (373 commits)
-- **Rewrite/remove plan:** Code from non-consenting contributors as of Sep 20 will be rewritten or removed before the Switch Commit.
+- **Rewrite/remove plan:** Code from non-consenting contributors as of Oct 2 will be rewritten or removed before the Switch Commit.
 
 ---
 
 ## 7. Go/no-go
 
-**Decision by:** September 20, 2026
+**Decision by:** October 2, 2026
 **Decision-maker:** cBioPortal core team (coordinated by Nikolaus Schultz, MSKCC)
 **Criteria:**
 - No unresolved substantive legal or technical objection
