@@ -2,43 +2,43 @@
 
 ## Summary
 
-_As of 2026-09-01._ The "best effort" target is 95% coverage of the codebase by commit volume ([RFC 86](https://github.com/cBioPortal/relicensing/issues/8)).
+_As of 2026-09-02._ The "best effort" target is 95% coverage of the codebase by commit volume ([RFC 86](https://github.com/cBioPortal/relicensing/issues/8)).
 
-**Team lead consent** ([cbioportal#12282](https://github.com/cBioPortal/cbioportal/issues/12282)): **5 / 8 agreed** — MSKCC, The Hyve, PMCC, Bilkent U, Caris. Still pending: DFCI, CHOP, SE4BIO.
+**Team lead consent** ([cbioportal#12282](https://github.com/cBioPortal/cbioportal/issues/12282)): **7 / 8 agreed** — MSKCC, DFCI, The Hyve, PMCC, SE4BIO, Bilkent U, Caris. Still pending: CHOP.
 
 **By organization:**
 
 | Org | Contributors consented | Commit-volume coverage |
 |---|---|---|
 | MSKCC | 34/34 | 100% |
+| DFCI | 14/14 | 100% |
 | The Hyve | 12/12 | 100% |
 | Bilkent U | 5/5 | 100% |
 | PMCC | 3/3 | 100% |
 | Caris | 2/2 | 100% |
+| SE4BIO | 2/2 | 100% |
 | CHOP | 1/3 | 17.3% |
-| DFCI | 4/14 | 15.0% |
-| SE4BIO | 0/2 | 0% |
 | Unaffiliated/individual | 4/130 | 4.1% |
 
-The five orgs with team-lead consent (MSKCC, The Hyve, Bilkent U, PMCC, Caris) are fully covered. The remaining gap to 95% is concentrated in DFCI, CHOP, and SE4BIO — team-lead consent from any of those would close more ground than individual outreach at this point (DFCI alone accounts for ~1,355 uncovered commits; CHOP's largest contributor alone accounts for 663 of CHOP's 816).
+The seven orgs with team-lead consent (MSKCC, DFCI, The Hyve, PMCC, SE4BIO, Bilkent U, Caris) are fully covered. **Overall coverage is now 95.8%, above the 95% "best effort" target** — but two components are still individually short of 95%: frontend (93.7%) and session-service (91.8%). The remaining gap is concentrated in CHOP (675 uncovered commits, 663 of them from a single contributor, [kalletlak](https://github.com/kalletlak)) and in unaffiliated individual contributors (373 uncovered commits spread across 126 people). CHOP team-lead consent from Adam Resnick is now the single highest-leverage remaining item.
 
 **Coverage by commit volume:**
 
 | | Consented commits | Total commits | Coverage |
 |---|---|---|---|
-| **Overall** | 22,561 | 25,227 | **89.4%** |
-| Backend | 14,304 | 16,074 | 89.0% |
-| Frontend | 7,793 | 8,600 | 90.6% |
-| Docker | 224 | 240 | 93.3% |
-| Core (importer) | 92 | 142 | 64.8% |
-| Session-service | 148 | 171 | 86.5% |
+| **Overall** | 24,162 | 25,227 | **95.8%** |
+| Backend | 15,584 | 16,074 | 97.0% |
+| Frontend | 8,058 | 8,600 | 93.7% |
+| Docker | 227 | 240 | 94.6% |
+| Core (importer) | 136 | 142 | 95.8% |
+| Session-service | 157 | 171 | 91.8% |
 
 **Individual contributor consent** ([cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271)):
 
 | | Contributors | % |
 |---|---|---|
-| Consented | 65 / 208 | 31.2% |
-| Pending | 143 / 208 | 68.8% |
+| Consented | 77 / 208 | 37.0% |
+| Pending | 131 / 208 | 63.0% |
 
 ## Team lead consent
 
@@ -47,11 +47,11 @@ Consent from team leads covers contributions made by their team members. See [cb
 | Team | Team Lead | Consent Status |
 |---|---|---|
 | cBioPortal @ MSKCC | Nikolaus Schultz | [yes](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653) |
-| cBioPortal @ DFCI | James Lindsay | pending |
+| cBioPortal @ DFCI | James Lindsay | [yes](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5514014842) |
 | cBioPortal @ PMCC | Trevor Pugh | [yes](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5497278496) |
 | cBioPortal @ CHOP | Adam Resnick | pending |
 | cBioPortal @ The Hyve | Henk-Jan van den Ham | [yes](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5343586536) |
-| cBioPortal @ SE4BIO | Pieter Lukasse | pending |
+| cBioPortal @ SE4BIO | Pieter Lukasse | [yes](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5511327507) |
 | cBioPortal @ Bilkent U | Ugur Dogrusoz | [yes](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5350502520) |
 | cBioPortal @ Caris | Priti Kumari | [yes](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5500479290) |
 
@@ -71,42 +71,42 @@ See [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271).
 | [dippindots](https://github.com/dippindots) | Gaofei Zhao | MSKCC | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787006214370829)[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 715 | 402 | 246 | 39 | 20 | 8 |
 | [adamabeshouse](https://github.com/adamabeshouse) | Adam Abeshouse | MSKCC | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 693 | 62 | 630 | 1 | 0 | 0 |
 | [kalletlak](https://github.com/kalletlak) | Karthik K | CHOP | pending | 663 | 256 | 396 | 0 | 0 | 11 |
-| [ecerami](https://github.com/ecerami) | Ethan Cerami | DFCI | pending | 655 | 644 | 11 | 0 | 0 | 0 |
+| [ecerami](https://github.com/ecerami) | Ethan Cerami | DFCI | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5514014842)</sup> | 655 | 644 | 11 | 0 | 0 | 0 |
 | [fedde-s](https://github.com/fedde-s) | Fedde Schaeffer | The Hyve | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5343586536)</sup> | 537 | 487 | 50 | 0 | 0 | 0 |
-| [ersinciftci](https://github.com/ersinciftci) | Ersin Ciftci | DFCI | pending | 448 | 366 | 82 | 0 | 0 | 0 |
+| [ersinciftci](https://github.com/ersinciftci) | Ersin Ciftci | DFCI | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5514014842)</sup> | 448 | 366 | 82 | 0 | 0 | 0 |
 | [pvannierop](https://github.com/pvannierop) | Pim van Nierop | The Hyve | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5343586536)</sup> | 436 | 156 | 272 | 6 | 0 | 2 |
 | [armish](https://github.com/armish) | B. Arman Aksoy | MSKCC | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 315 | 315 | 0 | 0 | 0 | 0 |
 | [zainasir](https://github.com/zainasir) | Zain Nasir | MSKCC | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787004106744099)[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 258 | 106 | 66 | 83 | 1 | 2 |
 | [gblaih](https://github.com/gblaih) | Bryan Lai | MSKCC | yes<sup>[¹](https://github.com/cBioPortal/cbioportal/issues/12271#issuecomment-5330010351)[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 204 | 16 | 183 | 0 | 1 | 4 |
-| [pieterlukasse](https://github.com/pieterlukasse) | Pieter Lukasse | SE4BIO | pending | 200 | 190 | 10 | 0 | 0 | 0 |
+| [pieterlukasse](https://github.com/pieterlukasse) | Pieter Lukasse | SE4BIO | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5511327507)</sup> | 200 | 190 | 10 | 0 | 0 | 0 |
 | [sheridancbio](https://github.com/sheridancbio) | Robert Sheridan | MSKCC | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787061175191719)[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 191 | 171 | 5 | 1 | 14 | 0 |
 | [oplantalech](https://github.com/oplantalech) | Oleguer Plantalech | The Hyve | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5343586536)</sup> | 186 | 108 | 72 | 0 | 4 | 2 |
 | [leexgh](https://github.com/leexgh) | Xiang Li | MSKCC | yes<sup>[¹](https://github.com/cBioPortal/cbioportal/issues/12271#issuecomment-5320764809)[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 159 | 16 | 143 | 0 | 0 | 0 |
 | [mandawilson](https://github.com/mandawilson) | Manda Wilson | MSKCC | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787069252125209)[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 159 | 71 | 1 | 0 | 0 | 87 |
 | [zheins](https://github.com/zheins) | Zachary Heins | MSKCC | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 157 | 157 | 0 | 0 | 0 | 0 |
 | [haynescd](https://github.com/haynescd) | Charles Haynes | CHOP | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787144976792519)</sup> | 141 | 78 | 39 | 5 | 19 | 0 |
-| [Luke-Sikina](https://github.com/Luke-Sikina) | Luke Sikina | DFCI | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787051243718419)</sup> | 120 | 61 | 54 | 3 | 0 | 2 |
+| [Luke-Sikina](https://github.com/Luke-Sikina) | Luke Sikina | DFCI | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787051243718419)[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5514014842)</sup> | 120 | 61 | 54 | 3 | 0 | 2 |
 | [yichaoS](https://github.com/yichaoS) | Yichao Sun | MSKCC | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 115 | 100 | 15 | 0 | 0 | 0 |
 | [istemi-bahceci](https://github.com/istemi-bahceci) | İstemi Bahçeci | Bilkent U | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5350502520)</sup> | 109 | 109 | 0 | 0 | 0 | 0 |
 | [JiaoJiao123](https://github.com/JiaoJiao123) | Jiaojiao Wang | MSKCC | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 98 | 97 | 1 | 0 | 0 | 0 |
 | [ao508](https://github.com/ao508) | Angelica Ochoa | MSKCC | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787004915193039)[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 96 | 90 | 5 | 0 | 0 | 1 |
-| [adufilie](https://github.com/adufilie) | Andrew Dufilie | DFCI | pending | 80 | 0 | 80 | 0 | 0 | 0 |
+| [adufilie](https://github.com/adufilie) | Andrew Dufilie | DFCI | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5514014842)</sup> | 80 | 0 | 80 | 0 | 0 | 0 |
 | [nschultz-sketch](https://github.com/nschultz-sketch) | Niki Schultz | MSKCC | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 105 | 105 | 0 | 0 | 0 | 0 |
-| [tmazor](https://github.com/tmazor) | Tali Mazor | DFCI | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787057517782339)</sup> | 74 | 70 | 4 | 0 | 0 | 0 |
-| [JREastonMarks](https://github.com/JREastonMarks) | Jeremy R. Easton-Marks | DFCI | pending | 71 | 42 | 0 | 1 | 28 | 0 |
+| [tmazor](https://github.com/tmazor) | Tali Mazor | DFCI | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787057517782339)[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5514014842)</sup> | 74 | 70 | 4 | 0 | 0 | 0 |
+| [JREastonMarks](https://github.com/JREastonMarks) | Jeremy R. Easton-Marks | DFCI | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5514014842)</sup> | 71 | 42 | 0 | 1 | 28 | 0 |
 | [spcar7](https://github.com/spcar7) | Lennart Bastian | MSKCC | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 69 | 69 | 0 | 0 | 0 | 0 |
 | [ritikakundra](https://github.com/ritikakundra) | Ritika Kundra | MSKCC | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787151525170909)[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 61 | 61 | 0 | 0 | 0 | 0 |
 | [nr23730](https://github.com/nr23730) | Niklas Reimer |  | pending | 61 | 49 | 1 | 6 | 5 | 0 |
 | [caitlinjones](https://github.com/caitlinjones) | Caitin Jones | MSKCC | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 58 | 58 | 0 | 0 | 0 | 0 |
 | [rmadupuri](https://github.com/rmadupuri) | Ramya Madupuri | MSKCC | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787005361262699)[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 58 | 49 | 0 | 3 | 6 | 0 |
-| [tamaccount](https://github.com/tamaccount) | Tamba | DFCI | pending | 52 | 4 | 48 | 0 | 0 | 0 |
+| [tamaccount](https://github.com/tamaccount) | Tamba | DFCI | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5514014842)</sup> | 52 | 4 | 48 | 0 | 0 | 0 |
 | [sbabyanusha](https://github.com/sbabyanusha) | Baby Anusha Satravada | MSKCC | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787006432271899)[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 52 | 42 | 0 | 0 | 10 | 0 |
 | [jagnathan](https://github.com/jagnathan) | Jag (P K Jagannathan) | PMCC | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787683795153349)[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5497278496)</sup> | 49 | 25 | 24 | 0 | 0 | 0 |
 | [morungos](https://github.com/morungos) | Stuart Watt | PMCC | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5497278496)</sup> | 48 | 48 | 0 | 0 | 0 | 0 |
-| [forus](https://github.com/forus) | Ruslan Forostianov | SE4BIO | pending | 46 | 15 | 4 | 2 | 16 | 9 |
+| [forus](https://github.com/forus) | Ruslan Forostianov | SE4BIO | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5511327507)</sup> | 46 | 15 | 4 | 2 | 16 | 9 |
 | [averyniceday](https://github.com/averyniceday) | Avery Wang | MSKCC | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787061135744189)[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 41 | 39 | 2 | 0 | 0 | 0 |
 | [victoria34](https://github.com/victoria34) | Jing Su | MSKCC | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 38 | 20 | 18 | 0 | 0 | 0 |
-| [fuzhaoyuan](https://github.com/fuzhaoyuan) | Zhaoyuan (Ryan) Fu | DFCI | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787004770076559)</sup> | 36 | 18 | 16 | 2 | 0 | 0 |
+| [fuzhaoyuan](https://github.com/fuzhaoyuan) | Zhaoyuan (Ryan) Fu | DFCI | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787004770076559)[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5514014842)</sup> | 36 | 18 | 16 | 2 | 0 | 0 |
 | [furkansahin](https://github.com/furkansahin) | Furkan Sahin | Bilkent U | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5350502520)</sup> | 33 | 33 | 0 | 0 | 0 | 0 |
 | [qlu-cls](https://github.com/qlu-cls) | Qi-Xuan Lu | Caris | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5500479290)</sup> | 32 | 30 | 2 | 0 | 0 | 0 |
 | [j-hudecek](https://github.com/j-hudecek) | Jan Hudecek | The Hyve | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5343586536)</sup> | 24 | 24 | 0 | 0 | 0 | 0 |
@@ -116,15 +116,15 @@ See [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271).
 | [leedonghn4](https://github.com/leedonghn4) | Dong Li | MSKCC | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 20 | 20 | 0 | 0 | 0 | 0 |
 | [ngocnn1104](https://github.com/ngocnn1104) | Ngoc Nguyen |  | pending | 18 | 2 | 16 | 0 | 0 | 0 |
 | [jamesqo](https://github.com/jamesqo) | James Ko | MSKCC | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787004695438599)[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 18 | 10 | 0 | 1 | 7 | 0 |
-| [Rajat-Sirohi](https://github.com/Rajat-Sirohi) | Rajat Sirohi | DFCI | pending | 17 | 4 | 13 | 0 | 0 | 0 |
-| [jtquach1](https://github.com/jtquach1) | Joyce Quach | DFCI | pending | 16 | 4 | 12 | 0 | 0 | 0 |
+| [Rajat-Sirohi](https://github.com/Rajat-Sirohi) | Rajat Sirohi | DFCI | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5514014842)</sup> | 17 | 4 | 13 | 0 | 0 | 0 |
+| [jtquach1](https://github.com/jtquach1) | Joyce Quach | DFCI | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5514014842)</sup> | 16 | 4 | 12 | 0 | 0 | 0 |
 | [HectorWon](https://github.com/HectorWon) | Minxin Cheng | MSKCC | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 14 | 14 | 0 | 0 | 0 | 0 |
-| [lemccarthy](https://github.com/lemccarthy) | Lloyd McCarthy | DFCI | pending | 13 | 8 | 5 | 0 | 0 | 0 |
+| [lemccarthy](https://github.com/lemccarthy) | Lloyd McCarthy | DFCI | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5514014842)</sup> | 13 | 8 | 5 | 0 | 0 | 0 |
 | [uklineale](https://github.com/uklineale) | Neel Kuila | CHOP | pending | 12 | 10 | 2 | 0 | 0 | 0 |
 | [ChrisWakefield](https://github.com/ChrisWakefield) | Chris Wakefield | MDACC | pending | 12 | 8 | 4 | 0 | 0 | 0 |
 | [pappde](https://github.com/pappde) | Denis P |  | pending | 11 | 7 | 4 | 0 | 0 | 0 |
 | [paragomi](https://github.com/paragomi) | nkucukdemirci |  | pending | 10 | 10 | 0 | 0 | 0 | 0 |
-| [priti88](https://github.com/priti88) | Priti Kumari | DFCI | yes<sup>[¹](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5500479290)</sup> | 10 | 10 | 0 | 0 | 0 | 0 |
+| [priti88](https://github.com/priti88) | Priti Kumari | DFCI | yes<sup>[¹](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5500479290)[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5514014842)</sup> | 10 | 10 | 0 | 0 | 0 | 0 |
 | [rnugraha](https://github.com/rnugraha) | Riza Nugraha |  | pending | 9 | 6 | 3 | 0 | 0 | 0 |
 | [MatthijsPon](https://github.com/MatthijsPon) | Matthijs Pon | The Hyve | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5343586536)</sup> | 9 | 4 | 2 | 0 | 3 | 0 |
 | [holtgrewe](https://github.com/holtgrewe) | Manuel Holtgrewe |  | pending | 8 | 8 | 0 | 0 | 0 | 0 |
@@ -167,7 +167,7 @@ See [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271).
 | [kunalhemnani1](https://github.com/kunalhemnani1) | Kunal Hemnani |  | pending | 2 | 0 | 2 | 0 | 0 | 0 |
 | [ayushns9](https://github.com/ayushns9) | Ayush Goel |  | pending | 2 | 0 | 2 | 0 | 0 | 0 |
 | [saurabhhhcodes](https://github.com/saurabhhhcodes) | Saurabh Kumar Bajpai |  | pending | 2 | 2 | 0 | 0 | 0 | 0 |
-| [marriott-er](https://github.com/marriott-er) | Eric Marriott | DFCI | pending | 2 | 2 | 0 | 0 | 0 | 0 |
+| [marriott-er](https://github.com/marriott-er) | Eric Marriott | DFCI | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5514014842)</sup> | 2 | 2 | 0 | 0 | 0 | 0 |
 | [pozhidaevak](https://github.com/pozhidaevak) | Anton Pozhidaev |  | pending | 2 | 1 | 1 | 0 | 0 | 0 |
 | [brettvanderwerff](https://github.com/brettvanderwerff) | Brett Vanderwerff |  | pending | 2 | 0 | 2 | 0 | 0 | 0 |
 | [SURAJ-SHARMA27](https://github.com/SURAJ-SHARMA27) | SURAJ |  | pending | 2 | 0 | 2 | 0 | 0 | 0 |
@@ -190,7 +190,7 @@ See [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271).
 | [gritsynad](https://github.com/gritsynad) | Gritsyna Dmitriy |  | pending | 2 | 2 | 0 | 0 | 0 | 0 |
 | [gautamsarawagi](https://github.com/gautamsarawagi) | Gautam Sarawagi |  | pending | 2 | 0 | 2 | 0 | 0 | 0 |
 | [tonatiuh-gonzalez47](https://github.com/tonatiuh-gonzalez47) | Tonatiuh Gonzalez |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
-| [scvannost](https://github.com/scvannost) | SC Van Nostrand | DFCI | pending | 1 | 1 | 0 | 0 | 0 | 0 |
+| [scvannost](https://github.com/scvannost) | SC Van Nostrand | DFCI | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5514014842)</sup> | 1 | 1 | 0 | 0 | 0 | 0 |
 | [eugeniomazzone](https://github.com/eugeniomazzone) | Eugenio Mazzone |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
 | [KhushamBansal](https://github.com/KhushamBansal) | Khusham Bansal |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
 | [aswin2108](https://github.com/aswin2108) | Aswin Shailajan |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
