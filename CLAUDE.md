@@ -70,11 +70,11 @@ Chosen over MIT because Apache 2.0 provides explicit patent grants — critical 
 | Phase 1 (SBOM/audit) | Jul 10–28 | Starts in parallel with Phase 0 on known components |
 | Phase 2 — Team lead consent | launch Jul 31, deadline Aug 31 | Team-lead sign-off via [cbioportal#12282](https://github.com/cBioPortal/cbioportal/issues/12282); runs in parallel with Phase 3 tail |
 | Phase 2 — Individual contributor outreach | launch Jul 28, deadline Sep 20 | Runs in parallel with Phase 3; closes when notice period ends |
-| Phase 3 (30-day notice) | Aug 21 – Sep 20 | Runs in parallel with tail of Phase 2 outreach; fixed at 30 days |
-| Sign-off Gate | Sep 20–23 | Fast if the record is assembled continuously through Phases 1–3, not started here |
-| Phase 4 (Switch Commit) | Sep 23–30 | Fast if SPDX header scripts/tooling are dry-run tested during the Phase 1 window |
+| Phase 3 (30-day notice) | Sep 2 – Oct 2 | Notice posted 2026-09-02 ([cbioportal#12328](https://github.com/cBioPortal/cbioportal/issues/12328)); full 30-day window |
+| Sign-off Gate | Oct 2–5 | Fast if the record is assembled continuously through Phases 1–3, not started here |
+| Phase 4 (Switch Commit) | Oct 5–12 | Fast if SPDX header scripts/tooling are dry-run tested during the Phase 1 window |
 
-**Critical path:** Phase 3's 30-day window is fixed (Aug 21 – Sep 20) and cannot be compressed. Phase 2 individual outreach runs in parallel and closes Sep 20; any non-responder by that date defaults to rewrite/remove. Team lead consent (deadline Aug 31) provides an additional coverage layer before the notice period ends.
+**Critical path:** Phase 3's 30-day window runs Sep 2 – Oct 2 (notice posted 2026-09-02). Phase 2 individual outreach runs in parallel and closes Oct 2; any non-responder by that date defaults to rewrite/remove. Team lead consent deadline was Aug 31 — 7/8 met as of 2026-09-02, CHOP (Adam Resnick) still pending.
 
 ## Key Risks
 
@@ -130,7 +130,7 @@ Tracked in [cBioPortal/relicensing](https://github.com/cBioPortal/relicensing) (
 - [x] Phase 0: Release & Component Scope (#1) — closed 2026-07-10. Manifest at `docs/relicensing/component-manifest.md`. Two non-blocking product decisions remain open (cbioportal-core version pinning, Helm chart currency vs. docker-compose)
 - [ ] Phase 1: Compliance & Dependency Audit (#2) — draft v1 audit published 2026-07-10 (`docs/relicensing/dependency-audit.md`). Code-change follow-ups tracked as cbioportal#12266–12269. Non-code follow-ups (npm scan, full Maven transitive resolution, mysql-connector-j legal confirmation) remain, proceeding in parallel with Phase 2 rather than blocking it
 - [ ] Phase 2: Contributor Outreach & Consent (#3) — starting 2026-07-10 in parallel with Phase 1's remaining non-code follow-ups
-- [ ] Phase 3: Community Feedback (#4) — blocked on Phase 2
+- [ ] Phase 3: Community Feedback (#4) — **active** (Sep 2 – Oct 2); notice posted at [cbioportal#12328](https://github.com/cBioPortal/cbioportal/issues/12328)
 - [ ] Pre-Switch Sign-off Gate (#5) — blocked on Phase 3
 - [ ] Phase 4: Technical Execution (#6) — blocked on sign-off gate
 - [ ] Phase 5: Future Governance (#7) — blocked on Phase 4
