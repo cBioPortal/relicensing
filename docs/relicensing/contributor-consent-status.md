@@ -2,7 +2,7 @@
 
 ## Summary
 
-_As of 2026-09-02._ The "best effort" target is 95% coverage of the codebase by commit volume ([RFC 86](https://github.com/cBioPortal/relicensing/issues/8)).
+_As of 2026-09-14._ The "best effort" target is 95% coverage of the codebase by commit volume ([RFC 86](https://github.com/cBioPortal/relicensing/issues/8)).
 
 **Team lead consent** ([cbioportal#12282](https://github.com/cBioPortal/cbioportal/issues/12282)): **7 / 8 agreed** — MSKCC, DFCI, The Hyve, PMCC, SE4BIO, Bilkent U, Caris. Still pending: CHOP.
 
@@ -15,30 +15,30 @@ _As of 2026-09-02._ The "best effort" target is 95% coverage of the codebase by 
 | The Hyve | 12/12 | 100% |
 | Bilkent U | 5/5 | 100% |
 | PMCC | 3/3 | 100% |
-| Caris | 2/2 | 100% |
+| Caris | 3/3 | 100% |
 | SE4BIO | 2/2 | 100% |
-| CHOP | 1/3 | 17.3% |
-| Unaffiliated/individual | 4/130 | 4.1% |
+| CHOP | 2/3 | 98.5% |
+| Unaffiliated/individual | 5/133 | 19.0% |
 
-The seven orgs with team-lead consent (MSKCC, DFCI, The Hyve, PMCC, SE4BIO, Bilkent U, Caris) are fully covered. **Overall coverage is now 95.8%, above the 95% "best effort" target** — but two components are still individually short of 95%: frontend (93.7%) and session-service (91.8%). The remaining gap is concentrated in CHOP (675 uncovered commits, 663 of them from a single contributor, [kalletlak](https://github.com/kalletlak)) and in unaffiliated individual contributors (373 uncovered commits spread across 126 people). CHOP team-lead consent from Adam Resnick is now the single highest-leverage remaining item.
+The seven orgs with team-lead consent (MSKCC, DFCI, The Hyve, PMCC, SE4BIO, Bilkent U, Caris) are fully covered. Karthik Kalletla ([kalletlak](https://github.com/kalletlak), 663 commits — previously the single largest pending individual contributor) and Niklas Reimer ([nr23730](https://github.com/nr23730), 61 commits) both personally consented via [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271) this run. **Overall coverage is now 98.7% — all five components are individually above the 95% "best effort" target for the first time**: backend 98.8%, frontend 98.3%, docker 97.1%, core (importer) 99.3%, session-service 98.2%. The remaining gap is now small and diffuse: CHOP's only remaining uncovered contributor is [uklineale](https://github.com/uklineale) (Neel Kuila, 12 commits, pending), and unaffiliated individuals account for the rest (329 uncovered commits across ~128 people). CHOP team-lead consent from Adam Resnick would close CHOP's org row entirely but is no longer required to clear the RFC's aggregate or per-component bars.
 
 **Coverage by commit volume:**
 
 | | Consented commits | Total commits | Coverage |
 |---|---|---|---|
-| **Overall** | 24,162 | 25,227 | **95.8%** |
-| Backend | 15,584 | 16,074 | 97.0% |
-| Frontend | 8,058 | 8,600 | 93.7% |
-| Docker | 227 | 240 | 94.6% |
-| Core (importer) | 136 | 142 | 95.8% |
-| Session-service | 157 | 171 | 91.8% |
+| **Overall** | 24,901 | 25,242 | **98.7%** |
+| Backend | 15,899 | 16,084 | 98.8% |
+| Frontend | 8,460 | 8,605 | 98.3% |
+| Docker | 233 | 240 | 97.1% |
+| Core (importer) | 141 | 142 | 99.3% |
+| Session-service | 168 | 171 | 98.2% |
 
 **Individual contributor consent** ([cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271)):
 
 | | Contributors | % |
 |---|---|---|
-| Consented | 77 / 208 | 37.0% |
-| Pending | 131 / 208 | 63.0% |
+| Consented | 80 / 209 | 38.3% |
+| Pending | 129 / 209 | 61.7% |
 
 ## Team lead consent
 
@@ -70,7 +70,7 @@ See [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271).
 | [gideonite](https://github.com/gideonite) | Gideon Dresdner | MSKCC | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 820 | 818 | 2 | 0 | 0 | 0 |
 | [dippindots](https://github.com/dippindots) | Gaofei Zhao | MSKCC | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787006214370829)[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 715 | 402 | 246 | 39 | 20 | 8 |
 | [adamabeshouse](https://github.com/adamabeshouse) | Adam Abeshouse | MSKCC | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 693 | 62 | 630 | 1 | 0 | 0 |
-| [kalletlak](https://github.com/kalletlak) | Karthik K | CHOP | pending | 663 | 256 | 396 | 0 | 0 | 11 |
+| [kalletlak](https://github.com/kalletlak) | Karthik K | CHOP | yes<sup>[¹](https://github.com/cBioPortal/cbioportal/issues/12271#issuecomment-5625488429)</sup> | 663 | 256 | 396 | 0 | 0 | 11 |
 | [ecerami](https://github.com/ecerami) | Ethan Cerami | DFCI | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5514014842)</sup> | 655 | 644 | 11 | 0 | 0 | 0 |
 | [fedde-s](https://github.com/fedde-s) | Fedde Schaeffer | The Hyve | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5343586536)</sup> | 537 | 487 | 50 | 0 | 0 | 0 |
 | [ersinciftci](https://github.com/ersinciftci) | Ersin Ciftci | DFCI | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5514014842)</sup> | 448 | 366 | 82 | 0 | 0 | 0 |
@@ -78,7 +78,8 @@ See [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271).
 | [armish](https://github.com/armish) | B. Arman Aksoy | MSKCC | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 315 | 315 | 0 | 0 | 0 | 0 |
 | [zainasir](https://github.com/zainasir) | Zain Nasir | MSKCC | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787004106744099)[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 258 | 106 | 66 | 83 | 1 | 2 |
 | [gblaih](https://github.com/gblaih) | Bryan Lai | MSKCC | yes<sup>[¹](https://github.com/cBioPortal/cbioportal/issues/12271#issuecomment-5330010351)[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 204 | 16 | 183 | 0 | 1 | 4 |
-| [pieterlukasse](https://github.com/pieterlukasse) | Pieter Lukasse | SE4BIO | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5511327507)</sup> | 200 | 190 | 10 | 0 | 0 | 0 |
+| [pieterlukasse](https://github.com/pieterlukasse) | Pieter Lukasse | SE4BIO | yes<sup>[¹](https://github.com/cBioPortal/cbioportal/issues/12271#issuecomment-5518805504)[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5511327507)</sup> | 200 | 190 | 10 | 0 | 0 | 0 |
+| [7xuanlu](https://github.com/7xuanlu) | Qi-Xuan Lu | Caris | yes<sup>[¹](https://github.com/cBioPortal/cbioportal/issues/12271#issuecomment-5533759517)</sup> | 15 | 10 | 5 | 0 | 0 | 0 |
 | [sheridancbio](https://github.com/sheridancbio) | Robert Sheridan | MSKCC | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787061175191719)[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 191 | 171 | 5 | 1 | 14 | 0 |
 | [oplantalech](https://github.com/oplantalech) | Oleguer Plantalech | The Hyve | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5343586536)</sup> | 186 | 108 | 72 | 0 | 4 | 2 |
 | [leexgh](https://github.com/leexgh) | Xiang Li | MSKCC | yes<sup>[¹](https://github.com/cBioPortal/cbioportal/issues/12271#issuecomment-5320764809)[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 159 | 16 | 143 | 0 | 0 | 0 |
@@ -96,7 +97,7 @@ See [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271).
 | [JREastonMarks](https://github.com/JREastonMarks) | Jeremy R. Easton-Marks | DFCI | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5514014842)</sup> | 71 | 42 | 0 | 1 | 28 | 0 |
 | [spcar7](https://github.com/spcar7) | Lennart Bastian | MSKCC | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 69 | 69 | 0 | 0 | 0 | 0 |
 | [ritikakundra](https://github.com/ritikakundra) | Ritika Kundra | MSKCC | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787151525170909)[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 61 | 61 | 0 | 0 | 0 | 0 |
-| [nr23730](https://github.com/nr23730) | Niklas Reimer |  | pending | 61 | 49 | 1 | 6 | 5 | 0 |
+| [nr23730](https://github.com/nr23730) | Niklas Reimer |  | yes<sup>[¹](https://github.com/cBioPortal/cbioportal/issues/12271#issuecomment-5617019021)</sup> | 61 | 49 | 1 | 6 | 5 | 0 |
 | [caitlinjones](https://github.com/caitlinjones) | Caitin Jones | MSKCC | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 58 | 58 | 0 | 0 | 0 | 0 |
 | [rmadupuri](https://github.com/rmadupuri) | Ramya Madupuri | MSKCC | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787005361262699)[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5147851653)</sup> | 58 | 49 | 0 | 3 | 6 | 0 |
 | [tamaccount](https://github.com/tamaccount) | Tamba | DFCI | yes<sup>[²](https://github.com/cBioPortal/cbioportal/issues/12282#issuecomment-5514014842)</sup> | 52 | 4 | 48 | 0 | 0 | 0 |
