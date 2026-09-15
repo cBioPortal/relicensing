@@ -27,8 +27,11 @@ Yes. This is a license transition, not a move to closed source.
 It affects release licensing and requires a defined switch commit, contributor consent coverage, and notice/sign-off steps.
 
 ### Where can contributors publicly give consent?
-- Public consent collection issue: https://github.com/cBioPortal/cbioportal/issues/12271
-- Team lead consent issue: https://github.com/cBioPortal/cbioportal/issues/12282
+- Public consent collection issue: https://github.com/cBioPortal/relicensing/issues/24 (formerly `cbioportal#12271`, moved via issue transfer)
+- Team lead consent issue: https://github.com/cBioPortal/relicensing/issues/25 (formerly `cbioportal#12282`, moved via issue transfer)
+
+### Where can the public give feedback?
+- Formal notice + 30-day comment period: https://github.com/cBioPortal/relicensing/issues/21
 
 ## Current status (high level)
 
@@ -39,9 +42,9 @@ It affects release licensing and requires a defined switch commit, contributor c
   - Team leads: 7/8 agreed
   - Individual contributors: 80/209 agreed
 
-- Phase 3: Community Feedback & Notice Period [pending]
-- Phase 4: Technical Execution [in progress]
-- Phase 5: Future Governance [in progress]
+- Phase 3: Community Feedback & Notice Period [active] — notice posted: [`relicensing#21`](https://github.com/cBioPortal/relicensing/issues/21)
+- Phase 4: Technical Execution [blocked — awaiting Pre-Switch Sign-off Gate]
+- Phase 5: Future Governance [blocked — awaiting Phase 4]
 
 ## Where to read details
 

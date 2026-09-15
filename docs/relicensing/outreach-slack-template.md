@@ -6,9 +6,9 @@
 
 **cBioPortal Relicensing — We need your consent (RFC 86)**
 
-We're proposing to relicense cBioPortal from AGPL-3.0 to Apache-2.0 (funder requirements + adoption barriers — full details: https://github.com/cBioPortal/cbioportal/issues/12271). Your past contributions stay attributed to you; only the license going forward changes.
+We're proposing to relicense cBioPortal from AGPL-3.0 to Apache-2.0 (funder requirements + adoption barriers — full details: https://github.com/cBioPortal/relicensing/issues/24). Your past contributions stay attributed to you; only the license going forward changes.
 
-If you've contributed code, please reply with your consent here or comment on the public consent issue: https://github.com/cBioPortal/cbioportal/issues/12271
+If you've contributed code, please reply with your consent here or comment on the public consent issue: https://github.com/cBioPortal/relicensing/issues/24
 
 > I, [your name], consent to the relicensing of my contributions to the cBioPortal repositories from AGPL-3.0 to Apache-2.0 as described in RFC 86.
 
