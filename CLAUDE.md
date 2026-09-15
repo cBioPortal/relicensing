@@ -62,19 +62,21 @@ Chosen over MIT because Apache 2.0 provides explicit patent grants — critical 
 
 ## Timeline
 
-**Hard deadline: 2026-09-30.** This is aggressive relative to precedent — mpv's comparable GPL→LGPL relicensing ([mpv-player/mpv#2033](https://github.com/mpv-player/mpv/issues/2033)) took 4+ years on a smaller codebase. Hitting it requires running phases in parallel rather than the strictly serial chain the phase numbering implies, plus firm deadlines on contributor outreach. Backward-planned schedule from the 82-day budget (2026-07-10 → 2026-09-30):
+**Hard deadline: 2026-10-24** (revised 2026-09-14 from the original 2026-09-30; see below). This is aggressive relative to precedent — mpv's comparable GPL→LGPL relicensing ([mpv-player/mpv#2033](https://github.com/mpv-player/mpv/issues/2033)) took 4+ years on a smaller codebase. Hitting it requires running phases in parallel rather than the strictly serial chain the phase numbering implies, plus firm deadlines on contributor outreach. Backward-planned schedule from the 106-day budget (2026-07-10 → 2026-10-24):
 
 | Track | Window | Notes |
 |---|---|---|
 | Phase 0 (scope) | Jul 10–17 | Fast — scope is largely already known |
 | Phase 1 (SBOM/audit) | Jul 10–28 | Starts in parallel with Phase 0 on known components |
 | Phase 2 — Team lead consent | launch Jul 31, deadline Aug 31 | Team-lead sign-off via [cbioportal#12282](https://github.com/cBioPortal/cbioportal/issues/12282); runs in parallel with Phase 3 tail |
-| Phase 2 — Individual contributor outreach | launch Jul 28, deadline Sep 20 | Runs in parallel with Phase 3; closes when notice period ends |
-| Phase 3 (30-day notice) | Sep 2 – Oct 2 | Notice posted 2026-09-02 ([cbioportal#12328](https://github.com/cBioPortal/cbioportal/issues/12328)); full 30-day window |
-| Sign-off Gate | Oct 2–5 | Fast if the record is assembled continuously through Phases 1–3, not started here |
-| Phase 4 (Switch Commit) | Oct 5–12 | Fast if SPDX header scripts/tooling are dry-run tested during the Phase 1 window |
+| Phase 2 — Individual contributor outreach | launch Jul 28, deadline Oct 17 | Runs in parallel with Phase 3; closes when notice period ends |
+| Phase 3 (30-day notice) | Sep 18 – Oct 17 | Revised 2026-09-14 from the originally posted Sep 2 – Oct 2 window ([cbioportal#12328](https://github.com/cBioPortal/cbioportal/issues/12328)) — full 30-day window |
+| Sign-off Gate | Oct 17–20 | Fast if the record is assembled continuously through Phases 1–3, not started here |
+| Phase 4 (Switch Commit) | Oct 20–24 | Fast if SPDX header scripts/tooling are dry-run tested during the Phase 1 window |
 
-**Critical path:** Phase 3's 30-day window runs Sep 2 – Oct 2 (notice posted 2026-09-02). Phase 2 individual outreach runs in parallel and closes Oct 2; any non-responder by that date defaults to rewrite/remove. Team lead consent deadline was Aug 31 — 7/8 met as of 2026-09-02, CHOP (Adam Resnick) still pending.
+**Critical path:** Phase 3's 30-day window now runs Sep 18 – Oct 17 (revised 2026-09-14). Phase 2 individual outreach runs in parallel and closes Oct 17; any non-responder by that date defaults to rewrite/remove. Team lead consent deadline was Aug 31 — 7/8 met as of 2026-09-02, CHOP (Adam Resnick) still pending.
+
+**Note (2026-09-14):** the notice-period revision pushed the hard deadline from 2026-09-30 to 2026-10-24. The public notice at [cbioportal#12328](https://github.com/cBioPortal/cbioportal/issues/12328) was originally posted with the Sep 2 – Oct 2 window — confirm whether that issue's stated dates also need to be corrected/reposted to Sep 18 – Oct 17 so the public record matches.
 
 ## Key Risks
 
@@ -82,7 +84,7 @@ Chosen over MIT because Apache 2.0 provides explicit patent grants — critical 
 |------|-------|
 | Upstream AGPL dependency | If cBioPortal depends on AGPL libraries it doesn't own, those modules may need to stay AGPL or be replaced |
 | Contributor consent | Some contributors may be unreachable; "best effort" + rewrite strategy applies |
-| **Aggressive timeline** | Hard 2026-09-30 deadline vs. mpv's 4-year precedent for a comparable effort; critical path is now Phase 1 cleanup + individual contributor outreach — see Timeline section |
+| **Aggressive timeline** | Hard 2026-10-24 deadline (revised 2026-09-14 from 2026-09-30) vs. mpv's 4-year precedent for a comparable effort; critical path is now the Sep 18–Oct 17 notice period + individual contributor outreach — see Timeline section |
 | **Team-lead sign-off authority** | Team lead consent is collected directly (not formal legal/tech-transfer review) — faster, but weaker legal footing if a lead lacks actual authority to bind their team's contributions. See Decisions. |
 | Stakeholder pushback | Some may perceive license change as loss of control |
 | Legal/compliance complexity | Careful legal review required |
@@ -111,8 +113,9 @@ Tracked in [cBioPortal/relicensing](https://github.com/cBioPortal/relicensing) (
 
 ## Decisions
 
+- **Notice period rescheduled; hard deadline pushed to 2026-10-24 (2026-09-14):** Phase 3's 30-day public notice period moves from the originally-posted Sep 2 – Oct 2 window to **Sep 18 – Oct 17**. This pushes the Sign-off Gate (Oct 17–20) and Phase 4/Switch Commit (Oct 20–24) out accordingly, moving the hard deadline from 2026-09-30 to **2026-10-24**. Phase 2 individual-outreach deadline moves with it, from Sep 20 to Oct 17 (still closes when the notice period ends). Team lead consent deadline (Aug 31) is unaffected — already 7/8 agreed. **Open follow-up:** the public notice at [cbioportal#12328](https://github.com/cBioPortal/cbioportal/issues/12328) was posted with the old Sep 2 – Oct 2 dates; confirm whether it needs a correction/repost so the public record matches the new window.
 - **AI authorship (2026-05-19, extended 2026-07-10):** Treat AI-assisted commits as human-authored for contributor outreach. Originally scoped to `Co-Authored-By: Claude` tags; **extended 2026-07-10 to cover all AI coding tools** (confirmed footprint includes GitHub Copilot — 31/42/1/0 Copilot-authored PRs across cbioportal/cbioportal-frontend/cbioportal-core/session-service, per the Phase 1 audit — plus Claude, and any other AI agent found later). Most conservative/comprehensive baseline. Revisit only if legal review suggests otherwise.
-- **Team lead sign-off level (2026-07-10, updated 2026-07-31):** Get team lead consent from each cBioPortal team lead/PI directly, rather than routing through formal legal/tech-transfer review. Collected via public GitHub issue [cbioportal#12282](https://github.com/cBioPortal/cbioportal/issues/12282) (same mechanism as individual contributor consent — terms and consent statement are inline in the issue body). Rationale: non-commercial, mission-aligned open source tool; team leads can respond far faster than a legal department — necessary to hit the 2026-09-30 deadline. Trade-off: a team lead may not have actual authority to bind their organization; mitigated by an explicit authority attestation in their consent comment. Revisit for any team where this basis feels shaky.
+- **Team lead sign-off level (2026-07-10, updated 2026-07-31):** Get team lead consent from each cBioPortal team lead/PI directly, rather than routing through formal legal/tech-transfer review. Collected via public GitHub issue [cbioportal#12282](https://github.com/cBioPortal/cbioportal/issues/12282) (same mechanism as individual contributor consent — terms and consent statement are inline in the issue body). Rationale: non-commercial, mission-aligned open source tool; team leads can respond far faster than a legal department — necessary to hit the hard deadline (originally 2026-09-30, revised 2026-09-14 to 2026-10-24). Trade-off: a team lead may not have actual authority to bind their organization; mitigated by an explicit authority attestation in their consent comment. Revisit for any team where this basis feels shaky.
 - **Adjacent AGPL tooling out of scope (2026-07-10):** `cancerhotspots`, `datahub-study-curation-tools`, `clinical-data-normalization`, `fmi-converter`, and `clinical-data-dictionary` — real, actively-maintained, currently-AGPL cBioPortal repos, but not bundled into the docker-compose/Helm deployment — are kept separate from RFC86. They stay AGPL (or unlicensed) for now; candidates for a possible future relicensing wave, not this one. See `docs/relicensing/component-manifest.md`.
 - **Repo stays public; sensitive originals go elsewhere (2026-07-11):** Considered and rejected making `cBioPortal/relicensing` private to hold sensitive records. Reasons: the live public consent issues ([cbioportal#12282](https://github.com/cBioPortal/cbioportal/issues/12282) for Tier 1 team leads, [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271) for Tier 2 individuals) link directly into this repo; Phase 3 already commits to a public 30-day notice period; and the whole Phase 2 design deliberately mirrors mpv/VLC/Dolphin's public-transparency approach. Instead, any legal correspondence and other documents with sensitive details are stored in a private Google Drive folder: https://drive.google.com/drive/folders/1pGq4cS1S_gKhCsOsIO7sTEo5IQ9i4pTI — the public record (sign-off gate, relicensing#5) links to this folder as the location of record, without embedding the documents themselves.
 - **Live consent records are sensitive (2026-07-31):** Treat `cbioportal#12282`, `cbioportal#12271`, and `docs/relicensing/contributor-consent-status.md` as live records. Preserve recorded consents exactly; make only surgical edits when needed, and avoid broad rewrites that could alter or obscure existing consent entries.
@@ -130,7 +133,7 @@ Tracked in [cBioPortal/relicensing](https://github.com/cBioPortal/relicensing) (
 - [x] Phase 0: Release & Component Scope (#1) — closed 2026-07-10. Manifest at `docs/relicensing/component-manifest.md`. Two non-blocking product decisions remain open (cbioportal-core version pinning, Helm chart currency vs. docker-compose)
 - [ ] Phase 1: Compliance & Dependency Audit (#2) — draft v1 audit published 2026-07-10 (`docs/relicensing/dependency-audit.md`). Code-change follow-ups tracked as cbioportal#12266–12269. Non-code follow-ups (npm scan, full Maven transitive resolution, mysql-connector-j legal confirmation) remain, proceeding in parallel with Phase 2 rather than blocking it
 - [ ] Phase 2: Contributor Outreach & Consent (#3) — starting 2026-07-10 in parallel with Phase 1's remaining non-code follow-ups
-- [ ] Phase 3: Community Feedback (#4) — **active** (Sep 2 – Oct 2); notice posted at [cbioportal#12328](https://github.com/cBioPortal/cbioportal/issues/12328)
+- [ ] Phase 3: Community Feedback (#4) — **active** (Sep 18 – Oct 17, revised 2026-09-14 from originally-posted Sep 2 – Oct 2); notice posted at [cbioportal#12328](https://github.com/cBioPortal/cbioportal/issues/12328) — confirm issue dates are updated to match
 - [ ] Pre-Switch Sign-off Gate (#5) — blocked on Phase 3
 - [ ] Phase 4: Technical Execution (#6) — blocked on sign-off gate
 - [ ] Phase 5: Future Governance (#7) — blocked on Phase 4
