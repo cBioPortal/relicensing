@@ -20,8 +20,6 @@ _As of 2026-09-14._ The "best effort" target is 95% coverage of the codebase by 
 | CHOP | 2/3 | 98.5% |
 | Unaffiliated/individual | 5/133 | 19.0% |
 
-The seven orgs with team-lead consent (MSKCC, DFCI, The Hyve, PMCC, SE4BIO, Bilkent U, Caris) are fully covered. Karthik Kalletla ([kalletlak](https://github.com/kalletlak), 663 commits — previously the single largest pending individual contributor) and Niklas Reimer ([nr23730](https://github.com/nr23730), 61 commits) both personally consented via [cbioportal#12271](https://github.com/cBioPortal/cbioportal/issues/12271) this run. **Overall coverage is now 98.7% — all five components are individually above the 95% "best effort" target for the first time**: backend 98.8%, frontend 98.3%, docker 97.1%, core (importer) 99.3%, session-service 98.2%. The remaining gap is now small and diffuse: CHOP's only remaining uncovered contributor is [uklineale](https://github.com/uklineale) (Neel Kuila, 12 commits, pending), and unaffiliated individuals account for the rest (329 uncovered commits across ~128 people). CHOP team-lead consent from Adam Resnick would close CHOP's org row entirely but is no longer required to clear the RFC's aggregate or per-component bars.
-
 **Coverage by commit volume:**
 
 | | Consented commits | Total commits | Coverage |
