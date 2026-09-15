@@ -1,8 +1,8 @@
 # RFC86 Phase 3 — Community Feedback & 30-Day Notice Period
 
-**Status:** Notice posted 2026-09-02. Comment period open through **2026-10-02 (23:59 UTC)**. Tracked in [relicensing#4](https://github.com/cBioPortal/relicensing/issues/4).
+**Status:** Notice posted 2026-09-02, rescheduled 2026-09-14. Comment period open through **2026-10-17 (23:59 UTC)**. Tracked in [relicensing#4](https://github.com/cBioPortal/relicensing/issues/4).
 
-**Notice issue (public):** [cBioPortal/cbioportal#12328](https://github.com/cBioPortal/cbioportal/issues/12328)
+**Notice issue (public):** [relicensing#21](https://github.com/cBioPortal/relicensing/issues/21) (formerly `cbioportal#12328`, moved via issue transfer)
 
 ---
 
@@ -10,10 +10,10 @@
 
 ### Comment period
 
-**Open:** September 2, 2026
-**Close:** October 2, 2026 (23:59 UTC)
+**Open:** September 18, 2026
+**Close:** October 17, 2026 (23:59 UTC)
 
-> **Timing note:** The original target opening was August 21; the notice was posted Sep 2 because Phase 2 outreach ran in parallel and reached the 95% threshold only recently. This is a full 30-day window.
+> **Timing note:** The original target opening was August 21; the notice was first posted Sep 2 because Phase 2 outreach ran in parallel and reached the 95% threshold only recently. **Revised 2026-09-14** to Sep 18 – Oct 17, still a full 30-day window.
 
 ---
 
@@ -57,7 +57,7 @@ No specific release version pinned. The Switch Commit will be tied to the releas
 
 1. Phase 2 consent ≥95% per component (or confirmed rewrite/remove plan for the gap)
 2. Phase 1 GPL-3.0 frontend dependencies replaced (react-column-resizer, react-json-to-table)
-3. This comment period (Oct 2 close)
+3. This comment period (Oct 17 close)
 4. Pre-switch sign-off gate ([relicensing#5](https://github.com/cBioPortal/relicensing/issues/5))
 
 **Target:** Switch Commit tied to the release immediately following the sign-off gate.
@@ -69,8 +69,8 @@ No specific release version pinned. The Switch Commit will be tied to the releas
 Full audit: [`docs/relicensing/dependency-audit.md`](dependency-audit.md)
 
 **Frontend blockers being removed:**
-- `react-column-resizer` (GPL-3.0-only) — reimplemented in-house ([cbioportal#12266](https://github.com/cBioPortal/cbioportal/issues/12266))
-- `react-json-to-table` (GPL-3.0-only) — reimplemented in-house ([cbioportal#12267](https://github.com/cBioPortal/cbioportal/issues/12267))
+- `react-column-resizer` (GPL-3.0-only) — reimplemented in-house ([relicensing#22](https://github.com/cBioPortal/relicensing/issues/22))
+- `react-json-to-table` (GPL-3.0-only) — reimplemented in-house ([relicensing#23](https://github.com/cBioPortal/relicensing/issues/23))
 
 **Backend:**
 - `mysql-connector-j` (GPL-2.0 + Universal FOSS Exception) — UFE permits use alongside Apache-2.0; pending legal confirmation
@@ -83,18 +83,17 @@ Full audit: [`docs/relicensing/dependency-audit.md`](dependency-audit.md)
 
 Full board: [`docs/relicensing/contributor-consent-status.md`](contributor-consent-status.md)
 
-As of 2026-09-02:
+As of 2026-09-14:
 - **Team leads:** 7/8 agreed (MSKCC, DFCI, The Hyve, PMCC, SE4BIO, Bilkent U, Caris). CHOP pending.
-- **Overall coverage:** 95.8% (24,162 / 25,227 commits)
-- Two components below 95%: frontend (93.7%), session-service (91.8%)
-- Remaining gap: CHOP (675 commits) + unaffiliated individuals (373 commits)
-- **Rewrite/remove plan:** Code from non-consenting contributors as of Oct 2 will be rewritten or removed before the Switch Commit.
+- **Overall coverage:** 98.7% (24,901 / 25,242 commits) — all five components individually above 95%
+- Remaining gap: one CHOP contributor (12 commits) + unaffiliated individuals (~329 commits)
+- **Rewrite/remove plan:** Code from non-consenting contributors as of Oct 17 will be rewritten or removed before the Switch Commit.
 
 ---
 
 ## 7. Go/no-go
 
-**Decision by:** October 2, 2026
+**Decision by:** October 17, 2026
 **Decision-maker:** cBioPortal core team (coordinated by Nikolaus Schultz, MSKCC)
 **Criteria:**
 - No unresolved substantive legal or technical objection
@@ -108,7 +107,7 @@ As of 2026-09-02:
 
 ## Announcement checklist
 
-- [x] Formal notice issue posted in cbioportal/cbioportal: [cbioportal#12328](https://github.com/cBioPortal/cbioportal/issues/12328) (2026-09-02)
+- [x] Formal notice issue posted: [relicensing#21](https://github.com/cBioPortal/relicensing/issues/21) (2026-09-02, rescheduled 2026-09-14)
 - [ ] Mailing list announcement (link to notice issue)
 - [ ] Slack announcement (#cbioportal channel)
 - [ ] Google Groups / community channels

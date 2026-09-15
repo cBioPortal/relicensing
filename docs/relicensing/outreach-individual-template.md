@@ -21,9 +21,9 @@ You've contributed to cBioPortal, and we're asking for your consent to a license
 
 **One thing to check first:** Was this contribution made under an employment agreement that assigns IP to your employer?
 - **No / not sure** → your consent below is sufficient.
-- **Yes** → please still sign below, and tell us your employer at the time so we can follow up if needed. (We're separately contacting known team leads — MSKCC, DFCI, PMCC, CHOP, Hyve, SE4BIO, Bilkent University, Caris — via https://github.com/cBioPortal/cbioportal/issues/12282.)
+- **Yes** → please still sign below, and tell us your employer at the time so we can follow up if needed. (We're separately contacting known team leads — MSKCC, DFCI, PMCC, CHOP, Hyve, SE4BIO, Bilkent University, Caris — via https://github.com/cBioPortal/relicensing/issues/25.)
 
-**To consent:** reply here, or comment on the public consent issue (https://github.com/cBioPortal/cbioportal/issues/12271) with:
+**To consent:** reply here, or comment on the public consent issue (https://github.com/cBioPortal/relicensing/issues/24) with:
 
 > I, [your name], consent to the relicensing of my contributions to the cBioPortal repositories from AGPL-3.0 to Apache-2.0 as described in RFC 86.
 
@@ -37,4 +37,4 @@ Thank you for contributing to cBioPortal!
 
 ---
 
-*This message is being sent to all contributors as part of the RFC 86 relicensing process. See https://github.com/cBioPortal/cbioportal/issues/12271 to give consent publicly, https://github.com/cBioPortal/relicensing/issues/3 for the full Phase 2 process, and https://github.com/cBioPortal/relicensing/blob/main/docs/relicensing/contributor-consent-status.md for the public status board tracking every contributor's consent status.*
+*This message is being sent to all contributors as part of the RFC 86 relicensing process. See https://github.com/cBioPortal/relicensing/issues/24 to give consent publicly, https://github.com/cBioPortal/relicensing/issues/3 for the full Phase 2 process, and https://github.com/cBioPortal/relicensing/blob/main/docs/relicensing/contributor-consent-status.md for the public status board tracking every contributor's consent status.*
