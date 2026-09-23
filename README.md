@@ -39,8 +39,8 @@ It affects release licensing and requires a defined switch commit, contributor c
 - Phase 1: Compliance & Dependency Audit [completed]
 - Phase 2: Contributor Outreach & Consent [in progress]
   - Public consent board: [`docs/relicensing/contributor-consent-status.md`](docs/relicensing/contributor-consent-status.md)
-  - Team leads: 7/8 agreed
-  - Individual contributors: 80/209 agreed
+  - Team leads: 8/8 agreed
+  - Individual contributors: 81/209 agreed
 
 - Phase 3: Community Feedback & Notice Period [active] — notice posted: [`relicensing#21`](https://github.com/cBioPortal/relicensing/issues/21)
 - Phase 4: Technical Execution [blocked — awaiting Pre-Switch Sign-off Gate]

@@ -2,9 +2,9 @@
 
 ## Summary
 
-_As of 2026-09-14._ The "best effort" target is 95% coverage of the codebase by commit volume ([RFC 86](https://github.com/cBioPortal/relicensing/issues/8)).
+_As of 2026-09-23._ The "best effort" target is 95% coverage of the codebase by commit volume ([RFC 86](https://github.com/cBioPortal/relicensing/issues/8)).
 
-**Team lead consent** ([relicensing#25](https://github.com/cBioPortal/relicensing/issues/25), formerly `cbioportal#12282` before an issue transfer): **7 / 8 agreed** — MSKCC, DFCI, The Hyve, PMCC, SE4BIO, Bilkent U, Caris. Still pending: CHOP.
+**Team lead consent** ([relicensing#25](https://github.com/cBioPortal/relicensing/issues/25), formerly `cbioportal#12282` before an issue transfer): **8 / 8 agreed** — MSKCC, DFCI, The Hyve, PMCC, CHOP, SE4BIO, Bilkent U, Caris. All contributing organizations have now signed off.
 
 **By organization:**
 
@@ -17,16 +17,16 @@ _As of 2026-09-14._ The "best effort" target is 95% coverage of the codebase by 
 | PMCC | 3/3 | 100% |
 | Caris | 3/3 | 100% |
 | SE4BIO | 2/2 | 100% |
-| CHOP | 2/3 | 98.5% |
+| CHOP | 3/3 | 100% |
 | Unaffiliated/individual | 5/133 | 19.0% |
 
 **Coverage by commit volume:**
 
 | | Consented commits | Total commits | Coverage |
 |---|---|---|---|
-| **Overall** | 24,901 | 25,242 | **98.7%** |
-| Backend | 15,899 | 16,084 | 98.8% |
-| Frontend | 8,460 | 8,605 | 98.3% |
+| **Overall** | 24,913 | 25,242 | **98.7%** |
+| Backend | 15,909 | 16,084 | 98.9% |
+| Frontend | 8,462 | 8,605 | 98.3% |
 | Docker | 233 | 240 | 97.1% |
 | Core (importer) | 141 | 142 | 99.3% |
 | Session-service | 168 | 171 | 98.2% |
@@ -35,19 +35,24 @@ _As of 2026-09-14._ The "best effort" target is 95% coverage of the codebase by 
 
 | | Contributors | % |
 |---|---|---|
-| Consented | 80 / 209 | 38.3% |
-| Pending | 129 / 209 | 61.7% |
+| Consented | 81 / 209 | 38.8% |
+| Pending | 128 / 209 | 61.2% |
 
 ## Team lead consent
 
 Consent from team leads covers contributions made by their team members. See [relicensing#25](https://github.com/cBioPortal/relicensing/issues/25).
+
+Two of the rows below need a note:
+
+- **CHOP** — outreach was originally addressed to Adam Resnick (D3b). Consent was given on 2026-09-21 by **Yuankun Zhu**, Director of Bioinformatics at the Center for Data Driven Discovery in Biomedicine (D3b), Children's Hospital of Philadelphia, covering "the PedcBioPortal team at CHOP D3b" — the team the three CHOP contributors below belong to.
+- **PMCC** — consent came by email from UHN Legal Counsel rather than from the team lead directly; the linked comment is the public summary of that correspondence.
 
 | Team | Team Lead | Consent Status |
 |---|---|---|
 | cBioPortal @ MSKCC | Nikolaus Schultz | [yes](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138010) |
 | cBioPortal @ DFCI | James Lindsay | [yes](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138532) |
 | cBioPortal @ PMCC | Trevor Pugh | [yes](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138303) |
-| cBioPortal @ CHOP | Adam Resnick | pending |
+| cBioPortal @ CHOP | Yuankun Zhu | [yes](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5765069676) |
 | cBioPortal @ The Hyve | Henk-Jan van den Ham | [yes](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138143) |
 | cBioPortal @ SE4BIO | Pieter Lukasse | [yes](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138454) |
 | cBioPortal @ Bilkent U | Ugur Dogrusoz | [yes](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138218) |
@@ -68,7 +73,7 @@ See [relicensing#24](https://github.com/cBioPortal/relicensing/issues/24).
 | [gideonite](https://github.com/gideonite) | Gideon Dresdner | MSKCC | yes<sup>[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138010)</sup> | 820 | 818 | 2 | 0 | 0 | 0 |
 | [dippindots](https://github.com/dippindots) | Gaofei Zhao | MSKCC | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787006214370829)[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138010)</sup> | 715 | 402 | 246 | 39 | 20 | 8 |
 | [adamabeshouse](https://github.com/adamabeshouse) | Adam Abeshouse | MSKCC | yes<sup>[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138010)</sup> | 693 | 62 | 630 | 1 | 0 | 0 |
-| [kalletlak](https://github.com/kalletlak) | Karthik K | CHOP | yes<sup>[¹](https://github.com/cBioPortal/relicensing/issues/24#issuecomment-5682125482)</sup> | 663 | 256 | 396 | 0 | 0 | 11 |
+| [kalletlak](https://github.com/kalletlak) | Karthik K | CHOP | yes<sup>[¹](https://github.com/cBioPortal/relicensing/issues/24#issuecomment-5682125482)[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5765069676)</sup> | 663 | 256 | 396 | 0 | 0 | 11 |
 | [ecerami](https://github.com/ecerami) | Ethan Cerami | DFCI | yes<sup>[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138532)</sup> | 655 | 644 | 11 | 0 | 0 | 0 |
 | [fedde-s](https://github.com/fedde-s) | Fedde Schaeffer | The Hyve | yes<sup>[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138143)</sup> | 537 | 487 | 50 | 0 | 0 | 0 |
 | [ersinciftci](https://github.com/ersinciftci) | Ersin Ciftci | DFCI | yes<sup>[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138532)</sup> | 448 | 366 | 82 | 0 | 0 | 0 |
@@ -83,7 +88,7 @@ See [relicensing#24](https://github.com/cBioPortal/relicensing/issues/24).
 | [leexgh](https://github.com/leexgh) | Xiang Li | MSKCC | yes<sup>[¹](https://github.com/cBioPortal/relicensing/issues/24#issuecomment-5682125105)[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138010)</sup> | 159 | 16 | 143 | 0 | 0 | 0 |
 | [mandawilson](https://github.com/mandawilson) | Manda Wilson | MSKCC | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787069252125209)[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138010)</sup> | 159 | 71 | 1 | 0 | 0 | 87 |
 | [zheins](https://github.com/zheins) | Zachary Heins | MSKCC | yes<sup>[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138010)</sup> | 157 | 157 | 0 | 0 | 0 | 0 |
-| [haynescd](https://github.com/haynescd) | Charles Haynes | CHOP | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787144976792519)</sup> | 141 | 78 | 39 | 5 | 19 | 0 |
+| [haynescd](https://github.com/haynescd) | Charles Haynes | CHOP | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787144976792519)[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5765069676)</sup> | 141 | 78 | 39 | 5 | 19 | 0 |
 | [Luke-Sikina](https://github.com/Luke-Sikina) | Luke Sikina | DFCI | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787051243718419)[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138532)</sup> | 120 | 61 | 54 | 3 | 0 | 2 |
 | [yichaoS](https://github.com/yichaoS) | Yichao Sun | MSKCC | yes<sup>[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138010)</sup> | 115 | 100 | 15 | 0 | 0 | 0 |
 | [istemi-bahceci](https://github.com/istemi-bahceci) | İstemi Bahçeci | Bilkent U | yes<sup>[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138218)</sup> | 109 | 109 | 0 | 0 | 0 | 0 |
@@ -119,7 +124,7 @@ See [relicensing#24](https://github.com/cBioPortal/relicensing/issues/24).
 | [jtquach1](https://github.com/jtquach1) | Joyce Quach | DFCI | yes<sup>[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138532)</sup> | 16 | 4 | 12 | 0 | 0 | 0 |
 | [HectorWon](https://github.com/HectorWon) | Minxin Cheng | MSKCC | yes<sup>[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138010)</sup> | 14 | 14 | 0 | 0 | 0 | 0 |
 | [lemccarthy](https://github.com/lemccarthy) | Lloyd McCarthy | DFCI | yes<sup>[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138532)</sup> | 13 | 8 | 5 | 0 | 0 | 0 |
-| [uklineale](https://github.com/uklineale) | Neel Kuila | CHOP | pending | 12 | 10 | 2 | 0 | 0 | 0 |
+| [uklineale](https://github.com/uklineale) | Neel Kuila | CHOP | yes<sup>[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5765069676)</sup> | 12 | 10 | 2 | 0 | 0 | 0 |
 | [ChrisWakefield](https://github.com/ChrisWakefield) | Chris Wakefield | MDACC | pending | 12 | 8 | 4 | 0 | 0 | 0 |
 | [pappde](https://github.com/pappde) | Denis P |  | pending | 11 | 7 | 4 | 0 | 0 | 0 |
 | [paragomi](https://github.com/paragomi) | nkucukdemirci |  | pending | 10 | 10 | 0 | 0 | 0 | 0 |
