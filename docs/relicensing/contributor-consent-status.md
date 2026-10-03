@@ -2,7 +2,7 @@
 
 ## Summary
 
-_As of 2026-09-23._ The "best effort" target is 95% coverage of the codebase by commit volume ([RFC 86](https://github.com/cBioPortal/relicensing/issues/8)).
+_As of 2026-10-03._ The "best effort" target is 95% coverage of the codebase by commit volume ([RFC 86](https://github.com/cBioPortal/relicensing/issues/8)).
 
 **Team lead consent** ([relicensing#25](https://github.com/cBioPortal/relicensing/issues/25), formerly `cbioportal#12282` before an issue transfer): **8 / 8 agreed** — MSKCC, DFCI, The Hyve, PMCC, CHOP, SE4BIO, Bilkent U, Caris. All contributing organizations have now signed off.
 
@@ -18,14 +18,14 @@ _As of 2026-09-23._ The "best effort" target is 95% coverage of the codebase by 
 | Caris | 3/3 | 100% |
 | SE4BIO | 2/2 | 100% |
 | CHOP | 3/3 | 100% |
-| Unaffiliated/individual | 5/133 | 19.0% |
+| Unaffiliated/individual | 6/133 | 20.2% |
 
 **Coverage by commit volume:**
 
 | | Consented commits | Total commits | Coverage |
 |---|---|---|---|
-| **Overall** | 24,913 | 25,242 | **98.7%** |
-| Backend | 15,909 | 16,084 | 98.9% |
+| **Overall** | 24,918 | 25,242 | **98.7%** |
+| Backend | 15,914 | 16,084 | 98.9% |
 | Frontend | 8,462 | 8,605 | 98.3% |
 | Docker | 233 | 240 | 97.1% |
 | Core (importer) | 141 | 142 | 99.3% |
@@ -35,8 +35,8 @@ _As of 2026-09-23._ The "best effort" target is 95% coverage of the codebase by 
 
 | | Contributors | % |
 |---|---|---|
-| Consented | 81 / 209 | 38.8% |
-| Pending | 128 / 209 | 61.2% |
+| Consented | 82 / 209 | 39.2% |
+| Pending | 127 / 209 | 60.8% |
 
 ## Team lead consent
 
@@ -144,7 +144,7 @@ See [relicensing#24](https://github.com/cBioPortal/relicensing/issues/24).
 | [Beking0912](https://github.com/Beking0912) | Beking0912 |  | pending | 6 | 1 | 5 | 0 | 0 | 0 |
 | [juleskers](https://github.com/juleskers) | Jules Kerssemakers |  | pending | 6 | 6 | 0 | 0 | 0 | 0 |
 | [arishta](https://github.com/arishta) | Arishta Jain |  | pending | 5 | 1 | 4 | 0 | 0 | 0 |
-| [Pradyuman-aviator](https://github.com/Pradyuman-aviator) | DevPradyumansh. |  | pending | 5 | 5 | 0 | 0 | 0 | 0 |
+| [Pradyuman-aviator](https://github.com/Pradyuman-aviator) | DevPradyumansh. |  | yes<sup>[¹](https://github.com/cBioPortal/relicensing/issues/24#issuecomment-5803134404)</sup> | 5 | 5 | 0 | 0 | 0 | 0 |
 | [agarwalrounak](https://github.com/agarwalrounak) | Rounak Agarwal |  | pending | 5 | 2 | 3 | 0 | 0 | 0 |
 | [sowmiyaa-kumar](https://github.com/sowmiyaa-kumar) | Sowmiyaa Kumar | The Hyve | yes<sup>[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138143)</sup> | 5 | 4 | 1 | 0 | 0 | 0 |
 | [tlangs](https://github.com/tlangs) | Trevyn Langsford |  | pending | 5 | 5 | 0 | 0 | 0 | 0 |
