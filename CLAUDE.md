@@ -143,9 +143,9 @@ Still genuinely hosted in `cbioportal` (not transferred): [#12268](https://githu
 - [x] Phase 0: Release & Component Scope (#1) — closed 2026-07-10. Manifest at `docs/relicensing/component-manifest.md`. Two non-blocking product decisions remain open (cbioportal-core version pinning, Helm chart currency vs. docker-compose)
 - [x] Phase 1: Compliance & Dependency Audit (#2) — closed on GitHub; draft v1 audit published 2026-07-10 (`docs/relicensing/dependency-audit.md`). Code-change follow-ups tracked as relicensing#22–23 (formerly cbioportal#12266–12267) and cbioportal#12268–12269. Non-code follow-ups (npm scan, full Maven transitive resolution, mysql-connector-j legal confirmation) remain, proceeding in parallel with Phase 2 rather than blocking it
 - [ ] Phase 2: Contributor Outreach & Consent (#3) — starting 2026-07-10 in parallel with Phase 1's remaining non-code follow-ups
-- [ ] Phase 3: Community Feedback (#4) — **active** (Sep 18 – Oct 17, revised 2026-09-14 from originally-posted Sep 2 – Oct 2); notice posted at [relicensing#21](https://github.com/cBioPortal/relicensing/issues/21), updated 2026-09-14/15 to match the new dates and refreshed consent numbers
-- [ ] Pre-Switch Sign-off Gate (#5) — blocked on Phase 3
-- [ ] Phase 4: Technical Execution (#6) — blocked on sign-off gate
+- [x] Phase 3: Community Feedback (#4) — comment period closed 2026-10-17 (Sep 18 – Oct 17) with no public comments received on [relicensing#21](https://github.com/cBioPortal/relicensing/issues/21)
+- [ ] Pre-Switch Sign-off Gate (#5) — **retroactive**: switch merged before the gate was signed; record drafted at `docs/relicensing/signoff-record.md` (2026-10-25), awaiting signature. Open: DCO not live, switch release not yet tagged
+- [ ] Phase 4: Technical Execution (#6) — switch PRs merged 2026-10-20/21 in 5 repos (hard deadline 2026-10-24 met on merge); remaining: tag the switch release, `cbioportal-helm`, DCO, stale-AGPL grep, announcement (`docs/relicensing/announcement-draft.md`)
 - [ ] Phase 5: Future Governance (#7) — blocked on Phase 4
 
 ## Working Conventions
