@@ -1,6 +1,6 @@
 # RFC86 Phase 3 — Community Feedback & 30-Day Notice Period
 
-**Status:** Notice posted 2026-09-02, rescheduled 2026-09-14. Comment period open through **2026-10-17 (23:59 UTC)**. Tracked in [relicensing#4](https://github.com/cBioPortal/relicensing/issues/4).
+**Status:** Notice posted 2026-09-02, rescheduled 2026-09-14. Comment period closed **2026-10-17 (23:59 UTC)** with no public comments. Switch executed 2026-10-20/21; see [signoff-record.md](signoff-record.md). Tracked in [relicensing#4](https://github.com/cBioPortal/relicensing/issues/4).
 
 **Notice issue (public):** [relicensing#21](https://github.com/cBioPortal/relicensing/issues/21) (formerly `cbioportal#12328`, moved via issue transfer)
 
@@ -37,7 +37,7 @@ Rationale:
 | `cBioPortal/session-service` | None | Apache-2.0 added |
 | `cBioPortal/cbioportal-core` | None | Apache-2.0 added |
 | `cBioPortal/cbioportal-docker-compose` | None | Apache-2.0 added |
-| `cBioPortal/cbioportal-helm` | None | Apache-2.0 added |
+| `cBioPortal/cbioportal-helm` | None | Apache-2.0 to be added (not yet switched as of 2026-10-25) |
 
 Out of scope: `datahub` (data licensing), `cbioportal-test` (already MIT), adjacent AGPL tooling not bundled in the main distribution.
 
@@ -47,7 +47,7 @@ Out of scope: `datahub` (data licensing), `cbioportal-test` (already MIT), adjac
 
 - Code before the Switch Commit: contributed under AGPL-3.0-or-later. Historical AGPL rights for existing recipients are preserved.
 - Code at or after the Switch Commit: distributed under Apache-2.0.
-- A `NOTICE` file (required by Apache-2.0) will be added to each repo at the Switch Commit, preserving AGPL-era attributions.
+- ~~A `NOTICE` file will be added to each repo at the Switch Commit.~~ **Correction (2026-10-25):** no `NOTICE` file was created at the switch; Apache-2.0 does not require one. AGPL-era history is preserved in git.
 
 ---
 
