@@ -2,7 +2,7 @@
 
 ## Summary
 
-_As of 2026-10-03._ The "best effort" target is 95% coverage of the codebase by commit volume ([RFC 86](https://github.com/cBioPortal/relicensing/issues/8)).
+_As of 2026-10-25._ The "best effort" target is 95% coverage of the codebase by commit volume ([RFC 86](https://github.com/cBioPortal/relicensing/issues/8)).
 
 **Team lead consent** ([relicensing#25](https://github.com/cBioPortal/relicensing/issues/25), formerly `cbioportal#12282` before an issue transfer): **8 / 8 agreed** — MSKCC, DFCI, The Hyve, PMCC, CHOP, SE4BIO, Bilkent U, Caris. All contributing organizations have now signed off.
 
@@ -18,15 +18,15 @@ _As of 2026-10-03._ The "best effort" target is 95% coverage of the codebase by 
 | Caris | 3/3 | 100% |
 | SE4BIO | 2/2 | 100% |
 | CHOP | 3/3 | 100% |
-| Unaffiliated/individual | 6/133 | 20.2% |
+| Unaffiliated/individual | 7/133 | 21.9% |
 
 **Coverage by commit volume:**
 
 | | Consented commits | Total commits | Coverage |
 |---|---|---|---|
-| **Overall** | 24,918 | 25,242 | **98.7%** |
-| Backend | 15,914 | 16,084 | 98.9% |
-| Frontend | 8,462 | 8,605 | 98.3% |
+| **Overall** | 24,925 | 25,242 | **98.7%** |
+| Backend | 15,915 | 16,084 | 98.9% |
+| Frontend | 8,468 | 8,605 | 98.4% |
 | Docker | 233 | 240 | 97.1% |
 | Core (importer) | 141 | 142 | 99.3% |
 | Session-service | 168 | 171 | 98.2% |
@@ -35,8 +35,8 @@ _As of 2026-10-03._ The "best effort" target is 95% coverage of the codebase by 
 
 | | Contributors | % |
 |---|---|---|
-| Consented | 82 / 209 | 39.2% |
-| Pending | 127 / 209 | 60.8% |
+| Consented | 83 / 209 | 39.7% |
+| Pending | 126 / 209 | 60.3% |
 
 ## Team lead consent
 
@@ -137,7 +137,7 @@ See [relicensing#24](https://github.com/cBioPortal/relicensing/issues/24).
 | [artgoldberg](https://github.com/artgoldberg) | Arthur P Goldberg | MSKCC | yes<sup>[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138010)</sup> | 7 | 7 | 0 | 0 | 0 | 0 |
 | [Nelliney](https://github.com/Nelliney) | Tetiana Matiukhova | MSKCC | yes<sup>[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138010)</sup> | 7 | 0 | 7 | 0 | 0 | 0 |
 | [dubincorey](https://github.com/dubincorey) | Corey Dubin | Caris | yes<sup>[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138385)</sup> | 7 | 0 | 7 | 0 | 0 | 0 |
-| [rishisulakhe](https://github.com/rishisulakhe) | Rishi Prasad Sulakhe |  | pending | 7 | 1 | 6 | 0 | 0 | 0 |
+| [rishisulakhe](https://github.com/rishisulakhe) | Rishi Prasad Sulakhe |  | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1791218305878239)</sup> | 7 | 1 | 6 | 0 | 0 | 0 |
 | [hweej](https://github.com/hweej) | Jason Hwee |  | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787018433068569)</sup> | 7 | 4 | 3 | 0 | 0 | 0 |
 | [cataphract](https://github.com/cataphract) | Gustavo Lopes |  | pending | 6 | 6 | 0 | 0 | 0 | 0 |
 | [johnyesit](https://github.com/johnyesit) | johnyesit |  | pending | 6 | 0 | 6 | 0 | 0 | 0 |
