@@ -12,20 +12,20 @@ _As of 2026-10-26._ The "best effort" target is 95% coverage of the codebase by 
 |---|---|---|
 | MSKCC | 34/34 | 100% |
 | DFCI | 14/14 | 100% |
-| The Hyve | 12/12 | 100% |
+| The Hyve | 13/13 | 100% |
 | Bilkent U | 6/6 | 100% |
 | PMCC | 3/3 | 100% |
 | Caris | 3/3 | 100% |
 | SE4BIO | 2/2 | 100% |
 | CHOP | 3/3 | 100% |
-| Unaffiliated/individual | 7/132 | 22.0% |
+| Unaffiliated/individual | 7/131 | 22.3% |
 
 **Coverage by commit volume:**
 
 | | Consented commits | Total commits | Coverage |
 |---|---|---|---|
-| **Overall** | 24,926 | 25,242 | **98.7%** |
-| Backend | 15,915 | 16,084 | 98.9% |
+| **Overall** | 24,932 | 25,242 | **98.8%** |
+| Backend | 15,921 | 16,084 | 99.0% |
 | Frontend | 8,469 | 8,605 | 98.4% |
 | Docker | 233 | 240 | 97.1% |
 | Core (importer) | 141 | 142 | 99.3% |
@@ -35,8 +35,8 @@ _As of 2026-10-26._ The "best effort" target is 95% coverage of the codebase by 
 
 | | Contributors | % |
 |---|---|---|
-| Consented | 84 / 209 | 40.2% |
-| Pending | 125 / 209 | 59.8% |
+| Consented | 85 / 209 | 40.7% |
+| Pending | 124 / 209 | 59.3% |
 
 ## Team lead consent
 
@@ -139,7 +139,7 @@ See [relicensing#24](https://github.com/cBioPortal/relicensing/issues/24).
 | [dubincorey](https://github.com/dubincorey) | Corey Dubin | Caris | yes<sup>[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138385)</sup> | 7 | 0 | 7 | 0 | 0 | 0 |
 | [rishisulakhe](https://github.com/rishisulakhe) | Rishi Prasad Sulakhe |  | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1791218305878239)</sup> | 7 | 1 | 6 | 0 | 0 | 0 |
 | [hweej](https://github.com/hweej) | Jason Hwee |  | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787018433068569)</sup> | 7 | 4 | 3 | 0 | 0 | 0 |
-| [cataphract](https://github.com/cataphract) | Gustavo Lopes |  | pending | 6 | 6 | 0 | 0 | 0 | 0 |
+| [cataphract](https://github.com/cataphract) | Gustavo Lopes | The Hyve | yes<sup>[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138143)</sup> | 6 | 6 | 0 | 0 | 0 | 0 |
 | [johnyesit](https://github.com/johnyesit) | johnyesit |  | pending | 6 | 0 | 6 | 0 | 0 | 0 |
 | [Beking0912](https://github.com/Beking0912) | Beking0912 |  | pending | 6 | 1 | 5 | 0 | 0 | 0 |
 | [juleskers](https://github.com/juleskers) | Jules Kerssemakers |  | pending | 6 | 6 | 0 | 0 | 0 | 0 |
