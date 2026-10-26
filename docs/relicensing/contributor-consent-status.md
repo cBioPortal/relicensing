@@ -2,7 +2,7 @@
 
 ## Summary
 
-_As of 2026-10-25._ The "best effort" target is 95% coverage of the codebase by commit volume ([RFC 86](https://github.com/cBioPortal/relicensing/issues/8)).
+_As of 2026-10-26._ The "best effort" target is 95% coverage of the codebase by commit volume ([RFC 86](https://github.com/cBioPortal/relicensing/issues/8)).
 
 **Team lead consent** ([relicensing#25](https://github.com/cBioPortal/relicensing/issues/25), formerly `cbioportal#12282` before an issue transfer): **8 / 8 agreed** — MSKCC, DFCI, The Hyve, PMCC, CHOP, SE4BIO, Bilkent U, Caris. All contributing organizations have now signed off.
 
@@ -13,20 +13,20 @@ _As of 2026-10-25._ The "best effort" target is 95% coverage of the codebase by 
 | MSKCC | 34/34 | 100% |
 | DFCI | 14/14 | 100% |
 | The Hyve | 12/12 | 100% |
-| Bilkent U | 5/5 | 100% |
+| Bilkent U | 6/6 | 100% |
 | PMCC | 3/3 | 100% |
 | Caris | 3/3 | 100% |
 | SE4BIO | 2/2 | 100% |
 | CHOP | 3/3 | 100% |
-| Unaffiliated/individual | 7/133 | 21.9% |
+| Unaffiliated/individual | 7/132 | 22.0% |
 
 **Coverage by commit volume:**
 
 | | Consented commits | Total commits | Coverage |
 |---|---|---|---|
-| **Overall** | 24,925 | 25,242 | **98.7%** |
+| **Overall** | 24,926 | 25,242 | **98.7%** |
 | Backend | 15,915 | 16,084 | 98.9% |
-| Frontend | 8,468 | 8,605 | 98.4% |
+| Frontend | 8,469 | 8,605 | 98.4% |
 | Docker | 233 | 240 | 97.1% |
 | Core (importer) | 141 | 142 | 99.3% |
 | Session-service | 168 | 171 | 98.2% |
@@ -35,8 +35,8 @@ _As of 2026-10-25._ The "best effort" target is 95% coverage of the codebase by 
 
 | | Contributors | % |
 |---|---|---|
-| Consented | 83 / 209 | 39.7% |
-| Pending | 126 / 209 | 60.3% |
+| Consented | 84 / 209 | 40.2% |
+| Pending | 125 / 209 | 59.8% |
 
 ## Team lead consent
 
@@ -240,7 +240,7 @@ See [relicensing#24](https://github.com/cBioPortal/relicensing/issues/24).
 | [jochemb](https://github.com/jochemb) | Jochem Bijlard |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
 | [yashhash2](https://github.com/yashhash2) | Yash Kumar Singh |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
 | [stevearmstrong-dev](https://github.com/stevearmstrong-dev) | Steve Armstrong |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
-| [Rgtemze](https://github.com/Rgtemze) | Ziya Erkoc |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
+| [Rgtemze](https://github.com/Rgtemze) | Ziya Erkoc | Bilkent U | yes<sup>[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138218)</sup> | 1 | 0 | 1 | 0 | 0 | 0 |
 | [thepiyush-303](https://github.com/thepiyush-303) | Piyush Bhatt |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
 | [mervekilicarslan5](https://github.com/mervekilicarslan5) | Merve Kilicarslan |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
 | [pnartowski](https://github.com/pnartowski) | Nartowski Paweł |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
