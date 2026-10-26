@@ -12,21 +12,21 @@ _As of 2026-10-26._ The "best effort" target is 95% coverage of the codebase by 
 |---|---|---|
 | MSKCC | 34/34 | 100% |
 | DFCI | 14/14 | 100% |
-| The Hyve | 13/13 | 100% |
+| The Hyve | 14/14 | 100% |
 | Bilkent U | 6/6 | 100% |
 | PMCC | 3/3 | 100% |
 | Caris | 3/3 | 100% |
 | SE4BIO | 2/2 | 100% |
 | CHOP | 3/3 | 100% |
-| Unaffiliated/individual | 7/131 | 22.3% |
+| Unaffiliated/individual | 7/130 | 22.5% |
 
 **Coverage by commit volume:**
 
 | | Consented commits | Total commits | Coverage |
 |---|---|---|---|
-| **Overall** | 24,932 | 25,242 | **98.8%** |
-| Backend | 15,921 | 16,084 | 99.0% |
-| Frontend | 8,469 | 8,605 | 98.4% |
+| **Overall** | 24,935 | 25,242 | **98.8%** |
+| Backend | 15,922 | 16,084 | 99.0% |
+| Frontend | 8,471 | 8,605 | 98.4% |
 | Docker | 233 | 240 | 97.1% |
 | Core (importer) | 141 | 142 | 99.3% |
 | Session-service | 168 | 171 | 98.2% |
@@ -35,8 +35,8 @@ _As of 2026-10-26._ The "best effort" target is 95% coverage of the codebase by 
 
 | | Contributors | % |
 |---|---|---|
-| Consented | 85 / 209 | 40.7% |
-| Pending | 124 / 209 | 59.3% |
+| Consented | 86 / 209 | 41.1% |
+| Pending | 123 / 209 | 58.9% |
 
 ## Team lead consent
 
@@ -163,7 +163,7 @@ See [relicensing#24](https://github.com/cBioPortal/relicensing/issues/24).
 | [olzhasmukayev](https://github.com/olzhasmukayev) | Olzhas Mukayev |  | pending | 3 | 0 | 3 | 0 | 0 | 0 |
 | [Leowisd](https://github.com/Leowisd) | Yifu |  | pending | 3 | 0 | 3 | 0 | 0 | 0 |
 | [ugurdogrusoz](https://github.com/ugurdogrusoz) | Ugur Dogrusoz | Bilkent U | yes<sup>[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138218)</sup> | 3 | 3 | 0 | 0 | 0 | 0 |
-| [FlorisVleugels](https://github.com/FlorisVleugels) | Melrus |  | pending | 3 | 1 | 2 | 0 | 0 | 0 |
+| [FlorisVleugels](https://github.com/FlorisVleugels) | Melrus | The Hyve | yes<sup>[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138143)</sup> | 3 | 1 | 2 | 0 | 0 | 0 |
 | [khaledfahmy123](https://github.com/khaledfahmy123) | Khaled Fahmy |  | pending | 3 | 0 | 3 | 0 | 0 | 0 |
 | [sambrightman](https://github.com/sambrightman) | Sam Brightman |  | pending | 3 | 3 | 0 | 0 | 0 | 0 |
 | [fkaercher](https://github.com/fkaercher) | Florian Kaercher |  | pending | 3 | 3 | 0 | 0 | 0 | 0 |
