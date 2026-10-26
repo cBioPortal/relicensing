@@ -19,7 +19,7 @@ cBioPortal's core software is now licensed under the **Apache License 2.0**. Thi
 | `cbioportal-core` (data importer) | no license | Apache-2.0 |
 | `session-service` | no license | Apache-2.0 |
 | `cbioportal-docker-compose` | no license | Apache-2.0 |
-| `cbioportal-helm` | no license | Apache-2.0 (to follow) |
+| `cbioportal-helm` | no license | Apache-2.0 |
 
 The new license applies to code from the switch commit onward, in release **[TBD — first release containing the switch]**. Releases published before that remain available under the license they were distributed with (AGPL-3.0 for the backend and frontend). Nothing about those earlier releases changes.
 

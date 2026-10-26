@@ -145,7 +145,7 @@ Still genuinely hosted in `cbioportal` (not transferred): [#12268](https://githu
 - [ ] Phase 2: Contributor Outreach & Consent (#3) — starting 2026-07-10 in parallel with Phase 1's remaining non-code follow-ups
 - [x] Phase 3: Community Feedback (#4) — comment period closed 2026-10-17 (Sep 18 – Oct 17) with no public comments received on [relicensing#21](https://github.com/cBioPortal/relicensing/issues/21)
 - [ ] Pre-Switch Sign-off Gate (#5) — **retroactive**: switch merged before the gate was signed; record drafted at `docs/relicensing/signoff-record.md` (2026-10-25), awaiting signature. Open: DCO not live, switch release not yet tagged
-- [ ] Phase 4: Technical Execution (#6) — switch PRs merged 2026-10-20/21 in 5 repos (hard deadline 2026-10-24 met on merge); remaining: tag the switch release, `cbioportal-helm`, DCO, stale-AGPL grep, announcement (`docs/relicensing/announcement-draft.md`)
+- [ ] Phase 4: Technical Execution (#6) — switch PRs merged 2026-10-20/21 in 5 repos (hard deadline 2026-10-24 met on merge); `cbioportal-helm` switched 2026-10-26 (helm#26); stray AGPL headers fixed in cbioportal#12452 / cbioportal-core#210 (confirm merged); remaining: tag the switch release, DCO, announcement (`docs/relicensing/announcement-draft.md`)
 - [ ] Phase 5: Future Governance (#7) — blocked on Phase 4
 
 ## Working Conventions
