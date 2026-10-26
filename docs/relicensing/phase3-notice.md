@@ -37,7 +37,7 @@ Rationale:
 | `cBioPortal/session-service` | None | Apache-2.0 added |
 | `cBioPortal/cbioportal-core` | None | Apache-2.0 added |
 | `cBioPortal/cbioportal-docker-compose` | None | Apache-2.0 added |
-| `cBioPortal/cbioportal-helm` | None | Apache-2.0 to be added (not yet switched as of 2026-10-25) |
+| `cBioPortal/cbioportal-helm` | None | Apache-2.0 added (2026-10-26) |
 
 Out of scope: `datahub` (data licensing), `cbioportal-test` (already MIT), adjacent AGPL tooling not bundled in the main distribution.
 

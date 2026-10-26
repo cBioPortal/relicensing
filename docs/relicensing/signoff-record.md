@@ -56,7 +56,8 @@ After the switch, the served distribution bundles the Apache-2.0 backend, fronte
 
 - Switch merged before this gate was signed (see top).
 - Docker-compose PR carried a "DO NOT MERGE before relicensing#5" label when merged.
-- `cbioportal-helm` is in scope (listed in the notice) but has **not yet been switched**; it is outside the five repos on the consent board. Remaining task.
+- `cbioportal-helm` is in scope (listed in the notice) and was switched via [cbioportal-helm#26](https://github.com/cBioPortal/cbioportal-helm/pull/26), merged 2026-10-26. It is outside the five repos on the consent board; its two contributors (`zainasir`, `inodb`) have both consented.
+- Leftover AGPL headers found by a repo-wide grep were fixed in [cbioportal#12452](https://github.com/cBioPortal/cbioportal/pull/12452) and [cbioportal-core#210](https://github.com/cBioPortal/cbioportal-core/pull/210) [TBD — confirm merged].
 - The notice promised a `NOTICE` file at the switch commit. None was created; Apache-2.0 does not require one. The notice text should be corrected.
 - Phase 5: DCO, license scanning in CI ([relicensing#7](https://github.com/cBioPortal/relicensing/issues/7)).
 
