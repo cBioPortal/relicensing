@@ -18,15 +18,15 @@ _As of 2026-10-28._ The "best effort" target is 95% coverage of the codebase by 
 | Caris | 3/3 | 100% |
 | SE4BIO | 2/2 | 100% |
 | CHOP | 3/3 | 100% |
-| Unaffiliated/individual | 39/130 | 46.0% |
+| Unaffiliated/individual | 45/130 | 47.7% |
 
 **Coverage by commit volume:**
 
 | | Consented commits | Total commits | Coverage |
 |---|---|---|---|
-| **Overall** | 25,028 | 25,242 | **99.2%** |
-| Backend | 15,955 | 16,084 | 99.2% |
-| Frontend | 8,528 | 8,605 | 99.1% |
+| **Overall** | 25,035 | 25,242 | **99.2%** |
+| Backend | 15,961 | 16,084 | 99.2% |
+| Frontend | 8,529 | 8,605 | 99.1% |
 | Docker | 235 | 240 | 97.9% |
 | Core (importer) | 141 | 142 | 99.3% |
 | Session-service | 169 | 171 | 98.8% |
@@ -35,8 +35,8 @@ _As of 2026-10-28._ The "best effort" target is 95% coverage of the codebase by 
 
 | | Contributors | % |
 |---|---|---|
-| Consented | 118 / 209 | 56.5% |
-| Pending | 91 / 209 | 43.5% |
+| Consented | 124 / 209 | 59.3% |
+| Pending | 85 / 209 | 40.7% |
 
 ## Team lead consent
 
@@ -187,7 +187,7 @@ See [relicensing#24](https://github.com/cBioPortal/relicensing/issues/24).
 | [dtenenba](https://github.com/dtenenba) | Dan Tenenbaum |  | yes<sup>[¹](https://github.com/cBioPortal/relicensing/issues/24#issuecomment-6427156731)</sup> | 2 | 2 | 0 | 0 | 0 | 0 |
 | [VenkateshVishwas](https://github.com/VenkateshVishwas) | Venky |  | pending | 2 | 2 | 0 | 0 | 0 | 0 |
 | [johnyaku](https://github.com/johnyaku) | John Reeves |  | yes<sup>[¹](https://github.com/cBioPortal/relicensing/issues/24#issuecomment-6426811425)</sup> | 2 | 1 | 0 | 1 | 0 | 0 |
-| [VarshiniGunti](https://github.com/VarshiniGunti) | Varshini |  | pending | 2 | 2 | 0 | 0 | 0 | 0 |
+| [VarshiniGunti](https://github.com/VarshiniGunti) | Varshini |  | yes<sup>³</sup> | 2 | 2 | 0 | 0 | 0 | 0 |
 | [siddhiguptas](https://github.com/siddhiguptas) | Siddhi Gupta |  | pending | 2 | 2 | 0 | 0 | 0 | 0 |
 | [tweep](https://github.com/tweep) | Jan-Hinnerk Vogel |  | pending | 2 | 2 | 0 | 0 | 0 | 0 |
 | [vaibhavlachhwani](https://github.com/vaibhavlachhwani) | Vaibhav Lachhwani |  | pending | 2 | 2 | 0 | 0 | 0 | 0 |
@@ -195,7 +195,7 @@ See [relicensing#24](https://github.com/cBioPortal/relicensing/issues/24).
 | [gautamsarawagi](https://github.com/gautamsarawagi) | Gautam Sarawagi |  | pending | 2 | 0 | 2 | 0 | 0 | 0 |
 | [tonatiuh-gonzalez47](https://github.com/tonatiuh-gonzalez47) | Tonatiuh Gonzalez |  | yes<sup>[¹](https://github.com/cBioPortal/relicensing/issues/24#issuecomment-6426786484)</sup> | 1 | 0 | 1 | 0 | 0 | 0 |
 | [scvannost](https://github.com/scvannost) | SC Van Nostrand | DFCI | yes<sup>[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138532)</sup> | 1 | 1 | 0 | 0 | 0 | 0 |
-| [eugeniomazzone](https://github.com/eugeniomazzone) | Eugenio Mazzone |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
+| [eugeniomazzone](https://github.com/eugeniomazzone) | Eugenio Mazzone |  | yes<sup>³</sup> | 1 | 1 | 0 | 0 | 0 | 0 |
 | [KhushamBansal](https://github.com/KhushamBansal) | Khusham Bansal |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
 | [aswin2108](https://github.com/aswin2108) | Aswin Shailajan |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
 | [m12m3r](https://github.com/m12m3r) | Mark Shehata |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
@@ -208,7 +208,7 @@ See [relicensing#24](https://github.com/cBioPortal/relicensing/issues/24).
 | [mhsh312](https://github.com/mhsh312) | mhsh312 |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
 | [karissawhiting](https://github.com/karissawhiting) | karissawhiting |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
 | [Gautam-aman](https://github.com/Gautam-aman) | Aman Gautam |  | yes<sup>[¹](https://github.com/cBioPortal/relicensing/issues/24#issuecomment-6440256027)</sup> | 1 | 1 | 0 | 0 | 0 | 0 |
-| [gulshan2052](https://github.com/gulshan2052) | Gulshan Anand |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
+| [gulshan2052](https://github.com/gulshan2052) | Gulshan Anand |  | yes<sup>³</sup> | 1 | 1 | 0 | 0 | 0 | 0 |
 | [callachennault](https://github.com/callachennault) | Calla Chennault |  | yes<sup>[¹](https://cbioportal.slack.com/archives/C0BQW0PPASV/p1787077888212769)</sup> | 1 | 0 | 1 | 0 | 0 | 0 |
 | [manik-dhanjal](https://github.com/manik-dhanjal) | Manik Dhanjal |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
 | [YashhCanCode](https://github.com/YashhCanCode) | Yashwanth Konnuru |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
@@ -221,7 +221,7 @@ See [relicensing#24](https://github.com/cBioPortal/relicensing/issues/24).
 | [Zohaibarif69](https://github.com/Zohaibarif69) | ZOHAIB |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
 | [Aiosa](https://github.com/Aiosa) | Aiosa |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
 | [officialasishkumar](https://github.com/officialasishkumar) | Asish Kumar |  | yes<sup>[¹](https://github.com/cBioPortal/relicensing/issues/24#issuecomment-6433839174)</sup> | 1 | 1 | 0 | 0 | 0 | 0 |
-| [rohangoel96](https://github.com/rohangoel96) | Rohan Goel |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
+| [rohangoel96](https://github.com/rohangoel96) | Rohan Goel |  | yes<sup>³</sup> | 1 | 1 | 0 | 0 | 0 | 0 |
 | [zeynepkaragoz](https://github.com/zeynepkaragoz) | Zeynep Karagoz, PhD | The Hyve | yes<sup>[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138143)</sup> | 1 | 1 | 0 | 0 | 0 | 0 |
 | [RyukXO-code](https://github.com/RyukXO-code) | Sagnik |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
 | [teesamuel](https://github.com/teesamuel) | Samuel Olufemi |  | yes<sup>[¹](https://github.com/cBioPortal/relicensing/issues/24#issuecomment-6436824139)</sup> | 1 | 1 | 0 | 0 | 0 | 0 |
@@ -234,10 +234,10 @@ See [relicensing#24](https://github.com/cBioPortal/relicensing/issues/24).
 | [thomasmarwitz](https://github.com/thomasmarwitz) | thomasmarwitz |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
 | [mdhvprasad](https://github.com/mdhvprasad) | mvprasad |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
 | [NikdAK](https://github.com/NikdAK) | Niklas dAK |  | yes<sup>[¹](https://github.com/cBioPortal/relicensing/issues/24#issuecomment-6427676309)</sup> | 1 | 0 | 0 | 1 | 0 | 0 |
-| [anshuman-rai-27](https://github.com/anshuman-rai-27) | Anshuman Rai |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
+| [anshuman-rai-27](https://github.com/anshuman-rai-27) | Anshuman Rai |  | yes<sup>³</sup> | 1 | 0 | 1 | 0 | 0 | 0 |
 | [nbentoneves](https://github.com/nbentoneves) | Nuno Bento |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
 | [meow1729](https://github.com/meow1729) | Aradhya Makkar |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
-| [jochemb](https://github.com/jochemb) | Jochem Bijlard |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
+| [jochemb](https://github.com/jochemb) | Jochem Bijlard |  | yes<sup>³</sup> | 1 | 1 | 0 | 0 | 0 | 0 |
 | [yashhash2](https://github.com/yashhash2) | Yash Kumar Singh |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
 | [stevearmstrong-dev](https://github.com/stevearmstrong-dev) | Steve Armstrong |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
 | [Rgtemze](https://github.com/Rgtemze) | Ziya Erkoc | Bilkent U | yes<sup>[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138218)</sup> | 1 | 0 | 1 | 0 | 0 | 0 |
@@ -277,3 +277,5 @@ See [relicensing#24](https://github.com/cBioPortal/relicensing/issues/24).
 ¹ Individual consent recorded — click to view the source comment.
 
 ² Team lead consent recorded for this contributor's org — click to view. See [team lead consent](#team-lead-consent) above.
+
+³ Individual consent received by email; the originals are kept in the private records folder rather than in this public repo.
