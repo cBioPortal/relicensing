@@ -21,7 +21,7 @@ cBioPortal's core software is now licensed under the **Apache License 2.0**. Thi
 | `cbioportal-docker-compose` | no license | Apache-2.0 |
 | `cbioportal-helm` | no license | Apache-2.0 |
 
-The new license applies to code from the switch commit onward, in release **[TBD — first release containing the switch]**. Releases published before that remain available under the license they were distributed with (AGPL-3.0 for the backend and frontend). Nothing about those earlier releases changes.
+The new license applies to code from the switch commit onward, in release **v7.2.2** (backend and frontend, published 2026-10-27). Releases of `cbioportal-core`, `session-service`, `cbioportal-docker-compose` and `cbioportal-helm` will follow. Releases published before that, including v7.2.1 and earlier, remain available under the license they were distributed with (AGPL-3.0 for the backend and frontend). Nothing about those earlier releases changes.
 
 ### Why
 
@@ -57,7 +57,7 @@ Our audit found two GPL-3.0 frontend dependencies in use, `react-column-resizer`
 
 ### Thank you
 
-Thanks to the contributors and team leads who responded, and to everyone who followed the notice period. Questions: [TBD — contact address or discussion link].
+Thanks to the contributors and team leads who responded, and to everyone who followed the notice period. Questions: gaoj@mskcc.org, or comment on [relicensing#24](https://github.com/cBioPortal/relicensing/issues/24).
 
 — The cBioPortal team
 
