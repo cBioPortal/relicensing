@@ -142,11 +142,11 @@ Still genuinely hosted in `cbioportal` (not transferred): [#12268](https://githu
 - [x] Issues moved to dedicated cBioPortal/relicensing repo (2026-07-10)
 - [x] Phase 0: Release & Component Scope (#1) — closed 2026-07-10. Manifest at `docs/relicensing/component-manifest.md`. Two non-blocking product decisions remain open (cbioportal-core version pinning, Helm chart currency vs. docker-compose)
 - [x] Phase 1: Compliance & Dependency Audit (#2) — closed on GitHub; draft v1 audit published 2026-07-10 (`docs/relicensing/dependency-audit.md`). Code-change follow-ups tracked as relicensing#22–23 (formerly cbioportal#12266–12267) and cbioportal#12268–12269. Non-code follow-ups (npm scan, full Maven transitive resolution, mysql-connector-j legal confirmation) remain, proceeding in parallel with Phase 2 rather than blocking it
-- [ ] Phase 2: Contributor Outreach & Consent (#3) — starting 2026-07-10 in parallel with Phase 1's remaining non-code follow-ups
+- [x] Phase 2: Contributor Outreach & Consent (#3) — closed 2026-10-28. 8/8 team leads; 124/209 individuals; 99.2% of commits covered (above the 95% target); the remainder accepted under best-effort. #24 stays open for late consents. Board: `docs/relicensing/contributor-consent-status.md`
 - [x] Phase 3: Community Feedback (#4) — comment period closed 2026-10-17 (Sep 18 – Oct 17) with no public comments received on [relicensing#21](https://github.com/cBioPortal/relicensing/issues/21)
-- [ ] Pre-Switch Sign-off Gate (#5) — **retroactive**: switch merged before the gate was signed; record drafted at `docs/relicensing/signoff-record.md` (2026-10-25), awaiting signature. Open: DCO not live, switch release not yet tagged
-- [ ] Phase 4: Technical Execution (#6) — switch PRs merged 2026-10-20/21 in 5 repos (hard deadline 2026-10-24 met on merge); `cbioportal-helm` switched 2026-10-26 (helm#26); stray AGPL headers fixed in cbioportal#12452 / cbioportal-core#210 (confirm merged); remaining: tag the switch release, DCO, announcement (`docs/relicensing/announcement-draft.md`)
-- [ ] Phase 5: Future Governance (#7) — blocked on Phase 4
+- [x] Pre-Switch Sign-off Gate (#5) — signed and closed 2026-10-28, **retroactively** (the switch merged first). Record: `docs/relicensing/signoff-record.md`. Accepted exceptions: DCO not live, no legal opinion on AI authorship, ~1.3% of commits accepted under best-effort
+- [x] Phase 4: Technical Execution (#6) — closed 2026-10-28. Switch PRs merged 2026-10-20/21 in 5 repos (deadline 2026-10-24 met on merge) and 2026-10-26 in `cbioportal-helm`; first release with the switch is `v7.2.2` (backend and frontend, 2026-10-27). Still open: releases for core, session-service, docker-compose and Helm; READMEs say "before October 2026" instead of naming `v7.2.2`; announcement (`docs/relicensing/announcement-draft.md`) unpublished; #24 FAQ still describes the switch as upcoming
+- [ ] Phase 5: Future Governance (#7) — **open**: DCO enforcement and license scanning (FOSSA/Snyk) in CI are not done; DCO was a gate item accepted as an exception
 
 ## Working Conventions
 
