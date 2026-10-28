@@ -2,7 +2,7 @@
 
 ## Summary
 
-_As of 2026-10-27._ The "best effort" target is 95% coverage of the codebase by commit volume ([RFC 86](https://github.com/cBioPortal/relicensing/issues/8)).
+_As of 2026-10-28._ The "best effort" target is 95% coverage of the codebase by commit volume ([RFC 86](https://github.com/cBioPortal/relicensing/issues/8)).
 
 **Team lead consent** ([relicensing#25](https://github.com/cBioPortal/relicensing/issues/25), formerly `cbioportal#12282` before an issue transfer): **8 / 8 agreed** — MSKCC, DFCI, The Hyve, PMCC, CHOP, SE4BIO, Bilkent U, Caris. All contributing organizations have now signed off.
 
@@ -18,15 +18,15 @@ _As of 2026-10-27._ The "best effort" target is 95% coverage of the codebase by 
 | Caris | 3/3 | 100% |
 | SE4BIO | 2/2 | 100% |
 | CHOP | 3/3 | 100% |
-| Unaffiliated/individual | 34/130 | 43.7% |
+| Unaffiliated/individual | 39/130 | 46.0% |
 
 **Coverage by commit volume:**
 
 | | Consented commits | Total commits | Coverage |
 |---|---|---|---|
-| **Overall** | 25,019 | 25,242 | **99.1%** |
-| Backend | 15,949 | 16,084 | 99.2% |
-| Frontend | 8,525 | 8,605 | 99.1% |
+| **Overall** | 25,028 | 25,242 | **99.2%** |
+| Backend | 15,955 | 16,084 | 99.2% |
+| Frontend | 8,528 | 8,605 | 99.1% |
 | Docker | 235 | 240 | 97.9% |
 | Core (importer) | 141 | 142 | 99.3% |
 | Session-service | 169 | 171 | 98.8% |
@@ -35,8 +35,8 @@ _As of 2026-10-27._ The "best effort" target is 95% coverage of the codebase by 
 
 | | Contributors | % |
 |---|---|---|
-| Consented | 113 / 209 | 54.1% |
-| Pending | 96 / 209 | 45.9% |
+| Consented | 118 / 209 | 56.5% |
+| Pending | 91 / 209 | 43.5% |
 
 ## Team lead consent
 
@@ -154,7 +154,7 @@ See [relicensing#24](https://github.com/cBioPortal/relicensing/issues/24).
 | [aditygrg2](https://github.com/aditygrg2) | Aditya Garg |  | pending | 4 | 0 | 4 | 0 | 0 | 0 |
 | [coderrsid](https://github.com/coderrsid) | Siddhant Sehgal |  | pending | 4 | 0 | 4 | 0 | 0 | 0 |
 | [jxu8](https://github.com/jxu8) | jxu8 |  | pending | 4 | 0 | 4 | 0 | 0 | 0 |
-| [alexsigaras](https://github.com/alexsigaras) | Alexandros Sigaras | Cornell | pending | 4 | 4 | 0 | 0 | 0 | 0 |
+| [alexsigaras](https://github.com/alexsigaras) | Alexandros Sigaras | Cornell | yes<sup>[¹](https://github.com/cBioPortal/relicensing/issues/24#issuecomment-6454303984)</sup> | 4 | 4 | 0 | 0 | 0 | 0 |
 | [egarcialara](https://github.com/egarcialara) | Elena | The Hyve | yes<sup>[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138143)</sup> | 4 | 4 | 0 | 0 | 0 | 0 |
 | [YusufZiyaOzgul](https://github.com/YusufZiyaOzgul) | Yusuf Ziya Özgül | Bilkent U | yes<sup>[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138218)</sup> | 3 | 0 | 3 | 0 | 0 | 0 |
 | [bemijonathan](https://github.com/bemijonathan) | Jonathan Atiene |  | yes<sup>[¹](https://github.com/cBioPortal/relicensing/issues/24#issuecomment-6428053343)</sup> | 3 | 0 | 3 | 0 | 0 | 0 |
@@ -182,7 +182,7 @@ See [relicensing#24](https://github.com/cBioPortal/relicensing/issues/24).
 | [lllinging](https://github.com/lllinging) | lllinging |  | pending | 2 | 0 | 2 | 0 | 0 | 0 |
 | [amanbhardwaj12072003](https://github.com/amanbhardwaj12072003) | Aman Bhardwaj |  | pending | 2 | 2 | 0 | 0 | 0 | 0 |
 | [ugurkoysuren](https://github.com/ugurkoysuren) | Ugur Koysuren |  | pending | 2 | 1 | 0 | 1 | 0 | 0 |
-| [sayan-aiml](https://github.com/sayan-aiml) | Sayan Kr. Pattanayak |  | pending | 2 | 0 | 2 | 0 | 0 | 0 |
+| [sayan-aiml](https://github.com/sayan-aiml) | Sayan Kr. Pattanayak |  | yes<sup>[¹](https://github.com/cBioPortal/relicensing/issues/24#issuecomment-6451842345)</sup> | 2 | 0 | 2 | 0 | 0 | 0 |
 | [kurt-mueller-osumc](https://github.com/kurt-mueller-osumc) | Kurt Mueller |  | pending | 2 | 1 | 0 | 1 | 0 | 0 |
 | [dtenenba](https://github.com/dtenenba) | Dan Tenenbaum |  | yes<sup>[¹](https://github.com/cBioPortal/relicensing/issues/24#issuecomment-6427156731)</sup> | 2 | 2 | 0 | 0 | 0 | 0 |
 | [VenkateshVishwas](https://github.com/VenkateshVishwas) | Venky |  | pending | 2 | 2 | 0 | 0 | 0 | 0 |
@@ -204,7 +204,7 @@ See [relicensing#24](https://github.com/cBioPortal/relicensing/issues/24).
 | [scbaysal](https://github.com/scbaysal) | eightbit |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
 | [jorvis](https://github.com/jorvis) | Joshua Orvis |  | yes<sup>[¹](https://github.com/cBioPortal/relicensing/issues/24#issuecomment-6426847756)</sup> | 1 | 1 | 0 | 0 | 0 | 0 |
 | [er-abhijeet](https://github.com/er-abhijeet) | Abhijeet M |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
-| [PerVillalva](https://github.com/PerVillalva) | Percival Villalva |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
+| [PerVillalva](https://github.com/PerVillalva) | Percival Villalva |  | yes<sup>[¹](https://github.com/cBioPortal/relicensing/issues/24#issuecomment-6447890981)</sup> | 1 | 0 | 1 | 0 | 0 | 0 |
 | [mhsh312](https://github.com/mhsh312) | mhsh312 |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
 | [karissawhiting](https://github.com/karissawhiting) | karissawhiting |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
 | [Gautam-aman](https://github.com/Gautam-aman) | Aman Gautam |  | yes<sup>[¹](https://github.com/cBioPortal/relicensing/issues/24#issuecomment-6440256027)</sup> | 1 | 1 | 0 | 0 | 0 | 0 |
@@ -253,7 +253,7 @@ See [relicensing#24](https://github.com/cBioPortal/relicensing/issues/24).
 | [ShahKirtan2003](https://github.com/ShahKirtan2003) | Kirtan Shah |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
 | [Vinny02](https://github.com/Vinny02) | Vinny02 |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
 | [ruslan-forostianov](https://github.com/ruslan-forostianov) | Ruslan |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
-| [eliaslautensack](https://github.com/eliaslautensack) | eliaslautensack |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
+| [eliaslautensack](https://github.com/eliaslautensack) | eliaslautensack |  | yes<sup>[¹](https://github.com/cBioPortal/relicensing/issues/24#issuecomment-6466860731)</sup> | 1 | 1 | 0 | 0 | 0 | 0 |
 | [Ak-Macha](https://github.com/Ak-Macha) | Akash Macha |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
 | [emmanuel-ferdman](https://github.com/emmanuel-ferdman) | Emmanuel Ferdman |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
 | [heuermh](https://github.com/heuermh) | Michael L Heuer |  | yes<sup>[¹](https://github.com/cBioPortal/relicensing/issues/24#issuecomment-6428026880)</sup> | 1 | 1 | 0 | 0 | 0 | 0 |
@@ -268,7 +268,7 @@ See [relicensing#24](https://github.com/cBioPortal/relicensing/issues/24).
 | [jCHENEBY](https://github.com/jCHENEBY) | jCHENEBY |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
 | [scarrero4660](https://github.com/scarrero4660) | scarrero4660 |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
 | [sandertan](https://github.com/sandertan) | Sander Tan | The Hyve | yes<sup>[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138143)</sup> | 1 | 1 | 0 | 0 | 0 | 0 |
-| [chiang-sh](https://github.com/chiang-sh) | Shan Chiang |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
+| [chiang-sh](https://github.com/chiang-sh) | Shan Chiang |  | yes<sup>[¹](https://github.com/cBioPortal/relicensing/issues/24#issuecomment-6459527300)</sup> | 1 | 1 | 0 | 0 | 0 | 0 |
 | [codyharoldsen](https://github.com/codyharoldsen) | sharoldsen |  | pending | 1 | 0 | 0 | 0 | 0 | 1 |
 | [jonkiky](https://github.com/jonkiky) | Yizhen Chen |  | pending | 1 | 0 | 0 | 0 | 0 | 1 |
 | [sdpetrides](https://github.com/sdpetrides) | Stephen Petrides |  | yes<sup>[¹](https://github.com/cBioPortal/relicensing/issues/24#issuecomment-6428279567)</sup> | 1 | 0 | 0 | 0 | 0 | 1 |
