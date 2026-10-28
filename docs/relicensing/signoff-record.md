@@ -14,7 +14,7 @@
 | `cbioportal-docker-compose` | [#100](https://github.com/cBioPortal/cbioportal-docker-compose/pull/100) | 2026-10-21 14:45 |
 | `cbioportal` | [#12392](https://github.com/cBioPortal/cbioportal/pull/12392) | 2026-10-21 16:28 |
 
-**Switch release:** [TBD]. The latest releases seen were published before these merges (backend/frontend v7.2.1 on 2026-10-20 05:35 UTC; core v1.0.17, session-service v0.6.5 earlier), so no published release yet contains the switch. Decide the version, tag it (signed, pointing at this record) and record it here.
+**Switch release:** `v7.2.2` for the backend ([release](https://github.com/cBioPortal/cbioportal/releases/tag/v7.2.2)) and frontend ([release](https://github.com/cBioPortal/cbioportal-frontend/releases/tag/v7.2.2)), published 2026-10-27, the first releases after the switch PRs. Both carry the Apache-2.0 `LICENSE`. `v7.2.1` (2026-10-20 05:35 UTC) was published before the switch merged and remains AGPL-3.0. The tags are not signed and do not point at this record. `cbioportal-core` (v1.0.17), `session-service` (v0.6.5), `cbioportal-docker-compose` and `cbioportal-helm` have no release yet that contains the switch.
 
 ## 2. Gate checklist ([relicensing#5](https://github.com/cBioPortal/relicensing/issues/5))
 
@@ -50,14 +50,14 @@ Note: CHOP's lead was previously recorded as Adam Resnick. Yuankun Zhu has been 
 
 ## 4. Effective license of the combined/served distribution
 
-After the switch, the served distribution bundles the Apache-2.0 backend, frontend, importer and session service. The vendored copyleft assets found in legacy webapp assets (3 GPL, 2 LGPL; see the manifest) have been removed or excluded, so the combined distribution is Apache-2.0 plus permissively licensed third-party code. Add the removal evidence (PR or commit links) here before signing.
+After the switch, the served distribution bundles the Apache-2.0 backend, frontend, importer and session service. The vendored copyleft assets found in legacy webapp assets (3 GPL, 2 LGPL; see the manifest) have been removed or excluded, so the combined distribution is Apache-2.0 plus permissively licensed third-party code. Evidence: at the backend `v7.2.2` tag (checked 2026-10-28) none of `jquery.popeye`, `jslab-stdlib`, `packery`, `cytoscape_web` or the Jmol scripts exists as a code file, and nothing in the tree references them. Only image assets remain under `webapp/gfx/popeye/` (and `jmol.png`); their licensing has not been checked and is a minor follow-up. The removing PRs were not identified.
 
 ## 5. Known deviations and follow-ups
 
 - Switch merged before this gate was signed (see top).
 - Docker-compose PR carried a "DO NOT MERGE before relicensing#5" label when merged.
 - `cbioportal-helm` is in scope (listed in the notice) and was switched via [cbioportal-helm#26](https://github.com/cBioPortal/cbioportal-helm/pull/26), merged 2026-10-26. It is outside the five repos on the consent board; its two contributors (`zainasir`, `inodb`) have both consented.
-- Leftover AGPL headers found by a repo-wide grep were fixed in [cbioportal#12452](https://github.com/cBioPortal/cbioportal/pull/12452) and [cbioportal-core#210](https://github.com/cBioPortal/cbioportal-core/pull/210) [TBD — confirm merged].
+- Leftover AGPL headers found by a repo-wide grep were fixed in [cbioportal#12452](https://github.com/cBioPortal/cbioportal/pull/12452) and [cbioportal-core#210](https://github.com/cBioPortal/cbioportal-core/pull/210), both merged.
 - The notice promised a `NOTICE` file at the switch commit. None was created; Apache-2.0 does not require one. The notice text should be corrected.
 - Phase 5: DCO, license scanning in CI ([relicensing#7](https://github.com/cBioPortal/relicensing/issues/7)).
 
