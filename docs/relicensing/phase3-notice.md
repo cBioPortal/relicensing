@@ -1,6 +1,8 @@
 # RFC86 Phase 3 — Community Feedback & 30-Day Notice Period
 
-**Status:** Notice posted 2026-09-02, rescheduled 2026-09-14. Comment period closed **2026-10-17 (23:59 UTC)** with no public comments. Switch executed 2026-10-20/21; see [signoff-record.md](signoff-record.md). Tracked in [relicensing#4](https://github.com/cBioPortal/relicensing/issues/4).
+**Status:** Notice posted 2026-09-02, rescheduled 2026-09-14. Comment period closed **2026-10-17 (23:59 UTC)** with no public comments. Switch executed 2026-10-20/21; see [signoff-record.md](signoff-record.md).
+
+> **Correction (2026-10-28):** this notice, as posted, said code from non-consenting contributors would be rewritten or removed before the Switch Commit (see "Rewrite/remove plan" and the switch criteria below). That is not what happened. The switch went ahead with 99.2% of commits covered by consent (above the 95% target), and the remaining contributors are accepted under the RFC's best-effort standard with no rewrite or removal planned; individual outreach and consent collection continue. CHOP's consent was also received (2026-09-21). The text below is kept unchanged as the record of what the public was told. See [signoff-record.md](signoff-record.md) and the Decisions section of `CLAUDE.md`. Tracked in [relicensing#4](https://github.com/cBioPortal/relicensing/issues/4).
 
 **Notice issue (public):** [relicensing#21](https://github.com/cBioPortal/relicensing/issues/21) (formerly `cbioportal#12328`, moved via issue transfer)
 
