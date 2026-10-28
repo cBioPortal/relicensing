@@ -74,7 +74,7 @@ Chosen over MIT because Apache 2.0 provides explicit patent grants — critical 
 | Sign-off Gate | Oct 17–20 | Fast if the record is assembled continuously through Phases 1–3, not started here |
 | Phase 4 (Switch Commit) | Oct 20–24 | Fast if SPDX header scripts/tooling are dry-run tested during the Phase 1 window |
 
-**Critical path:** Phase 3's 30-day window now runs Sep 18 – Oct 17 (revised 2026-09-14). Phase 2 individual outreach runs in parallel and closes Oct 17; any non-responder by that date defaults to rewrite/remove. Team lead consent deadline was Aug 31 — 7/8 met as of 2026-09-02; CHOP came in late, on 2026-09-21, completing **8/8**.
+**Critical path:** Phase 3's 30-day window now runs Sep 18 – Oct 17 (revised 2026-09-14). Phase 2 individual outreach ran in parallel and was due to close Oct 17; the original plan was that any non-responder by that date defaults to rewrite/remove, but as of 2026-10-28 non-responders are instead accepted under best-effort (see Decisions) and outreach continues. Team lead consent deadline was Aug 31 — 7/8 met as of 2026-09-02; CHOP came in late, on 2026-09-21, completing **8/8**.
 
 **Note (2026-09-14):** the notice-period revision pushed the hard deadline from 2026-09-30 to 2026-10-24. The public notice at [relicensing#21](https://github.com/cBioPortal/relicensing/issues/21) was originally posted with the Sep 2 – Oct 2 window — confirm whether that issue's stated dates also need to be corrected/reposted to Sep 18 – Oct 17 so the public record matches.
 
