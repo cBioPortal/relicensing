@@ -52,6 +52,8 @@ Note: CHOP's lead was previously recorded as Adam Resnick. Yuankun Zhu has been 
 
 After the switch, the served distribution bundles the Apache-2.0 backend, frontend, importer and session service. The vendored copyleft assets found in legacy webapp assets (3 GPL, 2 LGPL; see the manifest) have been removed or excluded, so the combined distribution is Apache-2.0 plus permissively licensed third-party code. Evidence: at the backend `v7.2.2` tag (checked 2026-10-28) none of `jquery.popeye`, `jslab-stdlib`, `packery`, `cytoscape_web` or the Jmol scripts exists as a code file, and nothing in the tree references them. Only image assets remain under `webapp/gfx/popeye/` (and `jmol.png`); their licensing has not been checked and is a minor follow-up. The removing PRs were not identified.
 
+**Caveat (2026-11-02):** this describes the source repositories. The deployment configs pin older images: `cbioportal-docker-compose` pins `cbioportal/cbioportal:7.1.2` and `session-service:0.6.4`, and `cbioportal-helm` pins `6.4.1`, all released before the switch. Those repositories are maintained through their own update processes, and no pin change has been made as part of RFC 86. The served distribution therefore moves to Apache-2.0 only as those pins are bumped to `v7.2.2` or later. No versioned `session-service` release containing the switch exists yet (a `master` image was built on 2026-10-21).
+
 ## 5. Known deviations and follow-ups
 
 - Switch merged before this gate was signed (see top).
