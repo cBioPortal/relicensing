@@ -35,11 +35,11 @@ The new license applies to code from the switch commit onward, in release **v7.2
 cBioPortal has never had a contributor license agreement, so we asked the copyright holders directly:
 
 - **All 8 contributing teams** gave written consent through their team lead: MSKCC, DFCI, PMCC (via UHN Legal Counsel), CHOP, The Hyve, SE4BIO, Bilkent University and Caris.
-- **Individual contributors** were invited to consent publicly on [relicensing#24](https://github.com/cBioPortal/relicensing/issues/24). 83 of 209 contributors have consented personally or through their team.
-- Together these cover **98.7% of commits** across the five repositories (24,925 of 25,242), above the 95% "best effort" target. The remaining 1.3% (contributors who could not be reached or did not respond) is accepted under that best-effort standard.
+- **Individual contributors** were invited to consent publicly on [relicensing#24](https://github.com/cBioPortal/relicensing/issues/24). 126 of 209 contributors have consented, personally or through their team (as of 2026-11-02).
+- Together these cover **99.2% of commits** across the five repositories (25,038 of 25,242), above the 95% "best effort" target. No contributor is recorded as having declined. The remaining 0.8% (contributors who could not be reached or have not yet responded) is accepted under that best-effort standard, and we are still collecting consents.
 - The per-contributor record is public: [consent status board](https://github.com/cBioPortal/relicensing/blob/main/docs/relicensing/contributor-consent-status.md).
 
-Team-lead consent was collected at the team-lead level rather than through formal institutional legal review, to meet the timeline. This was a deliberate choice and is recorded in the sign-off record. The exception is PMCC, whose consent came from UHN Legal Counsel.
+Team-lead consent was collected at the team-lead level rather than through formal institutional legal review, to meet the timeline. This was a deliberate choice and is recorded in the sign-off record. The exception is PMCC, whose consent came from UHN Legal Counsel. The [sign-off record](https://github.com/cBioPortal/relicensing/blob/main/docs/relicensing/signoff-record.md) was assembled after the switch; it lists the steps that happened out of order and the exceptions we accepted.
 
 ### Dependencies
 
@@ -65,8 +65,8 @@ Thanks to the contributors and team leads who responded, and to everyone who fol
 
 ### Short version for Slack / mailing list
 
-> cBioPortal (backend, frontend, importer, session service, docker-compose) is now Apache-2.0, completing RFC 86. All 8 contributing teams consented and 98.7% of commits are covered. Pre-switch releases remain AGPL. Details: [TBD link]
+> cBioPortal (backend, frontend, importer, session service, docker-compose) is now Apache-2.0, completing RFC 86. All 8 contributing teams consented and 99.2% of commits are covered. Pre-switch releases remain AGPL. Details: [TBD link]
 
-### Closing comment for relicensing#21
+### After publishing
 
-> The comment period closed 2026-10-17. No public comments or objections were received during the period. The relicense has been executed (PRs merged 2026-10-20/21). Full announcement: [TBD link]. Record: [`signoff-record.md`](https://github.com/cBioPortal/relicensing/blob/main/docs/relicensing/signoff-record.md).
+> Add a comment on the (closed) notice issue [relicensing#21](https://github.com/cBioPortal/relicensing/issues/21) linking to the published announcement. The outcome and corrections were already posted there on 2026-10-28.
