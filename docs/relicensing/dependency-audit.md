@@ -70,12 +70,14 @@ The preliminary dependency-audit PR referenced above (#12125) is itself entirely
 
 ## Open follow-ups
 
+> **Status update (2026-11-02):** the GPL replacements ([relicensing#22](https://github.com/cBioPortal/relicensing/issues/22), [#23](https://github.com/cBioPortal/relicensing/issues/23)) and the tracking issues cbioportal#12268 and #12269 are closed. The remaining unchecked items below were not verified in this pass. Note: this audit proposed `NOTICE` entries (mysql-connector-j UFE, jszip MIT election); no `NOTICE` file was created, so those attributions should be recorded elsewhere if legal review requires them.
+
 - [ ] Legal confirmation that `mysql-connector-j`'s Universal FOSS Exception conditions are met (likely yes, low risk)
-- [ ] **Implement** the `react-column-resizer` reimplementation in `cbioportal-frontend` — tracked in [relicensing#22](https://github.com/cBioPortal/relicensing/issues/22) (formerly `cbioportal#12266`) (owner TBD)
-- [ ] **Implement** the `react-json-to-table` reimplementation in `cbioportal-frontend` — tracked in [relicensing#23](https://github.com/cBioPortal/relicensing/issues/23) (formerly `cbioportal#12267`) (owner TBD)
-- [ ] Regenerate the backend's `OPEN-SOURCE-DOCUMENTATION` from current dependency state — tracked in [cBioPortal/cbioportal#12268](https://github.com/cBioPortal/cbioportal/issues/12268)
+- [x] **Implement** the `react-column-resizer` reimplementation in `cbioportal-frontend` — tracked in [relicensing#22](https://github.com/cBioPortal/relicensing/issues/22) (formerly `cbioportal#12266`) (owner TBD)
+- [x] **Implement** the `react-json-to-table` reimplementation in `cbioportal-frontend` — tracked in [relicensing#23](https://github.com/cBioPortal/relicensing/issues/23) (formerly `cbioportal#12267`) (owner TBD)
+- [x] Regenerate the backend's `OPEN-SOURCE-DOCUMENTATION` from current dependency state — tracked in [cBioPortal/cbioportal#12268](https://github.com/cBioPortal/cbioportal/issues/12268)
 - [ ] Run a full automated npm license scan of `cbioportal-frontend` (only PR #12125's spot-checked subset has been verified so far)
 - [ ] Confirm the other dual/multi-licensed transitive backend dependencies flagged by PR #12125 (Jakarta/Jersey/RabbitMQ-adjacent artifacts)
 - [ ] Run a **full transitive Maven dependency resolution** for the backend from a network environment that can reach `build.shibboleth.net` (neither PR #12125 nor this pass has actually completed one — both relied on direct declarations/effective POM/Maven Central metadata for the items checked)
-- [ ] Remove the dead Flash-based `netviz.jsp`/`cytoscape_web` feature — tracked in [cBioPortal/cbioportal#12269](https://github.com/cBioPortal/cbioportal/issues/12269)
+- [x] Remove the dead Flash-based `netviz.jsp`/`cytoscape_web` feature — tracked in [cBioPortal/cbioportal#12269](https://github.com/cBioPortal/cbioportal/issues/12269)
 - [x] Decide whether to formally extend the AI-authorship decision to cover Copilot-authored commits/PRs — **decided 2026-07-10: yes, extended to all AI tools**
