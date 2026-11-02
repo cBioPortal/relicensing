@@ -2,7 +2,7 @@
 
 ## Summary
 
-_As of 2026-10-28._ The "best effort" target is 95% coverage of the codebase by commit volume ([RFC 86](https://github.com/cBioPortal/relicensing/issues/8)).
+_As of 2026-11-02._ The "best effort" target is 95% coverage of the codebase by commit volume ([RFC 86](https://github.com/cBioPortal/relicensing/issues/8)).
 
 **Team lead consent** ([relicensing#25](https://github.com/cBioPortal/relicensing/issues/25), formerly `cbioportal#12282` before an issue transfer): **8 / 8 agreed** — MSKCC, DFCI, The Hyve, PMCC, CHOP, SE4BIO, Bilkent U, Caris. All contributing organizations have now signed off.
 
@@ -18,14 +18,14 @@ _As of 2026-10-28._ The "best effort" target is 95% coverage of the codebase by 
 | Caris | 3/3 | 100% |
 | SE4BIO | 2/2 | 100% |
 | CHOP | 3/3 | 100% |
-| Unaffiliated/individual | 45/130 | 47.7% |
+| Unaffiliated/individual | 47/130 | 48.5% |
 
 **Coverage by commit volume:**
 
 | | Consented commits | Total commits | Coverage |
 |---|---|---|---|
-| **Overall** | 25,035 | 25,242 | **99.2%** |
-| Backend | 15,961 | 16,084 | 99.2% |
+| **Overall** | 25,038 | 25,242 | **99.2%** |
+| Backend | 15,964 | 16,084 | 99.3% |
 | Frontend | 8,529 | 8,605 | 99.1% |
 | Docker | 235 | 240 | 97.9% |
 | Core (importer) | 141 | 142 | 99.3% |
@@ -35,8 +35,8 @@ _As of 2026-10-28._ The "best effort" target is 95% coverage of the codebase by 
 
 | | Contributors | % |
 |---|---|---|
-| Consented | 124 / 209 | 59.3% |
-| Pending | 85 / 209 | 40.7% |
+| Consented | 126 / 209 | 60.3% |
+| Pending | 83 / 209 | 39.7% |
 
 ## Team lead consent
 
@@ -175,7 +175,7 @@ See [relicensing#24](https://github.com/cBioPortal/relicensing/issues/24).
 | [pozhidaevak](https://github.com/pozhidaevak) | Anton Pozhidaev |  | yes<sup>[¹](https://github.com/cBioPortal/relicensing/issues/24#issuecomment-6435992639)</sup> | 2 | 1 | 1 | 0 | 0 | 0 |
 | [brettvanderwerff](https://github.com/brettvanderwerff) | Brett Vanderwerff |  | pending | 2 | 0 | 2 | 0 | 0 | 0 |
 | [SURAJ-SHARMA27](https://github.com/SURAJ-SHARMA27) | SURAJ |  | pending | 2 | 0 | 2 | 0 | 0 | 0 |
-| [KingAlex1985](https://github.com/KingAlex1985) | KingAlex1985 |  | pending | 2 | 2 | 0 | 0 | 0 | 0 |
+| [KingAlex1985](https://github.com/KingAlex1985) | KingAlex1985 |  | yes<sup>[¹](https://github.com/cBioPortal/relicensing/issues/24#issuecomment-6517474117)</sup> | 2 | 2 | 0 | 0 | 0 | 0 |
 | [SAHU-01](https://github.com/SAHU-01) | Ankita Sahu |  | pending | 2 | 0 | 2 | 0 | 0 | 0 |
 | [ckandoth](https://github.com/ckandoth) | Cyriac Kandoth | MSKCC | yes<sup>[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138010)</sup> | 2 | 2 | 0 | 0 | 0 | 0 |
 | [dianab0](https://github.com/dianab0) | dianab0 |  | pending | 2 | 1 | 1 | 0 | 0 | 0 |
@@ -246,7 +246,7 @@ See [relicensing#24](https://github.com/cBioPortal/relicensing/issues/24).
 | [pnartowski](https://github.com/pnartowski) | Nartowski Paweł |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
 | [kunalchandan](https://github.com/kunalchandan) | Kunal Chandan |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
 | [waffle-iron](https://github.com/waffle-iron) | Making GitHub Delicious. |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
-| [saxenanurag](https://github.com/saxenanurag) | Anurag Saxena |  | pending | 1 | 1 | 0 | 0 | 0 | 0 |
+| [saxenanurag](https://github.com/saxenanurag) | Anurag Saxena |  | yes<sup>[¹](https://github.com/cBioPortal/relicensing/issues/24#issuecomment-6577843582)</sup> | 1 | 1 | 0 | 0 | 0 | 0 |
 | [FilledEther20](https://github.com/FilledEther20) | Chaitanya Gairola |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
 | [Player256](https://github.com/Player256) | space_samurai |  | pending | 1 | 0 | 1 | 0 | 0 | 0 |
 | [khzhu](https://github.com/khzhu) | Kelsey Zhu | PMCC | yes<sup>[²](https://github.com/cBioPortal/relicensing/issues/25#issuecomment-5682138303)</sup> | 1 | 1 | 0 | 0 | 0 | 0 |
