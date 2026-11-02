@@ -54,7 +54,7 @@ Chosen over MIT because Apache 2.0 provides explicit patent grants — critical 
 - Code before the commit = AGPL; code after = Apache 2.0
 - Run automated script to update license headers in all source files
 - Update: LICENSE file, README.md, project website, CI/CD metadata
-- Create NOTICE file (required by Apache 2.0) preserving original AGPL attributions
+- ~~Create NOTICE file~~ — not created (Apache-2.0 does not require one; AGPL-era history is preserved in git; see Decisions)
 
 ### Phase 5 — Future Governance
 - Adopt **Developer Certificate of Origin (DCO)** with GitHub CI enforcement
@@ -83,7 +83,7 @@ Chosen over MIT because Apache 2.0 provides explicit patent grants — critical 
 | Risk | Notes |
 |------|-------|
 | Upstream AGPL dependency | If cBioPortal depends on AGPL libraries it doesn't own, those modules may need to stay AGPL or be replaced |
-| Contributor consent | Some contributors may be unreachable; "best effort" + rewrite strategy applies |
+| Contributor consent | Some contributors may be unreachable; resolved 2026-10-28: remainder (~1%) accepted under best-effort, no rewrite (see Decisions) |
 | **Aggressive timeline** | Hard 2026-10-24 deadline (revised 2026-09-14 from 2026-09-30) vs. mpv's 4-year precedent for a comparable effort; critical path is now the Sep 18–Oct 17 notice period + individual contributor outreach — see Timeline section |
 | **Team-lead sign-off authority** | Team lead consent is collected directly (not formal legal/tech-transfer review) — faster, but weaker legal footing if a lead lacks actual authority to bind their team's contributions. See Decisions. |
 | Stakeholder pushback | Some may perceive license change as loss of control |
@@ -116,7 +116,7 @@ Tracked in [cBioPortal/relicensing](https://github.com/cBioPortal/relicensing). 
 | Individual contributor consent | [#24](https://github.com/cBioPortal/relicensing/issues/24) | `cbioportal#12271` |
 | Team lead consent | [#25](https://github.com/cBioPortal/relicensing/issues/25) | `cbioportal#12282` |
 
-Still genuinely hosted in `cbioportal` (not transferred): [#12268](https://github.com/cBioPortal/cbioportal/issues/12268) (regenerate stale OPEN-SOURCE-DOCUMENTATION report), [#12269](https://github.com/cBioPortal/cbioportal/issues/12269) (remove dead Flash/netviz.jsp).
+Still hosted in `cbioportal` (not transferred; both now closed): [#12268](https://github.com/cBioPortal/cbioportal/issues/12268) (regenerate stale OPEN-SOURCE-DOCUMENTATION report), [#12269](https://github.com/cBioPortal/cbioportal/issues/12269) (remove dead Flash/netviz.jsp).
 
 ## Decisions
 
@@ -146,7 +146,7 @@ Still genuinely hosted in `cbioportal` (not transferred): [#12268](https://githu
 - [x] Issues moved to dedicated cBioPortal/relicensing repo (2026-07-10)
 - [x] Phase 0: Release & Component Scope (#1) — closed 2026-07-10. Manifest at `docs/relicensing/component-manifest.md`. Two non-blocking product decisions remain open (cbioportal-core version pinning, Helm chart currency vs. docker-compose)
 - [x] Phase 1: Compliance & Dependency Audit (#2) — closed on GitHub; draft v1 audit published 2026-07-10 (`docs/relicensing/dependency-audit.md`). Code-change follow-ups tracked as relicensing#22–23 (formerly cbioportal#12266–12267) and cbioportal#12268–12269. Non-code follow-ups (npm scan, full Maven transitive resolution, mysql-connector-j legal confirmation) remain, proceeding in parallel with Phase 2 rather than blocking it
-- [x] Phase 2: Contributor Outreach & Consent (#3) — closed 2026-10-28. 8/8 team leads; 124/209 individuals; 99.2% of commits covered (above the 95% target); the remainder accepted under best-effort. #24 stays open for late consents. Board: `docs/relicensing/contributor-consent-status.md`
+- [x] Phase 2: Contributor Outreach & Consent (#3) — closed 2026-10-28. 8/8 team leads; 126/209 individuals (as of 2026-11-02); 99.2% of commits covered (above the 95% target); the remainder accepted under best-effort. #24 stays open for late consents. Board: `docs/relicensing/contributor-consent-status.md`
 - [x] Phase 3: Community Feedback (#4) — comment period closed 2026-10-17 (Sep 18 – Oct 17) with no public comments received on [relicensing#21](https://github.com/cBioPortal/relicensing/issues/21)
 - [x] Pre-Switch Sign-off Gate (#5) — signed and closed 2026-10-28, **retroactively** (the switch merged first). Record: `docs/relicensing/signoff-record.md`. Accepted exceptions: DCO not live, no legal opinion on AI authorship, ~1.3% of commits accepted under best-effort
 - [x] Phase 4: Technical Execution (#6) — closed 2026-10-28. Switch PRs merged 2026-10-20/21 in 5 repos (deadline 2026-10-24 met on merge) and 2026-10-26 in `cbioportal-helm`; first release with the switch is `v7.2.2` (backend and frontend, 2026-10-27). Still open: releases for core, session-service, docker-compose and Helm; READMEs say "before October 2026" instead of naming `v7.2.2`; announcement (`docs/relicensing/announcement-draft.md`) unpublished; #24 FAQ still describes the switch as upcoming

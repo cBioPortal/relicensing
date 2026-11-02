@@ -4,13 +4,14 @@ This repository is the public coordination record for relicensing core cBioPorta
 
 ## What is changing
 
-RFC86 proposes Apache-2.0 relicensing for the in-scope repositories:
+RFC86 relicensed the in-scope repositories to Apache-2.0 (switch merged 2026-10-20/21; first release with the switch is `v7.2.2`, 2026-10-27; `cbioportal-helm` followed on 2026-10-26). Releases before `v7.2.2`, including `v7.2.1`, remain AGPL-3.0:
 
 - `cBioPortal/cbioportal`
 - `cBioPortal/cbioportal-frontend`
 - `cBioPortal/cbioportal-docker-compose`
 - `cBioPortal/cbioportal-core`
 - `cBioPortal/session-service`
+- `cBioPortal/cbioportal-helm` (Apache-2.0; its two contributors have consented)
 
 ## Why this is being done
 
@@ -37,14 +38,15 @@ It affects release licensing and requires a defined switch commit, contributor c
 
 - Phase 0: Release & Component Scope [completed]
 - Phase 1: Compliance & Dependency Audit [completed]
-- Phase 2: Contributor Outreach & Consent [in progress]
+- Phase 2: Contributor Outreach & Consent [completed 2026-10-28; individual consents still welcome on #24]
   - Public consent board: [`docs/relicensing/contributor-consent-status.md`](docs/relicensing/contributor-consent-status.md)
   - Team leads: 8/8 agreed
   - Individual contributors: 126/209 agreed
 
-- Phase 3: Community Feedback & Notice Period [active] — notice posted: [`relicensing#21`](https://github.com/cBioPortal/relicensing/issues/21)
-- Phase 4: Technical Execution [blocked — awaiting Pre-Switch Sign-off Gate]
-- Phase 5: Future Governance [blocked — awaiting Phase 4]
+- Phase 3: Community Feedback & Notice Period [completed; no public comments] — notice: [`relicensing#21`](https://github.com/cBioPortal/relicensing/issues/21)
+- Pre-Switch Sign-off Gate [signed retroactively 2026-10-28]: [`docs/relicensing/signoff-record.md`](docs/relicensing/signoff-record.md)
+- Phase 4: Technical Execution [completed 2026-10-28; releases of core, session-service, docker-compose and Helm, and updated image pins, still pending]
+- Phase 5: Future Governance [open: DCO and license scanning not done]
 
 ## Where to read details
 

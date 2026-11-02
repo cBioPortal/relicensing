@@ -1,5 +1,7 @@
 # RFC86 Phase 0 — Component & Release Manifest
 
+> **Historical snapshot (Phase 0, 2026-07-10).** The "Today", license and consent-status columns below describe the pre-switch state. Since then all five in-scope repos and `cbioportal-helm` were relicensed to Apache-2.0 (2026-10-20 to 10-26); see [signoff-record.md](signoff-record.md) and [contributor-consent-status.md](contributor-consent-status.md). Still open from this manifest: whether the Helm chart (pinned to `6.4.1`) is updated or deprecated, and updating the compose/Helm image pins to `v7.2.2` or later.
+
 **Status:** All research follow-ups resolved (2026-07-10). Two decisions remain that aren't licensing questions but affect what "the release" means (see bottom) — everything else is ready to feed Phase 1 (relicensing#2) and Phase 2 (relicensing#3). Tracked in [relicensing#1](https://github.com/cBioPortal/relicensing/issues/1).
 
 ## Effective license of the combined/served distribution
