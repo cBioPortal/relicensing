@@ -105,6 +105,8 @@ As of 2026-09-14:
 
 **Decision published in:** [relicensing#4](https://github.com/cBioPortal/relicensing/issues/4) and [relicensing#5](https://github.com/cBioPortal/relicensing/issues/5)
 
+> **Update (2026-11-02):** the decision was taken at the cBioPortal steering meeting on 2026-10-14, conditioned on no objections being received (consistent with the first criterion above). No objections were received. The decision was not posted in #4 or #5 at the time; see [signoff-record.md](signoff-record.md).
+
 ---
 
 ## Announcement checklist
